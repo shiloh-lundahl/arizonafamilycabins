@@ -243,21 +243,22 @@ def _push_to_hubspot(lead: Lead):
         pass  # never block the user on CRM errors
 
 
-# ── RUNONCE content loader (remove after first deploy) ─────────────────────────
-# Trigger ONCE via: curl https://<your-service>.onrender.com/admin/load-content-XK9mP2vQ7/
-# Then delete this route before going live.
+# ── Content loader (runs automatically on startup) ────────────────────────────
+# Because the site can run on Render's free tier with an ephemeral SQLite DB,
+# all content is (re)loaded from the committed JSON + markdown files on every boot.
+# This means the website never depends on a persistent database to display pages.
 
-@app.route("/admin/load-content-XK9mP2vQ7/")
-def runonce_load_content():
+def load_all_content():
     import glob
     import markdown as md
 
+    base = os.path.dirname(__file__)
     db.create_all()
     pages_loaded = 0
     articles_loaded = 0
 
     # Load page JSON files
-    for filepath in sorted(glob.glob("content/pages/*.json")):
+    for filepath in sorted(glob.glob(os.path.join(base, "content/pages/*.json"))):
         with open(filepath) as f:
             data = json.load(f)
         slug = data["url_slug"]
@@ -272,10 +273,9 @@ def runonce_load_content():
         pages_loaded += 1
 
     # Load article markdown files
-    for filepath in sorted(glob.glob("content/articles/*.md")):
+    for filepath in sorted(glob.glob(os.path.join(base, "content/articles/*.md"))):
         with open(filepath) as f:
             raw = f.read()
-        # Parse simple frontmatter (--- key: value ---)
         meta = {}
         body = raw
         if raw.startswith("---"):
@@ -305,13 +305,22 @@ def runonce_load_content():
         articles_loaded += 1
 
     db.session.commit()
-    return jsonify({"pages_loaded": pages_loaded, "articles_loaded": articles_loaded, "status": "ok"})
+    return {"pages_loaded": pages_loaded, "articles_loaded": articles_loaded, "status": "ok"}
+
+
+@app.route("/admin/reload-content/")
+def admin_reload_content():
+    return jsonify(load_all_content())
 
 
 # ── Startup ───────────────────────────────────────────────────────────────────
 
 with app.app_context():
-    db.create_all()
+    try:
+        load_all_content()
+    except Exception as e:
+        # Don't crash the web server if content load hiccups; pages can be reloaded
+        print(f"[startup] content load warning: {e}")
 
 if __name__ == "__main__":
     app.run(debug=True)

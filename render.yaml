@@ -2,21 +2,16 @@ services:
   - type: web
     name: arizonafamilycabins
     runtime: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app --timeout 60
     envVars:
       - key: SECRET_KEY
         generateValue: true
-      - key: DATABASE_URL
-        fromDatabase:
-          name: arizonafamilycabins-db
-          property: connectionString
       - key: PHONE_NUMBER
-        value: ""   # fill in before deploy
+        value: ""   # fill in once you have the booking phone number
       - key: HUBSPOT_API_KEY
-        value: ""   # fill in after creating HubSpot account
-
-databases:
-  - name: arizonafamilycabins-db
-    databaseName: arizonafamilycabins
-    plan: free
+        value: ""   # fill in after creating HubSpot account (optional)
+      # No DATABASE_URL set on purpose — the app falls back to local SQLite and
+      # reloads all page content from committed files on every startup, so the
+      # free plan needs no separate (card-required) database to serve the site.
