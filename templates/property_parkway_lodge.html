@@ -64,8 +64,30 @@
 
       <div class="content">
 
-        <!-- Photo placeholder -->
-        <div style="background:linear-gradient(160deg,#4a8a42,#1e3d1a);height:280px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);margin-bottom:32px;">[ Parkway Lodge Photos ]</div>
+        <!-- Photo gallery -->
+        {% set pk = [
+          ['01-exterior-front.jpg','Parkway Lodge exterior front'],
+          ['02-back-of-house.jpg','Parkway Lodge back of house'],
+          ['03-living-room.jpg','Parkway Lodge living room'],
+          ['04-dining-kitchen.jpg','Parkway Lodge dining and kitchen'],
+          ['05-master-bedroom.jpg','Parkway Lodge master bedroom'],
+          ['06-bedroom-2.jpg','Parkway Lodge bedroom 2'],
+          ['07-bedroom-3.jpg','Parkway Lodge bedroom 3'],
+          ['08-bunkroom.jpg','Parkway Lodge bunkroom'],
+          ['09-game-room.jpg','Parkway Lodge game room'],
+          ['10-family-fun-center.jpg','Parkway Lodge family fun center'],
+          ['11-hot-tub.jpg','Parkway Lodge hot tub'],
+          ['12-fire-pit.jpg','Parkway Lodge fire pit'],
+          ['13-rainbow-lake.jpg','Parkway Lodge near Rainbow Lake'],
+          ['14-gym.jpg','Parkway Lodge gym']
+        ] %}
+        <img class="gallery-hero" src="/static/img/parkway/01-exterior-front.jpg" alt="Parkway Lodge cabin exterior in Lakeside, Arizona" data-lightbox data-full="/static/img/parkway/01-exterior-front.jpg">
+        <div class="gallery-grid">
+          {% for img, alt in pk[1:] %}
+          <img src="/static/img/parkway/{{ img }}" alt="{{ alt }}" loading="lazy" data-lightbox data-full="/static/img/parkway/{{ img }}">
+          {% endfor %}
+        </div>
+        <p style="text-align:center;margin-top:14px;color:var(--gray);font-size:.9rem;">Click any photo to enlarge · {{ pk|length }} photos</p>
 
         <h2 style="color:var(--pine-dk);margin-bottom:16px;">About Parkway Lodge</h2>
         <p>Parkway Lodge is a spacious 7-bedroom retreat designed for the kind of gatherings that need real room to breathe. With space for up to 27 guests, it's one of the largest single-property cabin rentals in the Arizona White Mountains — meaning your whole group stays together, shares meals together, and wakes up to the same ponderosa pine view.</p>
@@ -162,5 +184,7 @@
     <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call or Text {{ phone }}</a>
   </div>
 </section>
+
+{% include "_lightbox.html" %}
 
 {% endblock %}

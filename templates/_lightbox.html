@@ -1,0 +1,33 @@
+<!-- Shared lightbox markup + script (include once per page that has a .gallery-grid) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">&#8249;</button>
+  <img id="lb-img" src="" alt="">
+  <button class="lb-nav lb-next" aria-label="Next">&#8250;</button>
+  <div class="lb-count" id="lb-count"></div>
+</div>
+<script>
+(function(){
+  var imgs = Array.prototype.slice.call(document.querySelectorAll('[data-lightbox]'));
+  if(!imgs.length) return;
+  var box = document.getElementById('lightbox');
+  var big = document.getElementById('lb-img');
+  var count = document.getElementById('lb-count');
+  var srcs = imgs.map(function(i){ return i.getAttribute('data-full') || i.src; });
+  var i = 0;
+  function show(n){ i = (n + srcs.length) % srcs.length; big.src = srcs[i]; count.textContent = (i+1)+' / '+srcs.length; }
+  function open(n){ show(n); box.classList.add('open'); document.body.style.overflow='hidden'; }
+  function close(){ box.classList.remove('open'); document.body.style.overflow=''; }
+  imgs.forEach(function(im, n){ im.addEventListener('click', function(){ open(n); }); });
+  box.querySelector('.lb-close').addEventListener('click', close);
+  box.querySelector('.lb-prev').addEventListener('click', function(e){ e.stopPropagation(); show(i-1); });
+  box.querySelector('.lb-next').addEventListener('click', function(e){ e.stopPropagation(); show(i+1); });
+  box.addEventListener('click', function(e){ if(e.target === box) close(); });
+  document.addEventListener('keydown', function(e){
+    if(!box.classList.contains('open')) return;
+    if(e.key==='Escape') close();
+    if(e.key==='ArrowLeft') show(i-1);
+    if(e.key==='ArrowRight') show(i+1);
+  });
+})();
+</script>

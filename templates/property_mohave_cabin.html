@@ -64,7 +64,14 @@
 
       <div class="content">
 
-        <div style="background:linear-gradient(160deg,#2d5a27,#1e3d1a);height:280px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);margin-bottom:32px;">[ Mohave Cabin + Treehouse Photos ]</div>
+        <!-- Photo gallery (from the live Airbnb listing) -->
+        <img class="gallery-hero" src="/static/img/mohave/01.jpg" alt="Mohave Cabin with Treehouse in Lakeside, Arizona at night" data-lightbox data-full="/static/img/mohave/01.jpg">
+        <div class="gallery-grid">
+          {% for n in range(2, 26) %}
+          <img src="/static/img/mohave/{{ '%02d' % n }}.jpg" alt="Mohave Cabin with Treehouse photo {{ n }}" loading="lazy" data-lightbox data-full="/static/img/mohave/{{ '%02d' % n }}.jpg">
+          {% endfor %}
+        </div>
+        <p style="text-align:center;margin-top:14px;color:var(--gray);font-size:.9rem;">Click any photo to enlarge · 25 photos</p>
 
         <h2 style="color:var(--pine-dk);margin-bottom:16px;">About Mohave Cabin with Treehouse</h2>
         <p>Mohave Cabin with Treehouse is our largest and most distinctive property — a 7-bedroom cabin with a genuine treehouse that pushes total capacity to 33 guests. This is the property for the reunion that finally gets the whole family together, the milestone birthday that needs real space, or the group that has always wanted something a little more special than a standard vacation rental.</p>
@@ -165,5 +172,7 @@
     <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call or Text {{ phone }}</a>
   </div>
 </section>
+
+{% include "_lightbox.html" %}
 
 {% endblock %}
