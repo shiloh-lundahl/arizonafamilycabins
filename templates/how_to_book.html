@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}How to Book a Cabin | Arizona Family Cabins – Lakeside, AZ{% endblock %}
+{% block meta_description %}Booking Parkway Lodge or Mohave Cabin with Treehouse is simple — call or text to check availability, reserve with a deposit, then show up and enjoy. Here's how it works.{% endblock %}
+{% block content %}
+
+<section class="hero" style="padding:60px 20px;">
+  <div class="container">
+    <h1>How to Book Your Arizona Mountain Cabin</h1>
+    <p class="tagline">Three simple steps to reserve Parkway Lodge or Mohave Cabin with Treehouse in Lakeside, AZ.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:760px;">
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Call, Text, or Send an Inquiry</h3>
+          <p>The fastest way to start is a call or text to <a href="tel:{{ phone_raw }}">{{ phone }}</a>. Tell us which cabin interests you (or ask us to help you choose), your preferred dates, and how many guests you're bringing. You can also use our <a href="/contact/">inquiry form</a> if you prefer — we respond quickly either way.</p>
+          <p style="margin-top:10px;">Not sure which cabin fits your group? Here's the quick guide:</p>
+          <ul style="margin-top:8px;padding-left:20px;list-style:disc;line-height:2;">
+            <li><strong>Up to 27 people</strong> → <a href="/parkway-lodge/">Parkway Lodge</a></li>
+            <li><strong>Up to 33 people</strong> → <a href="/mohave-cabin-treehouse/">Mohave Cabin with Treehouse</a></li>
+            <li><strong>Up to 60 people</strong> → Book both cabins together</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Check Availability &amp; Reserve Your Dates</h3>
+          <p>We'll confirm whether your dates are open and walk you through pricing. To hold your reservation, we collect a deposit. Once that's in, your dates are locked and we send you everything you need: directions, check-in instructions, house rules, parking info, and our personal recommendations for things to do in the area.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Arrive &amp; Enjoy</h3>
+          <p>Show up to a clean, fully stocked cabin just west of Rainbow Lake. Unpack, spread out across all seven bedrooms, and let the White Mountains do the rest. Cool air, ponderosa pines, fishing steps away, and space for your whole group to actually be together.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--cream);border-radius:8px;padding:32px;margin-top:48px;">
+      <h2 style="color:var(--pine-dk);margin-bottom:16px;">Good to Know Before You Book</h2>
+      <ul style="padding-left:20px;list-style:disc;line-height:2.2;">
+        <li><strong>Minimum stay:</strong> Varies by season — ask us when you call.</li>
+        <li><strong>Check-in / check-out times:</strong> We'll confirm these when you reserve.</li>
+        <li><strong>Peak season:</strong> Summer weekends and holiday weekends book early — the earlier you reach out, the better your chances of securing your dates.</li>
+        <li><strong>Both cabins:</strong> If your group exceeds 33, we can discuss booking Parkway Lodge and Mohave Cabin simultaneously for up to 60 guests.</li>
+        <li><strong>Direct booking:</strong> You're booking directly with us — no third-party platform fees.</li>
+      </ul>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;">
+      <h2 style="color:var(--pine-dk);margin-bottom:16px;">Ready to Check Availability?</h2>
+      <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call {{ phone }}</a>
+      &nbsp;
+      <a href="/contact/" class="btn btn-gold btn-lg">Send an Inquiry</a>
+    </div>
+
+    <div style="margin-top:48px;padding-top:32px;border-top:1px solid #ddd;">
+      <h3 style="color:var(--pine-dk);margin-bottom:12px;">Explore Our Cabins</h3>
+      <ul style="line-height:2.2;">
+        <li><a href="/parkway-lodge/">Parkway Lodge — 7 bedrooms, sleeps 27</a></li>
+        <li><a href="/mohave-cabin-treehouse/">Mohave Cabin with Treehouse — 7 bedrooms + treehouse, sleeps 33</a></li>
+        <li><a href="/faq/">Full FAQ</a></li>
+        <li><a href="/family-reunion-cabins-arizona/">Family Reunion Cabins in Arizona</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

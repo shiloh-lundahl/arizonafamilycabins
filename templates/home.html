@@ -1,0 +1,252 @@
+{% extends "base.html" %}
+
+{% block title %}Large Cabin Rentals Lakeside AZ – Arizona Family Cabins{% endblock %}
+{% block meta_description %}Two 7-bedroom cabins near Rainbow Lake in Lakeside, AZ. Parkway Lodge sleeps 27 · Mohave Cabin + Treehouse sleeps 33. Ideal for family reunions.{% endblock %}
+
+{% block extra_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many people can your cabins sleep?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Parkway Lodge sleeps up to 27 guests; Mohave Cabin with Treehouse sleeps up to 33 guests. Both have 7 bedrooms and are located near Rainbow Lake in Lakeside, Arizona."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are the cabins located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both cabins are located just west of Rainbow Lake in Lakeside, Arizona, in the White Mountains — about 3.5 hours from Phoenix and 3 hours from Tucson."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book a cabin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call or text us at {{ phone }} to check availability and reserve your dates. You can also submit our online contact form and we'll get back to you promptly."
+      }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">📍 Lakeside, Arizona · White Mountains</div>
+    <h1>Large Cabin Rentals for Families &amp; Big Groups in Arizona</h1>
+    <p class="tagline">Two 7-bedroom cabins near Rainbow Lake — the White Mountains' best-kept secret for family reunions, extended families, and group getaways that actually fit everyone.</p>
+    <div class="hero-ctas">
+      <a href="tel:{{ phone_raw }}" class="btn btn-gold btn-lg">📞 Call or Text to Book</a>
+      <a href="/contact/" class="btn btn-primary btn-lg" style="background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.5);">Check Availability</a>
+    </div>
+  </div>
+</section>
+
+<!-- Cabin Cards -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-header">
+      <h2>Two Extraordinary Cabins — One Unforgettable Location</h2>
+      <p>Both located just west of Rainbow Lake in Lakeside, AZ at 7,000 ft elevation. Cool summers. Ponderosa pines. Room for your whole crew.</p>
+    </div>
+    <div class="cabin-cards">
+
+      <!-- Parkway Lodge -->
+      <div class="cabin-card">
+        <div class="cabin-card-img">[ Parkway Lodge Photo ]</div>
+        <div class="cabin-card-body">
+          <h3>Parkway Lodge</h3>
+          <p class="sleeps">🛏 7 Bedrooms &nbsp;·&nbsp; 👥 Sleeps up to 27</p>
+          <p>A sprawling 7-bedroom lodge designed for large families and reunions. Multiple living areas, a full kitchen, and outdoor space — everything you need to gather 27 people under one roof in the Arizona White Mountains.</p>
+          <div class="features">
+            <span class="tag">Sleeps 27</span>
+            <span class="tag">7 Bedrooms</span>
+            <span class="tag">Full Kitchen</span>
+            <span class="tag">Near Rainbow Lake</span>
+          </div>
+          <a href="/parkway-lodge/" class="btn btn-primary">View Parkway Lodge</a>
+        </div>
+      </div>
+
+      <!-- Mohave Cabin + Treehouse -->
+      <div class="cabin-card">
+        <div class="cabin-card-img">[ Mohave Cabin + Treehouse Photo ]</div>
+        <div class="cabin-card-body">
+          <h3>Mohave Cabin &amp; Treehouse</h3>
+          <p class="sleeps">🛏 7 Bedrooms &nbsp;·&nbsp; 👥 Sleeps up to 33</p>
+          <p>Our largest retreat — a 7-bedroom cabin with a genuine treehouse that adds extra sleeping space and unforgettable charm. Perfect for the biggest family reunions and multi-generational getaways in Arizona's White Mountains.</p>
+          <div class="features">
+            <span class="tag">Sleeps 33</span>
+            <span class="tag">7 Bedrooms</span>
+            <span class="tag">Treehouse</span>
+            <span class="tag">Near Rainbow Lake</span>
+          </div>
+          <a href="/mohave-cabin-treehouse/" class="btn btn-primary">View Mohave Cabin</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Families Choose Arizona Family Cabins</h2>
+    </div>
+    <div class="three-col">
+      <div class="col">
+        <h3>🏔 White Mountains Elevation</h3>
+        <p>Lakeside sits at roughly 7,000 feet — cool summers when the Phoenix Valley hits 110°F. Sleep with windows open, breathe pine-scented air, and escape the desert heat.</p>
+      </div>
+      <div class="col">
+        <h3>🎣 Rainbow Lake Next Door</h3>
+        <p>Both cabins are just west of Rainbow Lake — a 60-acre stocked trout lake. Walk to the water, cast a line, kayak, or just sit on the bank and enjoy the quiet.</p>
+      </div>
+      <div class="col">
+        <h3>👨‍👩‍👧‍👦 Big Enough for Everyone</h3>
+        <p>Finding a cabin that sleeps 20, 27, or even 33 people in one place is rare. No splitting the group across three different rentals — everyone under one roof, every meal together.</p>
+      </div>
+      <div class="col">
+        <h3>🌲 Ponderosa Pine Country</h3>
+        <p>The Pinetop-Lakeside area sits on the Mogollon Rim above the Apache-Sitgreaves National Forest. Hundreds of miles of trails, forest roads, and wildlife right outside your door.</p>
+      </div>
+      <div class="col">
+        <h3>✅ Direct Booking — No Fees</h3>
+        <p>Book directly with us. No Airbnb service fees, no hidden platform charges. Talk to a real person who knows these cabins inside and out.</p>
+      </div>
+      <div class="col">
+        <h3>🏡 Real Reunions Happen Here</h3>
+        <p>Generational family reunions, church retreats, birthday milestones, company off-sites — our guests use these cabins for the moments that matter most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quick How-to-Book -->
+<section class="section section-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Easy to Book — 3 Simple Steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Call or Text Us</h3>
+          <p>Reach out at <a href="tel:{{ phone_raw }}">{{ phone }}</a> to ask questions and check availability. We answer promptly and love talking about the cabins.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Reserve Your Dates</h3>
+          <p>We'll hold your dates with a deposit and send you all the details — directions, check-in info, house rules, and local recommendations.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Show Up &amp; Enjoy</h3>
+          <p>Arrive to a clean, stocked cabin near Rainbow Lake. Unpack, spread out, and start making memories with your whole group.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call {{ phone }} to Book</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What is the largest cabin you have?</h3>
+        <p>Mohave Cabin with Treehouse is our largest, sleeping up to 33 guests across 7 bedrooms plus the treehouse. It's ideal for big family reunions, large extended-family gatherings, and group events.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where exactly are the cabins located?</h3>
+        <p>Both Parkway Lodge and Mohave Cabin are located just west of Rainbow Lake in Lakeside, Arizona — part of the Pinetop-Lakeside community in the White Mountains. It's about 3.5 hours from Phoenix via the US-60 or AZ-260.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can we book both cabins at the same time?</h3>
+        <p>Yes — if you need space for up to 60 people, booking both cabins together is an option. Call us to discuss availability and group pricing.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are the cabins good for kids?</h3>
+        <p>Absolutely. Rainbow Lake is safe for kids to fish and explore, the Mohave Cabin treehouse is a huge hit with children, and the forested setting is perfect for outdoor adventures of all kinds.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I reserve a cabin?</h3>
+        <p>Call or text us at <a href="tel:{{ phone_raw }}">{{ phone }}</a>, or fill out our <a href="/contact/">contact form</a>. We'll check availability, answer your questions, and walk you through the booking process.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Strip -->
+<section class="cta-strip">
+  <div class="container">
+    <h2>Ready to Book Your Arizona Mountain Getaway?</h2>
+    <p>Parkway Lodge sleeps 27 · Mohave Cabin + Treehouse sleeps 33 · Lakeside, AZ near Rainbow Lake</p>
+    <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call or Text {{ phone }}</a>
+    &nbsp;
+    <a href="/contact/" class="btn btn-gold btn-lg">Send an Inquiry</a>
+  </div>
+</section>
+
+<!-- Internal links / nearby pages -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Explore More</h2>
+    </div>
+    <div class="three-col">
+      <div class="col">
+        <h3>By Location</h3>
+        <ul style="margin-top:8px;line-height:2">
+          <li><a href="/large-cabins-lakeside-arizona/">Large Cabins in Lakeside, AZ</a></li>
+          <li><a href="/large-cabins-show-low-arizona/">Large Cabins in Show Low, AZ</a></li>
+          <li><a href="/large-cabins-pinetop-arizona/">Large Cabins in Pinetop, AZ</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>By Group Type</h3>
+        <ul style="margin-top:8px;line-height:2">
+          <li><a href="/family-reunion-cabins-arizona/">Family Reunion Cabins AZ</a></li>
+          <li><a href="/large-group-cabins-arizona/">Large Group Cabins AZ</a></li>
+          <li><a href="/cabins-that-sleep-30-arizona/">Cabins That Sleep 30+ in AZ</a></li>
+          <li><a href="/7-bedroom-cabins-arizona/">7-Bedroom Cabins AZ</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Plan Your Trip</h3>
+        <ul style="margin-top:8px;line-height:2">
+          <li><a href="/how-to-book/">How to Book</a></li>
+          <li><a href="/faq/">Full FAQ</a></li>
+          <li><a href="/blog/">Travel Guides &amp; Tips</a></li>
+          <li><a href="/about/">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

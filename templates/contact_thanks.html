@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Thanks – We'll Be in Touch | Arizona Family Cabins{% endblock %}
+{% block robots %}<meta name="robots" content="noindex, nofollow">{% endblock %}
+{% block content %}
+<section class="hero" style="padding:80px 20px;">
+  <div class="container" style="max-width:600px;">
+    <div style="font-size:3rem;margin-bottom:20px;">🌲</div>
+    <h1>Thanks — We Got Your Message!</h1>
+    <p class="tagline" style="margin-bottom:32px;">We'll be in touch within a few hours to check availability and answer your questions. In the meantime, feel free to call or text us directly.</p>
+    <a href="tel:{{ phone_raw }}" class="btn btn-gold btn-lg">📞 Call {{ phone }}</a>
+    &nbsp;
+    <a href="/" class="btn btn-primary btn-lg">Back to Home</a>
+  </div>
+</section>
+{% endblock %}

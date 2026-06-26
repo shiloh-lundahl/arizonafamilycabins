@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us – Book a Cabin | Arizona Family Cabins{% endblock %}
+{% block meta_description %}Ready to book Parkway Lodge or Mohave Cabin with Treehouse in Lakeside, AZ? Call, text, or fill out our inquiry form. We respond fast.{% endblock %}
+
+{% block content %}
+
+<section class="hero" style="padding:48px 20px;">
+  <div class="container">
+    <h1>Book Your Arizona Cabin Getaway</h1>
+    <p class="tagline">Call or text us directly — or send an inquiry and we'll get back to you fast.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col-main">
+
+      <div>
+        <h2 style="color:var(--pine-dk);margin-bottom:8px;">Send an Inquiry</h2>
+        <p style="color:var(--gray);margin-bottom:28px;">Tell us about your trip and we'll check availability and answer your questions.</p>
+
+        <form class="contact-form" action="/contact/" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Smith">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / Text *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(555) 000-0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cabin_interest">Which Cabin?</label>
+              <select id="cabin_interest" name="cabin_interest">
+                <option value="">Not sure yet</option>
+                <option value="parkway_lodge">Parkway Lodge (sleeps 27)</option>
+                <option value="mohave_cabin">Mohave Cabin + Treehouse (sleeps 33)</option>
+                <option value="both">Both Cabins</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="group_size">Group Size</label>
+              <select id="group_size" name="group_size">
+                <option value="">Select…</option>
+                <option value="10-15">10–15 people</option>
+                <option value="16-20">16–20 people</option>
+                <option value="21-27">21–27 people</option>
+                <option value="28-33">28–33 people</option>
+                <option value="34-60">34–60 (both cabins)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="check_in">Preferred Check-In</label>
+              <input type="date" id="check_in" name="check_in">
+            </div>
+            <div class="form-group">
+              <label for="check_out">Preferred Check-Out</label>
+              <input type="date" id="check_out" name="check_out">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your trip</label>
+            <textarea id="message" name="message" placeholder="Family reunion, occasion, any questions…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Inquiry →</button>
+          <p style="font-size:.8rem;color:var(--gray);margin-top:10px;text-align:center;">We typically respond within a few hours.</p>
+        </form>
+      </div>
+
+      <aside>
+        <div class="booking-box">
+          <h3>Prefer to Talk?</h3>
+          <p class="price-note">Fastest way to check availability and get your questions answered.</p>
+          <a href="tel:{{ phone_raw }}" class="btn btn-primary">📞 Call {{ phone }}</a>
+          <a href="sms:{{ phone_raw }}" class="btn btn-gold" style="margin-top:0">💬 Text Us</a>
+          <hr style="margin:20px 0;border:none;border-top:1px solid #ddd;">
+          <h3 style="margin-bottom:8px;">Our Cabins</h3>
+          <p style="font-size:.9rem;margin-bottom:12px;"><a href="/parkway-lodge/"><strong>Parkway Lodge</strong></a><br>7 bedrooms · Sleeps 27</p>
+          <p style="font-size:.9rem;"><a href="/mohave-cabin-treehouse/"><strong>Mohave Cabin + Treehouse</strong></a><br>7 bedrooms + treehouse · Sleeps 33</p>
+          <hr style="margin:20px 0;border:none;border-top:1px solid #ddd;">
+          <p style="font-size:.85rem;color:var(--gray);">📍 Located near Rainbow Lake<br>Lakeside, Arizona 85929<br>White Mountains</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

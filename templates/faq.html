@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% block title %}FAQ – Large Group Cabin Rentals in Lakeside, AZ | Arizona Family Cabins{% endblock %}
+{% block meta_description %}Common questions about booking Parkway Lodge (sleeps 27) or Mohave Cabin with Treehouse (sleeps 33) in Lakeside, Arizona. Rates, policies, location, amenities, and more.{% endblock %}
+
+{% block extra_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the largest cabin you offer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mohave Cabin with Treehouse is our largest property, sleeping up to 33 guests across 7 bedrooms plus the treehouse. Parkway Lodge sleeps up to 27 guests." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are the cabins located?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both cabins are located just west of Rainbow Lake in Lakeside, Arizona — in the White Mountains at approximately 7,000 feet elevation. Lakeside is part of the Pinetop-Lakeside community, about 3.5 hours from Phoenix." }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is it from Phoenix to the cabins?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Approximately 3.5 hours from central Phoenix via US-60 East through Globe, then east on AZ-260 to Show Low and Lakeside. It's a straightforward drive with no steep mountain passes." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we book both cabins at the same time?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Booking both Parkway Lodge and Mohave Cabin with Treehouse together can accommodate groups of up to 60 guests. Call us to discuss combined availability and pricing." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we book a cabin?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Call or text us directly to check availability and ask questions. You can also submit our online contact form. We take a deposit to secure your reservation." }
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="hero" style="padding:60px 20px;">
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <p class="tagline">Everything you need to know about our cabins, booking process, and the White Mountains.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:800px;">
+
+    <h2 style="color:var(--pine-dk);margin-bottom:24px;">The Cabins</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>What cabins do you have?</h3>
+        <p>We have two large-group cabin rentals in Lakeside, Arizona. <a href="/parkway-lodge/">Parkway Lodge</a> has 7 bedrooms and sleeps up to 27 guests. <a href="/mohave-cabin-treehouse/">Mohave Cabin with Treehouse</a> has 7 bedrooms plus a treehouse and sleeps up to 33 guests. Both are located just west of Rainbow Lake.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the treehouse at Mohave Cabin?</h3>
+        <p>The treehouse is a genuine sleeping structure set among the pines that adds extra capacity beyond Mohave's 7 main bedrooms, bringing total occupancy to 33. It's a standout feature — especially popular with kids and teens — and makes Mohave Cabin uniquely suited to large family reunions.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can we book both cabins at the same time?</h3>
+        <p>Yes. Combining Parkway Lodge and Mohave Cabin with Treehouse accommodates groups of up to 60 guests across two adjacent properties. Call us to discuss combined availability.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What amenities are included?</h3>
+        <p>Both cabins include full kitchens, multiple bathrooms, living and dining areas, outdoor space, WiFi, and ample parking. Call us for the full amenity list for each cabin — details vary between the two properties.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are the cabins pet-friendly?</h3>
+        <p>Contact us to ask about pet policies — it varies and we're happy to discuss your situation.</p>
+      </div>
+    </div>
+
+    <h2 style="color:var(--pine-dk);margin-top:48px;margin-bottom:24px;">Booking &amp; Rates</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>How do I check availability and book?</h3>
+        <p>Call or text us at <a href="tel:{{ phone_raw }}">{{ phone }}</a>, or fill out our <a href="/contact/">contact form</a>. We'll confirm availability, answer your questions, and walk you through the reservation process.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the minimum stay?</h3>
+        <p>Minimum stay requirements vary by season and cabin. Call us for current minimums — we're always happy to work with your schedule where we can.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you charge a deposit?</h3>
+        <p>Yes — a deposit is required to hold your reservation. We'll walk you through the deposit amount and payment process when you contact us.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are there platform fees like Airbnb charges?</h3>
+        <p>No. You're booking directly with us, so there are no third-party service fees. What we quote is what you pay.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is the cancellation policy?</h3>
+        <p>We'll share our cancellation policy when you book. Call us to discuss — we're reasonable people and understand that plans change.</p>
+      </div>
+    </div>
+
+    <h2 style="color:var(--pine-dk);margin-top:48px;margin-bottom:24px;">Location &amp; Getting There</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Where exactly are the cabins?</h3>
+        <p>Both cabins are located just west of Rainbow Lake in Lakeside, Arizona — in the Pinetop-Lakeside community in the White Mountains. Lakeside sits at approximately 7,000 feet elevation in the Apache-Sitgreaves National Forest.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How far is it from Phoenix?</h3>
+        <p>Approximately 3.5 hours via US-60 East through Globe, then AZ-260 east to Show Low and Lakeside. It's a straightforward drive — no steep mountain passes or difficult road conditions in summer.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How far is it from Tucson?</h3>
+        <p>Approximately 3 hours via AZ-77 North through Oracle and Globe, then east to Show Low and Lakeside.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is Rainbow Lake walkable from the cabins?</h3>
+        <p>Yes — both cabins are located just west of Rainbow Lake. It's a short walk to the water. The lake is 60 acres, stocked with trout, and great for fishing, kayaking, and enjoying the scenery.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is there to do in the area?</h3>
+        <p>Fishing and kayaking on Rainbow Lake and nearby lakes (Fool Hollow, Hawley Lake), hiking and mountain biking in the Apache-Sitgreaves National Forest, the Mogollon Rim overlooks, ATV trails, wildlife watching, and exploring the towns of Pinetop-Lakeside and Show Low. See our <a href="/blog/">travel guides</a> for more.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:56px;">
+      <h2 style="color:var(--pine-dk);margin-bottom:16px;">Still Have Questions?</h2>
+      <p style="margin-bottom:24px;color:var(--gray);">Call or text us — we're happy to help you plan the perfect group trip.</p>
+      <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call {{ phone }}</a>
+      &nbsp;
+      <a href="/contact/" class="btn btn-gold btn-lg">Send a Message</a>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

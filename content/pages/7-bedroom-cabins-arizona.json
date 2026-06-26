@@ -1,0 +1,37 @@
+{
+  "page_type": "type",
+  "url_slug": "7-bedroom-cabins-arizona",
+  "meta_title": "7-Bedroom Cabin Rentals in Arizona | White Mountains",
+  "meta_description": "7-bedroom cabin rentals in Arizona's White Mountains. Parkway Lodge (7 bed, sleeps 27) and Mohave Cabin with Treehouse (7 bed + treehouse, sleeps 33) near Rainbow Lake in Lakeside, AZ.",
+  "h1_title": "7-Bedroom Cabin Rentals in Arizona",
+  "hero_text": "Two 7-bedroom cabins near Rainbow Lake in Lakeside, AZ — the White Mountains' best large-group retreats, sleeping 27 or 33 guests.",
+  "why_section": "<h2>Why 7 Bedrooms Makes a Difference for Large Groups</h2><p>Seven bedrooms is the threshold where a large vacation rental stops feeling like a squeeze and starts feeling like a proper retreat. With 7 bedrooms, a family of 25–33 can distribute meaningfully: couples in private rooms, siblings sharing, kids in their own space, grandparents comfortable and not tucked into an awkward corner of the living room.</p><p>Arizona has very few genuine 7-bedroom cabin rentals. Our two Lakeside properties are purpose-built at this scale — not standard vacation homes stretched to maximum occupancy, but properties designed for groups in the 20–33 range. Both have full kitchens, multiple bathrooms, large common areas, and outdoor space commensurate with the group size they host.</p><p>Parkway Lodge: 7 bedrooms, sleeps 27, near Rainbow Lake in Lakeside, AZ.<br>Mohave Cabin with Treehouse: 7 bedrooms plus treehouse, sleeps 33, same location.</p>",
+  "how_section": "<h2>Who Books 7-Bedroom Cabins in Arizona</h2><p>Our 7-bedroom cabins are booked primarily for: multi-generational family reunions (the most common), extended-family vacations where 4–6 family units want to vacation together, church and youth group retreats, corporate off-sites for leadership teams, and sports team weekends during regional tournaments in the Show Low area.</p><p>The common thread is a group large enough that a standard vacation rental doesn't work — but who want a cabin experience, not a hotel conference facility. Seven bedrooms gives everyone sleeping privacy while maintaining the shared-kitchen, shared-living-room dynamic that makes group trips special.</p>",
+  "local_section": "<h2>The Setting: White Mountains, Lakeside, AZ</h2><p>Both 7-bedroom cabins are in Lakeside, Arizona, at 7,000 feet elevation in the Apache-Sitgreaves National Forest. The location puts you beside Rainbow Lake — a 60-acre stocked trout reservoir — 10 minutes from Show Low's grocery stores, and at the edge of hundreds of miles of national forest trails.</p><p>Summer is the prime season: temperatures in the low 80s, nights in the 50s, no humidity. The White Mountains are Arizona's best-kept secret for summer group trips — cooler than Sedona, less crowded than Flagstaff, and far more suited to large groups than either.</p>",
+  "faq_section": [
+    {
+      "question": "Do you have 7-bedroom cabin rentals in Arizona?",
+      "answer": "Yes — both our Lakeside, AZ cabins have 7 bedrooms. Parkway Lodge (7 bed, sleeps 27) and Mohave Cabin with Treehouse (7 bed + treehouse, sleeps 33) are near Rainbow Lake in the White Mountains."
+    },
+    {
+      "question": "How many people does a 7-bedroom cabin in Arizona sleep?",
+      "answer": "Our 7-bedroom cabins sleep 27 (Parkway Lodge) and 33 (Mohave Cabin with Treehouse, which also has a treehouse). Exact capacity depends on the sleeping configuration."
+    },
+    {
+      "question": "Where are your 7-bedroom cabins located?",
+      "answer": "Both cabins are in Lakeside, Arizona — part of the Pinetop-Lakeside community — just west of Rainbow Lake in the Apache-Sitgreaves National Forest. About 3.5 hours from Phoenix."
+    }
+  ],
+  "schema_markup": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you have 7-bedroom cabin rentals in Arizona?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Parkway Lodge (7 bedrooms, sleeps 27) and Mohave Cabin with Treehouse (7 bedrooms + treehouse, sleeps 33), both near Rainbow Lake in Lakeside, AZ."}}]},
+  "internal_links": [
+    {"url": "/cabins-that-sleep-30-arizona/", "text": "Arizona Cabins That Sleep 30+"},
+    {"url": "/large-group-cabins-arizona/", "text": "Large Group Cabins in Arizona"},
+    {"url": "/family-reunion-cabins-arizona/", "text": "Family Reunion Cabins in Arizona"},
+    {"url": "/large-cabins-lakeside-arizona/", "text": "Large Cabins in Lakeside, AZ"},
+    {"url": "/parkway-lodge/", "text": "Parkway Lodge – Sleeps 27"},
+    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with Treehouse – Sleeps 33"}
+  ],
+  "target_keyword": "7 bedroom cabin rentals arizona",
+  "is_published": true,
+  "noindex": false
+}

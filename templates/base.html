@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{% block title %}Arizona Family Cabins – Large Group Cabin Rentals in Lakeside, AZ{% endblock %}</title>
+  <meta name="description" content="{% block meta_description %}Book Parkway Lodge (sleeps 27) or Mohave Cabin with Treehouse (sleeps 33) in Lakeside, Arizona — perfect for family reunions, large groups, and unforgettable White Mountains getaways.{% endblock %}">
+
+  {% block canonical %}
+  <link rel="canonical" href="{{ site_url }}{{ request.path }}">
+  {% endblock %}
+
+  {% block robots %}
+  <meta name="robots" content="index, follow">
+  {% endblock %}
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site_url }}{{ request.path }}">
+  <meta property="og:title" content="{% block og_title %}Arizona Family Cabins – Large Group Rentals in Lakeside, AZ{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}Parkway Lodge sleeps 27 · Mohave Cabin with Treehouse sleeps 33 · Lakeside, Arizona near Rainbow Lake{% endblock %}">
+  <meta property="og:image" content="{{ site_url }}/static/img/og-image.jpg">
+  <meta property="og:site_name" content="Arizona Family Cabins">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site_url }}/static/img/og-image.jpg">
+
+  <!-- Schema.org – Organization sitewide -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Arizona Family Cabins",
+    "url": "{{ site_url }}",
+    "telephone": "{{ phone }}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lakeside",
+      "addressRegion": "AZ",
+      "addressCountry": "US"
+    },
+    "description": "Large-group cabin rentals near Rainbow Lake in Lakeside, Arizona. Parkway Lodge sleeps 27; Mohave Cabin with Treehouse sleeps 33.",
+    "image": "{{ site_url }}/static/img/og-image.jpg"
+  }
+  </script>
+
+  {% block extra_schema %}{% endblock %}
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">Arizona Family Cabins</a>
+    <nav class="main-nav">
+      <a href="/parkway-lodge/">Parkway Lodge</a>
+      <a href="/mohave-cabin-treehouse/">Mohave Cabin</a>
+      <a href="/how-to-book/">How to Book</a>
+      <a href="/about/">About</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <a href="tel:{{ phone_raw }}" class="btn btn-primary header-cta">Call to Book</a>
+  </div>
+</header>
+
+<!-- ── Main ────────────────────────────────────────────────── -->
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<!-- ── Footer ──────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <strong>Arizona Family Cabins</strong>
+      <p>Large-group cabin rentals near Rainbow Lake, Lakeside, Arizona — White Mountains country.</p>
+      <a href="tel:{{ phone_raw }}" class="btn btn-primary">Call or Text {{ phone }}</a>
+    </div>
+    <div class="footer-col">
+      <strong>Our Cabins</strong>
+      <ul>
+        <li><a href="/parkway-lodge/">Parkway Lodge – Sleeps 27</a></li>
+        <li><a href="/mohave-cabin-treehouse/">Mohave Cabin + Treehouse – Sleeps 33</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>Plan Your Stay</strong>
+      <ul>
+        <li><a href="/how-to-book/">How to Book</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/contact/">Contact Us</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>Nearby Areas</strong>
+      <ul>
+        <li><a href="/large-cabins-lakeside-arizona/">Lakeside, AZ</a></li>
+        <li><a href="/large-cabins-show-low-arizona/">Show Low, AZ</a></li>
+        <li><a href="/large-cabins-pinetop-arizona/">Pinetop, AZ</a></li>
+        <li><a href="/family-reunion-cabins-arizona/">Family Reunion Cabins</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {{ current_year }} Arizona Family Cabins &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

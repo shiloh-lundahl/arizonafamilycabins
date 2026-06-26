@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Arizona White Mountains Travel Guides & Tips | Arizona Family Cabins{% endblock %}
+{% block meta_description %}Guides to help you plan the perfect White Mountains trip — things to do near Lakeside, Rainbow Lake fishing, family reunion planning, best time to visit, and more.{% endblock %}
+{% block content %}
+
+<section class="hero" style="padding:56px 20px;">
+  <div class="container">
+    <h1>Arizona White Mountains Travel Guides</h1>
+    <p class="tagline">Tips, guides, and local knowledge to help you plan the perfect mountain getaway from our cabins in Lakeside, AZ.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% if articles %}
+    <div class="blog-grid">
+      {% for article in articles %}
+      <div class="blog-card">
+        <div class="blog-card-body">
+          <h3><a href="/blog/{{ article.slug }}/" style="color:var(--pine-dk);text-decoration:none;">{{ article.h1 }}</a></h3>
+          <p>{{ article.meta_description }}</p>
+          <a href="/blog/{{ article.slug }}/" class="btn btn-primary" style="padding:8px 16px;font-size:.85rem;">Read More →</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div style="text-align:center;padding:60px 20px;color:var(--gray);">
+      <p style="font-size:1.1rem;">Guides coming soon — check back after launch.</p>
+      <a href="/contact/" class="btn btn-primary" style="margin-top:20px;">Contact Us</a>
+    </div>
+    {% endif %}
+
+    <div style="margin-top:56px;padding:32px;background:var(--cream);border-radius:8px;text-align:center;">
+      <h2 style="color:var(--pine-dk);margin-bottom:12px;">Ready to Book a Cabin?</h2>
+      <p style="margin-bottom:20px;">Parkway Lodge (sleeps 27) and Mohave Cabin with Treehouse (sleeps 33) are near Rainbow Lake in Lakeside, AZ.</p>
+      <a href="tel:{{ phone_raw }}" class="btn btn-primary">📞 Call {{ phone }}</a>
+      &nbsp;
+      <a href="/contact/" class="btn btn-gold">Send an Inquiry</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

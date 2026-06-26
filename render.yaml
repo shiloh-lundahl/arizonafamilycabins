@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: arizonafamilycabins
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --timeout 60
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: arizonafamilycabins-db
+          property: connectionString
+      - key: PHONE_NUMBER
+        value: ""   # fill in before deploy
+      - key: HUBSPOT_API_KEY
+        value: ""   # fill in after creating HubSpot account
+
+databases:
+  - name: arizonafamilycabins-db
+    databaseName: arizonafamilycabins
+    plan: free

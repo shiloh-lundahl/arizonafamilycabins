@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.meta_title }}{% endblock %}
+{% block meta_description %}{{ article.meta_description }}{% endblock %}
+
+{% block extra_schema %}
+{% if article.schema_markup %}
+<script type="application/ld+json">{{ article.schema_markup | tojson }}</script>
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ article.h1 }}",
+  "description": "{{ article.meta_description }}",
+  "datePublished": "{{ article.published_at.strftime('%Y-%m-%d') if article.published_at else '' }}",
+  "dateModified": "{{ article.updated_at.strftime('%Y-%m-%d') if article.updated_at else '' }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arizona Family Cabins",
+    "url": "{{ site_url }}"
+  }
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="section">
+  <div class="container">
+    <div class="two-col-main">
+
+      <article style="max-width:720px;">
+        <nav class="breadcrumb">
+          <a href="/">Home</a><span>›</span><a href="/blog/">Blog</a><span>›</span>{{ article.h1 }}
+        </nav>
+        <h1 style="font-size:clamp(1.6rem,3vw,2.4rem);color:var(--pine-dk);margin:20px 0 12px;">{{ article.h1 }}</h1>
+        {% if article.published_at %}
+        <p style="color:var(--gray);font-size:.85rem;margin-bottom:28px;">{{ article.published_at.strftime('%B %d, %Y') }}</p>
+        {% endif %}
+
+        <div class="prose" style="line-height:1.8;">{{ article.body_html | safe }}</div>
+
+        {% if article.faq_section %}
+        <h2 style="color:var(--pine-dk);margin-top:48px;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {% for item in article.faq_section %}
+          <div class="faq-item">
+            <h3>{{ item.question }}</h3>
+            <p>{{ item.answer }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <div style="margin-top:40px;padding:24px;background:var(--cream);border-radius:8px;">
+          <strong>Book a Cabin in the White Mountains</strong>
+          <p style="margin:8px 0;">Parkway Lodge (sleeps 27) and Mohave Cabin with Treehouse (sleeps 33) — both near Rainbow Lake in Lakeside, AZ.</p>
+          <a href="tel:{{ phone_raw }}" class="btn btn-primary" style="margin-top:8px;">📞 Call {{ phone }}</a>
+          &nbsp;
+          <a href="/contact/" class="btn btn-gold" style="margin-top:8px;">Send an Inquiry</a>
+        </div>
+      </article>
+
+      <aside class="booking-box">
+        <h3>Book a Cabin</h3>
+        <p class="price-note">Near Rainbow Lake · Lakeside, AZ</p>
+        <a href="tel:{{ phone_raw }}" class="btn btn-primary">📞 Call {{ phone }}</a>
+        <a href="/contact/" class="btn btn-gold" style="margin-top:0;">📋 Inquiry Form</a>
+        <hr style="margin:20px 0;border:none;border-top:1px solid #ddd;">
+        <p style="font-size:.85rem;"><a href="/parkway-lodge/"><strong>Parkway Lodge</strong></a><br><span style="color:var(--gray);">Sleeps 27 · 7 bedrooms</span></p>
+        <p style="font-size:.85rem;margin-top:10px;"><a href="/mohave-cabin-treehouse/"><strong>Mohave Cabin + Treehouse</strong></a><br><span style="color:var(--gray);">Sleeps 33 · 7 bedrooms</span></p>
+        <hr style="margin:20px 0;border:none;border-top:1px solid #ddd;">
+        <p style="font-size:.85rem;"><a href="/blog/">← All Guides</a></p>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

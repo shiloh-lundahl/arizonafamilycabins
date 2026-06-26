@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.meta_title }}{% endblock %}
+{% block meta_description %}{{ page.meta_description }}{% endblock %}
+
+{% block robots %}
+{% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% else %}<meta name="robots" content="index, follow">{% endif %}
+{% endblock %}
+
+{% block extra_schema %}
+{% if page.schema_markup %}
+<script type="application/ld+json">{{ page.schema_markup | tojson }}</script>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+
+<section class="hero" style="padding:56px 20px;">
+  <div class="container">
+    <nav class="breadcrumb" style="color:rgba(255,255,255,.7);margin-bottom:16px;">
+      <a href="/" style="color:rgba(255,255,255,.7)">Home</a><span>›</span>{{ page.h1_title }}
+    </nav>
+    <h1>{{ page.h1_title }}</h1>
+    {% if page.hero_text %}
+    <div class="tagline">{{ page.hero_text | safe }}</div>
+    {% endif %}
+    <div class="hero-ctas" style="margin-top:28px;">
+      <a href="tel:{{ phone_raw }}" class="btn btn-gold btn-lg">📞 Call to Book</a>
+      <a href="/contact/" class="btn btn-primary btn-lg" style="background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.5);">Check Availability</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="two-col-main">
+
+      <div class="content">
+
+        {% if page.why_section %}
+        <div class="prose">{{ page.why_section | safe }}</div>
+        {% endif %}
+
+        <!-- Cabin cards always shown -->
+        <h2 style="color:var(--pine-dk);margin-top:40px;margin-bottom:20px;">Our Cabins Near {{ page.h1_title }}</h2>
+        <div class="cabin-cards" style="grid-template-columns:1fr;">
+
+          <div class="cabin-card" style="display:grid;grid-template-columns:220px 1fr;">
+            <div class="cabin-card-img" style="height:auto;min-height:180px;">[ Parkway Lodge ]</div>
+            <div class="cabin-card-body">
+              <h3><a href="/parkway-lodge/" style="color:var(--pine-dk);text-decoration:none;">Parkway Lodge</a></h3>
+              <p class="sleeps">🛏 7 Bedrooms &nbsp;·&nbsp; 👥 Sleeps up to 27</p>
+              <p>A spacious 7-bedroom lodge near Rainbow Lake in Lakeside, AZ — ideal for large family gatherings and group events up to 27 people.</p>
+              <a href="/parkway-lodge/" class="btn btn-primary" style="padding:8px 18px;font-size:.85rem;">View Parkway Lodge →</a>
+            </div>
+          </div>
+
+          <div class="cabin-card" style="display:grid;grid-template-columns:220px 1fr;margin-top:16px;">
+            <div class="cabin-card-img" style="height:auto;min-height:180px;">[ Mohave Cabin ]</div>
+            <div class="cabin-card-body">
+              <h3><a href="/mohave-cabin-treehouse/" style="color:var(--pine-dk);text-decoration:none;">Mohave Cabin &amp; Treehouse</a></h3>
+              <p class="sleeps">🛏 7 Bedrooms + Treehouse &nbsp;·&nbsp; 👥 Sleeps up to 33</p>
+              <p>Our largest property — 7 bedrooms plus a treehouse sleeping up to 33 guests near Rainbow Lake in Lakeside. Arizona's premier large-group cabin.</p>
+              <a href="/mohave-cabin-treehouse/" class="btn btn-primary" style="padding:8px 18px;font-size:.85rem;">View Mohave Cabin →</a>
+            </div>
+          </div>
+
+        </div>
+
+        {% if page.how_section %}
+        <div class="prose" style="margin-top:40px;">{{ page.how_section | safe }}</div>
+        {% endif %}
+
+        {% if page.local_section %}
+        <div class="prose" style="margin-top:40px;">{{ page.local_section | safe }}</div>
+        {% endif %}
+
+        {% if page.faq_section %}
+        <h2 style="color:var(--pine-dk);margin-top:48px;margin-bottom:20px;">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          {% for item in page.faq_section %}
+          <div class="faq-item">
+            <h3>{{ item.question }}</h3>
+            <p>{{ item.answer }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if page.internal_links %}
+        <div style="margin-top:40px;padding:24px;background:var(--light);border-radius:8px;">
+          <strong>Related Pages</strong>
+          <ul style="margin-top:8px;line-height:2;">
+            {% for link in page.internal_links %}
+            <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+      </div>
+
+      <aside class="booking-box">
+        <h3>Book These Cabins</h3>
+        <p class="price-note">Parkway Lodge (sleeps 27) &amp; Mohave Cabin + Treehouse (sleeps 33)</p>
+        <a href="tel:{{ phone_raw }}" class="btn btn-primary">📞 Call {{ phone }}</a>
+        <a href="sms:{{ phone_raw }}" class="btn btn-gold" style="margin-top:0;">💬 Text Us</a>
+        <a href="/contact/" class="btn" style="background:var(--light);color:var(--charcoal);margin-top:0;">📋 Inquiry Form</a>
+        <hr style="margin:20px 0;border:none;border-top:1px solid #ddd;">
+        <p style="font-size:.85rem;color:var(--gray);">📍 Lakeside, AZ near Rainbow Lake<br>White Mountains · ~3.5 hrs from Phoenix</p>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="container">
+    <h2>Ready to Book Your Arizona Mountain Getaway?</h2>
+    <p>Two large cabins in Lakeside, AZ · Sleeps 27 or 33 · Near Rainbow Lake</p>
+    <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call {{ phone }}</a>
+    &nbsp;
+    <a href="/contact/" class="btn btn-gold btn-lg">Send an Inquiry</a>
+  </div>
+</section>
+
+{% endblock %}

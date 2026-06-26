@@ -1,0 +1,55 @@
+{
+  "page_type": "location",
+  "url_slug": "large-cabins-lakeside-arizona",
+  "meta_title": "Large Cabins in Lakeside AZ – Sleeps 27 or 33",
+  "meta_description": "Large cabin rentals in Lakeside, AZ. Parkway Lodge sleeps 27; Mohave Cabin with Treehouse sleeps 33. Near Rainbow Lake in Arizona's White Mountains.",
+  "h1_title": "Large Cabin Rentals in Lakeside, Arizona",
+  "hero_text": "Two 7-bedroom cabins near Rainbow Lake — the White Mountains' best option for big families and groups who need everyone under one roof.",
+  "why_section": "<h2>Why Lakeside, Arizona for a Large Group Cabin?</h2><p>Lakeside sits at approximately 7,000 feet on the Mogollon Rim, tucked into the ponderosa pine forests of the Apache-Sitgreaves National Forest. It's part of the twin communities of Pinetop-Lakeside — a quiet mountain town with enough amenities (groceries, restaurants, gas) to support a group of 33, while still feeling like a genuine escape from the city.</p><p>For large groups, Lakeside has one significant advantage over more famous Arizona destinations: space. Sedona's cabins skew romantic and small. Flagstaff is a college town with limited large-group inventory. The White Mountains — and Lakeside in particular — is where you find properties that actually hold 20, 27, or 33 people under a single roof.</p><p>Summer temperatures in Lakeside average highs in the low 80s. When Phoenix hits 110°F, Lakeside is a place where you sleep with windows open. That cool mountain air, combined with the proximity to Rainbow Lake, makes it the premier Arizona cabin destination for summer family reunions and group getaways.</p>",
+  "how_section": "<h2>Getting to Lakeside from Phoenix and Tucson</h2><p>From Phoenix, Lakeside is approximately 3.5 hours via US-60 East through Globe, then east on AZ-260 through Show Low. It's a straightforward drive — no significant mountain passes, no switchbacks — just open highway that gradually climbs from desert scrub into pine forest. The elevation change is part of the experience: you can actually watch the landscape shift as you gain altitude.</p><p>From Tucson, the drive is roughly 3 hours via AZ-77 North through Oracle and Globe, then east on US-60 and AZ-260. From Albuquerque or El Paso, Lakeside is also accessible via I-40 to Show Low.</p>",
+  "local_section": "<h2>What to Do Near Our Lakeside Cabins</h2><p><strong>Rainbow Lake</strong> — Located just west of both our cabins, Rainbow Lake is a 60-acre reservoir stocked with rainbow trout by Arizona Game and Fish. It's perfect for fishing, catch-and-release, kayaking, and lakeside picnics. Bring poles and tackle — the lake is productive, especially in the mornings.</p><p><strong>Fool Hollow Lake Recreation Area</strong> — A state park about 5 miles away with a 150-acre lake, campground, boat launch, and swimming area. Ideal for a day trip when your group wants more water activities.</p><p><strong>Apache-Sitgreaves National Forest Trails</strong> — Hundreds of miles of trails for hiking, mountain biking, and horseback riding, starting just outside Lakeside. The Rim Lakes Vista Trail and the Mogollon Rim overlooks provide dramatic views above 7,500 feet.</p><p><strong>Show Low</strong> — About 10 minutes from Lakeside, Show Low is the regional hub for groceries (Safeway, Walmart), restaurants, and supplies. Stock your group's kitchen before settling in at the cabin.</p><p><strong>Hawley Lake</strong> — A high-elevation (8,200 ft) reservoir on the White Mountain Apache Reservation, about 35 miles southeast of Lakeside. One of the prettiest fishing lakes in Arizona, with cold, clear water even in midsummer.</p>",
+  "faq_section": [
+    {
+      "question": "What large cabins are available in Lakeside, AZ?",
+      "answer": "Arizona Family Cabins offers two large-group rentals in Lakeside: Parkway Lodge (7 bedrooms, sleeps 27) and Mohave Cabin with Treehouse (7 bedrooms plus treehouse, sleeps 33). Both are located just west of Rainbow Lake."
+    },
+    {
+      "question": "How far is Lakeside from Phoenix?",
+      "answer": "Approximately 3.5 hours via US-60 East through Globe, then east on AZ-260 through Show Low to Lakeside. The drive climbs from desert to pine forest — a gradual, easy route with no difficult mountain roads."
+    },
+    {
+      "question": "What is the elevation in Lakeside, AZ?",
+      "answer": "Lakeside sits at approximately 6,900–7,100 feet elevation. This gives it genuinely cool summers — average highs in the low 80s — making it a popular escape from the Phoenix heat."
+    },
+    {
+      "question": "Is Rainbow Lake near the cabins in Lakeside?",
+      "answer": "Yes — both our Lakeside cabins (Parkway Lodge and Mohave Cabin with Treehouse) are located just west of Rainbow Lake, a 60-acre stocked trout lake. It's within easy walking distance of both properties."
+    },
+    {
+      "question": "Can large groups find cabins that sleep 30+ in Lakeside?",
+      "answer": "Yes — our Mohave Cabin with Treehouse sleeps up to 33 guests, making it one of the largest single-property cabin rentals in the Arizona White Mountains. Parkway Lodge sleeps up to 27."
+    }
+  ],
+  "schema_markup": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What large cabins are available in Lakeside, AZ?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Arizona Family Cabins offers Parkway Lodge (sleeps 27) and Mohave Cabin with Treehouse (sleeps 33), both near Rainbow Lake in Lakeside, AZ."}
+      }
+    ]
+  },
+  "internal_links": [
+    {"url": "/large-cabins-show-low-arizona/", "text": "Large Cabins in Show Low, AZ"},
+    {"url": "/large-cabins-pinetop-arizona/", "text": "Large Cabins in Pinetop, AZ"},
+    {"url": "/family-reunion-cabins-arizona/", "text": "Family Reunion Cabins in Arizona"},
+    {"url": "/cabins-that-sleep-30-arizona/", "text": "Arizona Cabins That Sleep 30+"},
+    {"url": "/parkway-lodge/", "text": "Parkway Lodge – Sleeps 27"},
+    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with Treehouse – Sleeps 33"}
+  ],
+  "target_keyword": "large cabins lakeside arizona",
+  "is_published": true,
+  "noindex": false
+}

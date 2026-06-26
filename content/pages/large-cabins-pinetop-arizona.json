@@ -1,0 +1,41 @@
+{
+  "page_type": "location",
+  "url_slug": "large-cabins-pinetop-arizona",
+  "meta_title": "Large Cabins in Pinetop AZ – 7 Bedrooms, Sleeps 27–33",
+  "meta_description": "Large cabin rentals in the Pinetop-Lakeside area of Arizona. Parkway Lodge sleeps 27; Mohave Cabin with Treehouse sleeps 33. White Mountains at 7,000 ft. Call to book.",
+  "h1_title": "Large Cabin Rentals in Pinetop-Lakeside, Arizona",
+  "hero_text": "Pinetop-Lakeside's White Mountains setting — 7,200 feet, ponderosa pines, Rainbow Lake — is home to Arizona's best large-group cabin rentals.",
+  "why_section": "<h2>Pinetop-Lakeside: Arizona's Premier Mountain Town</h2><p>Pinetop-Lakeside is a single incorporated community spanning two historic towns on Arizona's Mogollon Rim. At approximately 7,200 feet — slightly higher than neighboring Show Low — it sits deeper into the ponderosa pine belt and closer to the Apache-Sitgreaves National Forest. The result is a cooler, quieter, more forested feel than Show Low's commercial corridor, while still providing easy access to services.</p><p>For large groups, Pinetop-Lakeside offers something genuinely rare in Arizona: cabin properties built to hold 20, 27, or even 33 people under a single roof. Our cabins sit in Lakeside, the eastern half of the community, just west of Rainbow Lake. At 7,000 feet, summer highs average in the low 80s. Evenings cool to the 50s. It's the kind of mountain air that makes an extended group stay feel genuinely restorative.</p><p>The White Mountains Trail System — 200+ miles of nonmotorized trails threading through the national forest — starts near our cabins. Woodland Lake Park in Pinetop offers a flat, paved loop around a 17-acre lake that's ideal for groups with younger children or guests of varying fitness levels.</p>",
+  "how_section": "<h2>Getting to Pinetop-Lakeside from Major Arizona Cities</h2><p>From Phoenix: approximately 3.5 hours via US-60 East through Mesa, Globe, and the Salt River Canyon, then east on AZ-260 through Show Low to Pinetop-Lakeside. The Salt River Canyon stretch — a 2,000-foot plunge to the canyon floor followed by a 2,000-foot climb out — is a highlight of the drive and signals the transition from desert to mountain.</p><p>From Tucson: approximately 3 hours via AZ-77 North through Oracle, Winkelman, and Globe, then east on US-60 and AZ-260. From Flagstaff: about 2 hours southeast via AZ-260, a scenic route through forest and high meadows.</p>",
+  "local_section": "<h2>What Makes Pinetop-Lakeside Special for Group Trips</h2><p><strong>Woodland Lake Park</strong> — A beloved 17-acre lake in Pinetop with a paved 1.8-mile loop trail, fishing dock, and picnic areas. Flat and accessible — good for all ages in your group, and a popular evening walk after dinner.</p><p><strong>Rainbow Lake</strong> — Steps from our cabins in Lakeside, this 60-acre reservoir is stocked with rainbow trout and open for fishing year-round. Bring poles. Early morning bites are excellent.</p><p><strong>White Mountains Trail System</strong> — Over 200 miles of nonmotorized trails through ponderosa pine forest, high meadows, and along the Mogollon Rim. The trails are well-marked, mostly moderate in difficulty, and stunning in fall when aspens turn gold.</p><p><strong>Pinetop-Lakeside's AZ-260 corridor</strong> — Restaurants, coffee shops, grocery stores, a hardware store, and the White Mountains Art Center line the main highway. Everything you need to provision a group of 30 for a week.</p><p><strong>Sunrise Park Resort</strong> — In winter and early spring, Sunrise Park on the White Mountain Apache Reservation (about 25 miles away) offers Arizona's best ski area with 65 runs. Not a summer destination, but worth knowing for shoulder-season group trips.</p>",
+  "faq_section": [
+    {
+      "question": "What is the elevation of Pinetop-Lakeside, AZ?",
+      "answer": "Pinetop-Lakeside sits at approximately 6,900–7,200 feet elevation, in the ponderosa pine belt on Arizona's Mogollon Rim. Summer highs average in the low 80s, with cool nights in the 50s."
+    },
+    {
+      "question": "Are there large cabins in Pinetop that sleep 30 people?",
+      "answer": "Yes. Our Mohave Cabin with Treehouse in Lakeside (part of the Pinetop-Lakeside community) sleeps up to 33 guests across 7 bedrooms plus the treehouse. Parkway Lodge sleeps 27."
+    },
+    {
+      "question": "What is Pinetop-Lakeside known for?",
+      "answer": "Pinetop-Lakeside is known for cool summers, the Apache-Sitgreaves National Forest, the White Mountains Trail System (200+ miles of trails), Rainbow Lake fishing, and the best large-group cabin rentals in Arizona."
+    },
+    {
+      "question": "How far is Pinetop from Phoenix?",
+      "answer": "About 3.5 hours via US-60 East through Globe and the Salt River Canyon, then east on AZ-260 through Show Low. The drive is scenic and straightforward."
+    }
+  ],
+  "schema_markup": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are there large cabins in Pinetop that sleep 30 people?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mohave Cabin with Treehouse in Lakeside sleeps up to 33; Parkway Lodge sleeps 27. Both are in the Pinetop-Lakeside community near Rainbow Lake."}}]},
+  "internal_links": [
+    {"url": "/large-cabins-lakeside-arizona/", "text": "Large Cabins in Lakeside, AZ"},
+    {"url": "/large-cabins-show-low-arizona/", "text": "Large Cabins Near Show Low, AZ"},
+    {"url": "/family-reunion-cabins-arizona/", "text": "Family Reunion Cabins in Arizona"},
+    {"url": "/cabins-that-sleep-30-arizona/", "text": "Arizona Cabins That Sleep 30+"},
+    {"url": "/parkway-lodge/", "text": "Parkway Lodge – Sleeps 27"},
+    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with Treehouse – Sleeps 33"}
+  ],
+  "target_keyword": "large cabins pinetop arizona",
+  "is_published": true,
+  "noindex": false
+}

@@ -1,0 +1,41 @@
+{
+  "page_type": "type",
+  "url_slug": "large-group-cabins-arizona",
+  "meta_title": "Large Group Cabins in Arizona – Sleeps 27 or 33 People",
+  "meta_description": "Arizona large group cabin rentals in the White Mountains. Parkway Lodge sleeps 27; Mohave Cabin with Treehouse sleeps 33. Near Rainbow Lake in Lakeside, AZ. Direct booking.",
+  "h1_title": "Large Group Cabin Rentals in Arizona",
+  "hero_text": "Arizona's best large-group cabins — 7 bedrooms, sleeps 27 or 33, near Rainbow Lake in the White Mountains of Lakeside, AZ.",
+  "why_section": "<h2>Finding a Truly Large-Group Cabin in Arizona</h2><p>Most vacation rental platforms define \"large group\" as 8–12 people. Search for a cabin that sleeps 25 or 30, and results thin out fast — especially in Arizona, where the vacation rental market skews toward couple-getaways and small families.</p><p>Our two White Mountains cabins exist specifically for groups that most platforms can't accommodate. Parkway Lodge has 7 bedrooms and sleeps up to 27. Mohave Cabin with Treehouse has 7 bedrooms plus a treehouse and sleeps up to 33. These aren't stretched capacities — they're purpose-built for large gatherings where everyone needs actual sleeping space, not just a sleeping bag on the floor.</p><p>Both properties are in Lakeside, Arizona, at 7,000 feet in the Apache-Sitgreaves National Forest, just west of Rainbow Lake. The White Mountains setting means cool summers, ponderosa pines, and the kind of mountain quiet that makes a 3-day group stay feel like a week.</p>",
+  "how_section": "<h2>Types of Large Groups We Host</h2><p><strong>Family reunions</strong> — The most common use. Families of 20–33 who want one kitchen, one gathering space, one place for the kids to run. See our <a href='/family-reunion-cabins-arizona/'>family reunion cabins page</a> for reunion-specific planning notes.</p><p><strong>Church and youth group retreats</strong> — Youth groups, small congregations, and church leadership teams use both cabins for annual retreats. The setting is naturally conducive to reflection, group discussion, and outdoor activities.</p><p><strong>Corporate retreats and off-sites</strong> — Remote enough to disconnect from the office, close enough to Phoenix (3.5 hours) that no one loses a full day traveling. Both cabins have WiFi for hybrid-work days if needed.</p><p><strong>Sports teams and athletic groups</strong> — Baseball, softball, and soccer teams use the cabins as a base camp during tournament weekends in the Show Low area. The cooler temperatures make summer athletic weekends far more comfortable than the Phoenix valley.</p><p><strong>Multi-family vacations</strong> — Three or four families traveling together who want the benefits of a shared vacation without the logistics of three separate rentals.</p>",
+  "local_section": "<h2>Why the White Mountains for a Large Group?</h2><p>Arizona's most famous destinations — Sedona, Scottsdale, Grand Canyon — are challenging for large groups. Sedona's cabins skew romantic and small. Scottsdale is expensive and hotel-oriented. Grand Canyon has limited lodging options within the park. The White Mountains offer something different: genuine mountain escape, abundant large-group lodging, and a region that's been serving Arizona families for generations without becoming overcrowded.</p><p>Lakeside's Rainbow Lake is the centerpiece. A 60-acre stocked trout reservoir, it's the kind of amenity that naturally organizes a group day — fishing competitions, morning walks around the bank, afternoons on the water. Show Low, 10 minutes away, handles provisioning for any size group. The Apache-Sitgreaves National Forest trails start practically at the cabin door.</p>",
+  "faq_section": [
+    {
+      "question": "What is the largest cabin rental in Arizona for big groups?",
+      "answer": "Mohave Cabin with Treehouse in Lakeside, AZ sleeps up to 33 guests across 7 bedrooms plus a treehouse — one of the largest single-property cabin rentals in the state. Parkway Lodge nearby sleeps 27."
+    },
+    {
+      "question": "Do you have cabins in Arizona that sleep 20, 25, or 30 people?",
+      "answer": "Yes. Parkway Lodge sleeps up to 27; Mohave Cabin with Treehouse sleeps up to 33. For groups of 34–60, both cabins can be booked together. Both are in Lakeside, AZ near Rainbow Lake."
+    },
+    {
+      "question": "What areas in Arizona have large group cabin rentals?",
+      "answer": "The White Mountains — particularly the Pinetop-Lakeside and Show Low area — has the best large-group cabin inventory in Arizona. Our cabins in Lakeside near Rainbow Lake are among the largest in the region."
+    },
+    {
+      "question": "How do I book a large group cabin in Arizona?",
+      "answer": "Call or text us directly at the number on this page. We handle reservations personally — no platform fees, no automated booking system. Tell us your dates, group size, and which cabin you're interested in."
+    }
+  ],
+  "schema_markup": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the largest cabin rental in Arizona for big groups?", "acceptedAnswer": {"@type": "Answer", "text": "Mohave Cabin with Treehouse sleeps up to 33; Parkway Lodge sleeps up to 27. Both are in Lakeside, AZ near Rainbow Lake in the White Mountains."}}]},
+  "internal_links": [
+    {"url": "/family-reunion-cabins-arizona/", "text": "Family Reunion Cabins in Arizona"},
+    {"url": "/cabins-that-sleep-30-arizona/", "text": "Arizona Cabins That Sleep 30+"},
+    {"url": "/7-bedroom-cabins-arizona/", "text": "7-Bedroom Cabins in Arizona"},
+    {"url": "/large-cabins-lakeside-arizona/", "text": "Large Cabins in Lakeside, AZ"},
+    {"url": "/parkway-lodge/", "text": "Parkway Lodge – Sleeps 27"},
+    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with Treehouse – Sleeps 33"}
+  ],
+  "target_keyword": "large group cabins arizona",
+  "is_published": true,
+  "noindex": false
+}

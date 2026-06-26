@@ -1,0 +1,45 @@
+{
+  "page_type": "situation",
+  "url_slug": "family-reunion-cabins-arizona",
+  "meta_title": "Family Reunion Cabins in Arizona – Sleeps 27 or 33",
+  "meta_description": "Arizona family reunion cabins in Lakeside, AZ. Parkway Lodge sleeps 27; Mohave Cabin with Treehouse sleeps 33. Near Rainbow Lake. Everyone under one roof.",
+  "h1_title": "Family Reunion Cabins in Arizona",
+  "hero_text": "Everyone under one roof — 27 or 33 people, 7 bedrooms, near Rainbow Lake in the White Mountains. The Arizona reunion cabin you've been searching for.",
+  "why_section": "<h2>Why Our Cabins Are Built for Family Reunions</h2><p>The single hardest part of planning a family reunion in Arizona is finding one property that fits everyone. Renting three separate Airbnbs means three check-in codes, three sets of house rules, and a group that naturally fractures into sub-groups. The whole point of a reunion — everyone together — gets undermined by logistics.</p><p>Our two Lakeside cabins solve that problem directly. Parkway Lodge puts up to 27 people under a single roof. Mohave Cabin with Treehouse handles up to 33. If your reunion runs larger, book both: together they accommodate up to 60 guests on adjacent properties near Rainbow Lake.</p><p>At 7,000 feet in the Arizona White Mountains, the setting handles itself. Cool summer temperatures (highs in the low 80s), ponderosa pine forest, Rainbow Lake steps away for fishing and morning walks, and evenings cool enough for a fire outside. It's the kind of place where three days in, the older generation is still at the kitchen table at midnight and the kids have claimed every corner of the property.</p>",
+  "how_section": "<h2>Planning Your Arizona Family Reunion: Practical Notes</h2><p><strong>Book early.</strong> Summer weekends — particularly July 4th, Labor Day, and school-break windows — fill months in advance. If your reunion is summer-targeted, calling in January or February is not too early.</p><p><strong>Provision the group kitchen before you arrive.</strong> Show Low, 10 minutes from our cabins, has a Safeway and Walmart. A group grocery run on arrival day is the most efficient way to stock a kitchen for 27 or 33 people.</p><p><strong>Plan one or two group activities, but leave space.</strong> The best reunion moments tend to happen unplanned — a fishing competition that takes over the afternoon, a card game that runs until 2 a.m., a morning walk around Rainbow Lake that becomes a tradition. Structure lightly.</p><p><strong>The treehouse is not just for kids.</strong> Mohave Cabin's treehouse creates natural overflow sleeping for teens who want their own space, and adults who want to say they slept in a treehouse. Assign it early to avoid negotiation.</p>",
+  "local_section": "<h2>What Your Reunion Group Will Do Here</h2><p><strong>Fish Rainbow Lake</strong> — 60 acres of stocked trout, steps from the cabins. Set up a family fishing tournament with a simple points system. Arizona fishing licenses are required (available at Show Low Walmart or online through AZ Game and Fish).</p><p><strong>Explore the Apache-Sitgreaves National Forest</strong> — Day hikes, forest drives, and ATV routes start just outside Lakeside. The KP Cienega and Pole Knoll Recreation Areas are family-friendly trailheads within 20 minutes of the cabins.</p><p><strong>Visit Fool Hollow Lake State Park</strong> — A 150-acre reservoir with swimming, boating, and picnic facilities, about 10 minutes away. Buy day passes in advance on summer weekends.</p><p><strong>Cook together</strong> — With a full kitchen and a group this size, the most memorable reunion meals are often the ones cooked collectively. Designate cooking teams by night. The White Mountains elevation means water boils at a slightly lower temperature — heads up if you're baking.</p>",
+  "faq_section": [
+    {
+      "question": "What is the best cabin in Arizona for a family reunion of 25–30 people?",
+      "answer": "Mohave Cabin with Treehouse in Lakeside, AZ is one of the best options in the state — sleeping up to 33 guests across 7 bedrooms plus a treehouse, near Rainbow Lake in the White Mountains. Parkway Lodge nearby sleeps up to 27."
+    },
+    {
+      "question": "Can we book a cabin in Arizona that sleeps the entire family?",
+      "answer": "Yes. Our two Lakeside cabins sleep 27 (Parkway Lodge) and 33 (Mohave Cabin with Treehouse). For groups up to 60, both can be booked together on adjacent properties."
+    },
+    {
+      "question": "How far in advance should we book a family reunion cabin in Arizona?",
+      "answer": "For summer weekends and holiday weeks, 4–6 months in advance is recommended. January or February for a July reunion is not too early. Call us to check current availability."
+    },
+    {
+      "question": "What makes Lakeside, AZ a good location for a family reunion?",
+      "answer": "Lakeside sits at 7,000 feet with cool summer temperatures (low 80s), Rainbow Lake for fishing and recreation, the Apache-Sitgreaves National Forest for hiking, and easy access to Show Low for supplies. It's far enough from Phoenix to feel like a real escape, close enough for a half-day drive."
+    },
+    {
+      "question": "Are kids welcome at the reunion cabins?",
+      "answer": "Absolutely. Rainbow Lake is gentle and great for kids who want to fish. The Mohave Cabin treehouse is a major hit with children. The forested setting is safe and naturally engaging for all ages."
+    }
+  ],
+  "schema_markup": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best cabin in Arizona for a family reunion of 25–30 people?", "acceptedAnswer": {"@type": "Answer", "text": "Mohave Cabin with Treehouse in Lakeside sleeps up to 33; Parkway Lodge sleeps up to 27. Both are near Rainbow Lake in the White Mountains."}}]},
+  "internal_links": [
+    {"url": "/large-cabins-lakeside-arizona/", "text": "Large Cabins in Lakeside, AZ"},
+    {"url": "/large-group-cabins-arizona/", "text": "Large Group Cabins in Arizona"},
+    {"url": "/cabins-that-sleep-30-arizona/", "text": "Arizona Cabins That Sleep 30+"},
+    {"url": "/7-bedroom-cabins-arizona/", "text": "7-Bedroom Cabins in Arizona"},
+    {"url": "/parkway-lodge/", "text": "Parkway Lodge – Sleeps 27"},
+    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with Treehouse – Sleeps 33"}
+  ],
+  "target_keyword": "family reunion cabins arizona",
+  "is_published": true,
+  "noindex": false
+}

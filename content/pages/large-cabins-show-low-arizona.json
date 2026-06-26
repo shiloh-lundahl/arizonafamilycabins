@@ -1,0 +1,41 @@
+{
+  "page_type": "location",
+  "url_slug": "large-cabins-show-low-arizona",
+  "meta_title": "Large Cabins Near Show Low AZ – Sleeps Up to 33",
+  "meta_description": "Large group cabin rentals near Show Low, Arizona. Parkway Lodge sleeps 27; Mohave Cabin with Treehouse sleeps 33. Located in Lakeside, 10 min from Show Low. Call to book.",
+  "h1_title": "Large Cabin Rentals Near Show Low, Arizona",
+  "hero_text": "Our White Mountains cabins are just 10 minutes from Show Low — close to town conveniences, deep in ponderosa pine country near Rainbow Lake.",
+  "why_section": "<h2>Show Low, AZ: Gateway to the White Mountains</h2><p>Show Low is the commercial hub of Arizona's White Mountains region, sitting at 6,331 feet on the Mogollon Rim. It's the place you stop for groceries at Safeway or Walmart, grab breakfast at a diner, or pick up fishing licenses before heading to the water. What it lacks in quaint mountain-town charm, it makes up for in practicality — and its location puts it at the center of one of Arizona's most underrated outdoor destinations.</p><p>Our cabins are located in neighboring Lakeside, just 10 minutes west of Show Low's commercial corridor and directly adjacent to Rainbow Lake. That proximity means you get the best of both worlds: the quiet and natural setting of a lakeside cabin in the pines, with easy access to Show Low's stores and services whenever a group of 27 or 33 needs to resupply.</p><p>Show Low takes its name from a card game played in 1876 between two ranchers disputing ownership of a ranch. The winner showed low — a 2 of clubs — and kept the land. The town's main street is still called Deuce of Clubs in honor of the legend.</p>",
+  "how_section": "<h2>Driving to Show Low from Phoenix and Tucson</h2><p>Show Low is approximately 3.25 hours from central Phoenix via US-60 East. The highway runs through Miami and Globe before climbing through the Salt River Canyon — a dramatic 2,000-foot descent and ascent that signals you've left the desert behind. Once through the canyon, the landscape shifts to juniper, then piñon pine, then the tall ponderosa that defines the Rim Country. Show Low sits at the top of that climb.</p><p>From Tucson, Show Low is about 2.75 hours via AZ-77 North through Winkelman and Globe, connecting to US-60 at Globe. From Flagstaff, it's a pleasant 2-hour drive southeast via AZ-260.</p>",
+  "local_section": "<h2>Things to Do Near Show Low on Your Group Trip</h2><p><strong>Fool Hollow Lake Recreation Area</strong> — Show Low's signature state park, just north of downtown. A 150-acre reservoir with a boat launch, fishing, swimming, and a pleasant campground. Day passes available — great for a full-group outing.</p><p><strong>Rainbow Lake (Lakeside)</strong> — Ten minutes from Show Low, our cabins sit directly beside Rainbow Lake, a 60-acre stocked trout reservoir in a quiet residential/recreational setting. Fishing, kayaking, and morning walks along the bank.</p><p><strong>Pinetop-Lakeside</strong> — The twin community to Show Low, stretching west along AZ-260. Home to the White Mountains Art Center, numerous restaurants, a weekend farmers market in summer, and the trailheads for the White Mountains Trail System — over 200 miles of nonmotorized trails through pine forest.</p><p><strong>Woodland Lake Park</strong> — A 17-acre lake in Pinetop-Lakeside with a paved trail loop, fishing pier, and picnic areas. Easy, flat, and good for all ages in your group.</p>",
+  "faq_section": [
+    {
+      "question": "Are there large cabins near Show Low that sleep 20+ people?",
+      "answer": "Yes — our cabins in Lakeside (10 minutes from Show Low) sleep up to 27 (Parkway Lodge) and 33 (Mohave Cabin with Treehouse). Both have 7 bedrooms and are near Rainbow Lake."
+    },
+    {
+      "question": "How far is Show Low from Phoenix?",
+      "answer": "Approximately 3.25 hours via US-60 East, passing through Globe and the dramatic Salt River Canyon before climbing to the Mogollon Rim. It's one of Arizona's best drives."
+    },
+    {
+      "question": "What is Show Low, AZ known for?",
+      "answer": "Show Low is the commercial hub of Arizona's White Mountains — known for outdoor recreation including fishing, hunting, hiking, mountain biking, and ATV riding in the Apache-Sitgreaves National Forest. It sits at 6,331 feet elevation."
+    },
+    {
+      "question": "Are there cabin rentals near Show Low for large family reunions?",
+      "answer": "Yes. Our Lakeside cabins — just 10 minutes from Show Low — are specifically designed for large reunions. Mohave Cabin with Treehouse sleeps 33; Parkway Lodge sleeps 27. Together they accommodate up to 60 guests."
+    }
+  ],
+  "schema_markup": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are there large cabins near Show Low that sleep 20+ people?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — our cabins in Lakeside sleep up to 27 (Parkway Lodge) and 33 (Mohave Cabin with Treehouse), just 10 minutes from Show Low."}}]},
+  "internal_links": [
+    {"url": "/large-cabins-lakeside-arizona/", "text": "Large Cabins in Lakeside, AZ"},
+    {"url": "/large-cabins-pinetop-arizona/", "text": "Large Cabins in Pinetop, AZ"},
+    {"url": "/family-reunion-cabins-arizona/", "text": "Family Reunion Cabins in Arizona"},
+    {"url": "/7-bedroom-cabins-arizona/", "text": "7-Bedroom Cabins in Arizona"},
+    {"url": "/parkway-lodge/", "text": "Parkway Lodge – Sleeps 27"},
+    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with Treehouse – Sleeps 33"}
+  ],
+  "target_keyword": "large cabins show low arizona",
+  "is_published": true,
+  "noindex": false
+}
