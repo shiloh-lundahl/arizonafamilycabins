@@ -48,7 +48,7 @@ ul { list-style: none; }
 .header-cta { white-space: nowrap; flex-shrink: 0; padding: 9px 20px; }
 
 /* ── Hero ───────────────────────────────────────────────────── */
-.hero { background: linear-gradient(135deg, var(--pine-dk) 0%, var(--pine) 60%, #3d7a35 100%); color: var(--white); padding: 80px 20px; text-align: center; }
+.hero { background: linear-gradient(rgba(20,40,18,.62), rgba(20,40,18,.72)), url('/static/img/hero.jpg'); background-size: cover; background-position: center; color: var(--white); padding: 96px 20px; text-align: center; }
 .hero h1 { font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 20px; }
 .hero .tagline { font-size: clamp(1rem, 2vw, 1.25rem); opacity: .9; margin-bottom: 32px; max-width: 700px; margin-left: auto; margin-right: auto; }
 .hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
