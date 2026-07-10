@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}Availability & Open Dates | Arizona Family Cabins{% endblock %}
+{% block meta_description %}Check live availability for Parkway Lodge (sleeps 27) and Mohave Cabin with Treehouse (sleeps 33) in Lakeside, AZ. See open dates and call or text to book direct.{% endblock %}
+
+{% block content %}
+
+<section class="hero" style="padding:56px 20px;">
+  <div class="container">
+    <h1>Check Availability</h1>
+    <p class="tagline">See which dates are open for each cabin, then call or text to book direct — no platform fees.</p>
+    <div class="hero-ctas" style="margin-top:24px;">
+      <a href="tel:{{ phone_raw }}" class="btn btn-gold btn-lg">📞 Call or Text to Book</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:900px;">
+
+    <div style="margin-bottom:40px;">
+      {% set cal_slug = "parkway-lodge" %}
+      {% set cal_name = "Parkway Lodge · Sleeps 27" %}
+      {% include "_calendar.html" %}
+      <div style="text-align:center;margin-top:14px;">
+        <a href="/parkway-lodge/" class="btn btn-primary">View Parkway Lodge Details →</a>
+      </div>
+    </div>
+
+    <div style="margin-bottom:20px;">
+      {% set cal_slug = "mohave-cabin-treehouse" %}
+      {% set cal_name = "Mohave Cabin with Treehouse · Sleeps 33" %}
+      {% include "_calendar.html" %}
+      <div style="text-align:center;margin-top:14px;">
+        <a href="/mohave-cabin-treehouse/" class="btn btn-primary">View Mohave Cabin Details →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="container">
+    <h2>Found Your Dates? Book Direct &amp; Save</h2>
+    <p>Booking directly with us means no Airbnb or VRBO service fees. Call or text to reserve.</p>
+    <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call or Text {{ phone }}</a>
+    &nbsp;
+    <a href="/contact/" class="btn btn-gold btn-lg">Send an Inquiry</a>
+  </div>
+</section>
+
+{% block extra_js %}{% endblock %}
+{% endblock %}

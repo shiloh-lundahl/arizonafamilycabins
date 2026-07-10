@@ -5,6 +5,7 @@ from datetime import datetime
 from flask import (Flask, render_template, request, redirect, url_for,
                    abort, Response, jsonify, make_response)
 from models import db, Page, Article, Lead
+from availability import get_availability, CABIN_ICAL_ENV
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -133,6 +134,27 @@ def mohave_cabin():
     return render_template("property_mohave_cabin.html")
 
 
+# ── Availability calendars ────────────────────────────────────────────────────
+
+CABINS = {
+    "parkway-lodge": {"name": "Parkway Lodge", "sleeps": 27},
+    "mohave-cabin-treehouse": {"name": "Mohave Cabin with Treehouse", "sleeps": 33},
+}
+
+
+@app.route("/availability/")
+def availability_page():
+    return render_template("availability.html", cabins=CABINS)
+
+
+@app.route("/api/availability/<slug>/")
+def api_availability(slug):
+    if slug not in CABIN_ICAL_ENV:
+        abort(404)
+    data = get_availability(slug)
+    return jsonify(data)
+
+
 # ── Blog ──────────────────────────────────────────────────────────────────────
 
 @app.route("/blog/")
@@ -155,8 +177,8 @@ def blog_post(slug):
 def dynamic_page(slug):
     # protect named routes that Flask resolves before this
     protected = {"about", "how-to-book", "faq", "contact", "blog",
-                 "parkway-lodge", "mohave-cabin-treehouse",
-                 "sitemap.xml", "robots.txt"}
+                 "parkway-lodge", "mohave-cabin-treehouse", "availability",
+                 "api", "sitemap.xml", "robots.txt"}
     if slug in protected:
         abort(404)
 
@@ -185,7 +207,7 @@ def sitemap():
         urls.append({"loc": loc, "lastmod": lastmod or datetime.utcnow().strftime("%Y-%m-%d")})
 
     add(f"{SITE_URL}/")
-    for slug in ["about", "how-to-book", "faq", "contact",
+    for slug in ["about", "how-to-book", "faq", "contact", "availability",
                  "parkway-lodge", "mohave-cabin-treehouse", "blog"]:
         add(f"{SITE_URL}/{slug}/")
 

@@ -1,0 +1,23 @@
+<div class="availability" data-slug="{{ cal_slug }}">
+  <div class="avail-head">
+    <h3>📅 Availability — {{ cal_name }}</h3>
+    <div class="avail-legend">
+      <span class="lg lg-open">Available</span>
+      <span class="lg lg-booked">Booked</span>
+      <span class="lg lg-today">Today</span>
+    </div>
+  </div>
+  <div class="avail-controls">
+    <button class="avail-prev" type="button">‹ Prev</button>
+    <span class="avail-range"></span>
+    <button class="avail-next" type="button">Next ›</button>
+  </div>
+  <div class="avail-months"><div class="avail-fallback">Loading calendar…</div></div>
+  <p class="avail-note">
+    <strong>How to read it:</strong> green days are open. You can <strong>check in</strong> on any open day and
+    <strong>check out</strong> on the next booked day — or any later open day. Booked nights are shaded.
+    This calendar syncs automatically from our live booking calendar, so it stays up to date.
+    To reserve your dates, call or text <a href="tel:{{ phone_raw }}">{{ phone }}</a>.
+  </p>
+  <div class="avail-status"></div>
+</div>

@@ -12,6 +12,12 @@ services:
         value: "(602) 430-2232"   # Karen (assistant) — bookings via call/text
       - key: HUBSPOT_API_KEY
         value: ""   # fill in after creating HubSpot account (optional)
+      # Airbnb iCal export URLs (the "sync calendar" links) — set privately in the
+      # Render dashboard (Environment tab), NOT committed here, since they are secret feeds.
+      - key: AIRBNB_ICAL_PARKWAY
+        sync: false
+      - key: AIRBNB_ICAL_MOHAVE
+        sync: false
       # No DATABASE_URL set on purpose — the app falls back to local SQLite and
       # reloads all page content from committed files on every startup, so the
       # free plan needs no separate (card-required) database to serve the site.
