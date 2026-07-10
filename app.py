@@ -26,7 +26,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db.init_app(app)
 
-PHONE = os.environ.get("PHONE_NUMBER", "(480) 555-0100")
+PHONE = os.environ.get("PHONE_NUMBER") or "(602) 430-2232"
 PHONE_RAW = "".join(c for c in PHONE if c.isdigit())
 SITE_URL = "https://arizonafamilycabins.com"
 

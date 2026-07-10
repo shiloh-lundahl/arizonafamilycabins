@@ -9,7 +9,7 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: PHONE_NUMBER
-        value: ""   # fill in once you have the booking phone number
+        value: "(602) 430-2232"   # Karen (assistant) — bookings via call/text
       - key: HUBSPOT_API_KEY
         value: ""   # fill in after creating HubSpot account (optional)
       # No DATABASE_URL set on purpose — the app falls back to local SQLite and
