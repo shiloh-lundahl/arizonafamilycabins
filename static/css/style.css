@@ -185,6 +185,10 @@ ul { list-style: none; }
 .cabin-card-img.has-photo { background: none; padding: 0; overflow: hidden; }
 .cabin-card-img.has-photo img { width: 100%; height: 100%; object-fit: cover; }
 
+/* ── Responsive video embed ──────────────────────────────────── */
+.video-embed { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); background: #000; }
+.video-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
 /* ── Blog post images ────────────────────────────────────────── */
 .prose img { border-radius: 8px; margin: 20px 0; box-shadow: var(--shadow); width: 100%; height: auto; }
 
