@@ -18,6 +18,10 @@ services:
         sync: false
       - key: AIRBNB_ICAL_MOHAVE
         sync: false
+      - key: VRBO_ICAL_PARKWAY
+        sync: false
+      - key: VRBO_ICAL_MOHAVE
+        sync: false
       # No DATABASE_URL set on purpose — the app falls back to local SQLite and
       # reloads all page content from committed files on every startup, so the
       # free plan needs no separate (card-required) database to serve the site.

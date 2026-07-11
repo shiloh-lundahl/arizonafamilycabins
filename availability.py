@@ -21,10 +21,11 @@ import time
 import requests
 from datetime import date, datetime, timedelta
 
-# slug -> env var holding that cabin's Airbnb iCal export URL
+# slug -> list of env vars holding that cabin's iCal export URLs (Airbnb, VRBO, ...)
+# All feeds are merged so a date booked on ANY platform shows as unavailable.
 CABIN_ICAL_ENV = {
-    "parkway-lodge": "AIRBNB_ICAL_PARKWAY",
-    "mohave-cabin-treehouse": "AIRBNB_ICAL_MOHAVE",
+    "parkway-lodge": ["AIRBNB_ICAL_PARKWAY", "VRBO_ICAL_PARKWAY"],
+    "mohave-cabin-treehouse": ["AIRBNB_ICAL_MOHAVE", "VRBO_ICAL_MOHAVE"],
 }
 
 _CACHE = {}            # slug -> {"fetched": epoch, "nights": set[str], "ranges": list}
@@ -89,12 +90,13 @@ def get_availability(slug, force=False):
             "updated": iso, "error": str|None} for a cabin slug.
     'nights' = list of ISO dates that are booked (unavailable to stay overnight).
     """
-    env_key = CABIN_ICAL_ENV.get(slug)
-    if not env_key:
+    env_keys = CABIN_ICAL_ENV.get(slug)
+    if not env_keys:
         return {"configured": False, "error": "unknown cabin", "nights": [], "ranges": []}
 
-    url = os.environ.get(env_key)
-    if not url:
+    urls = [os.environ.get(k) for k in env_keys]
+    urls = [u for u in urls if u]
+    if not urls:
         return {"configured": False, "error": None, "nights": [], "ranges": []}
 
     cached = _CACHE.get(slug)
@@ -107,22 +109,36 @@ def get_availability(slug, force=False):
             "error": None,
         }
 
-    try:
-        resp = requests.get(url, timeout=10, headers={"User-Agent": "ArizonaFamilyCabins/1.0"})
-        resp.raise_for_status()
-        nights, ranges = _compute(resp.text)
+    # Fetch and MERGE every feed (Airbnb + VRBO). A date booked on any platform is blocked.
+    nights = set()
+    ranges = []
+    ok = 0
+    last_err = None
+    for url in urls:
+        try:
+            resp = requests.get(url, timeout=10, headers={"User-Agent": "ArizonaFamilyCabins/1.0"})
+            resp.raise_for_status()
+            n, r = _compute(resp.text)
+            nights |= n
+            ranges.extend(r)
+            ok += 1
+        except Exception as e:
+            last_err = str(e)
+
+    if ok:
         updated = datetime.utcnow().isoformat(timespec="seconds") + "Z"
         _CACHE[slug] = {"fetched": time.time(), "nights": nights, "ranges": ranges, "updated": updated}
-        return {"configured": True, "nights": sorted(nights), "ranges": ranges, "updated": updated, "error": None}
-    except Exception as e:
-        # Serve stale cache if we have it; otherwise report the error
-        if cached:
-            return {
-                "configured": True,
-                "nights": sorted(cached["nights"]),
-                "ranges": cached["ranges"],
-                "updated": cached["updated"],
-                "error": None,
-                "stale": True,
-            }
-        return {"configured": True, "nights": [], "ranges": [], "error": str(e)}
+        return {"configured": True, "nights": sorted(nights), "ranges": ranges,
+                "updated": updated, "error": None}
+
+    # All feeds failed — serve stale cache if we have it, else report the error
+    if cached:
+        return {
+            "configured": True,
+            "nights": sorted(cached["nights"]),
+            "ranges": cached["ranges"],
+            "updated": cached["updated"],
+            "error": None,
+            "stale": True,
+        }
+    return {"configured": True, "nights": [], "ranges": [], "error": last_err}
