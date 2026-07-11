@@ -160,9 +160,9 @@ def api_availability(slug):
 # Blog categories — display name, short tagline, and longer intro for SEO
 BLOG_CATEGORIES = {
     "things-to-do": {
-        "name": "Things to Do in Lakeside",
-        "tagline": "Family fun and can't-miss attractions around the White Mountains.",
-        "intro": "Beyond the trails and the fishing, there's a whole lot to do around Lakeside, Pinetop, and Show Low — parks, the nature center, scenic drives, seasonal events, and easy family outings everyone can enjoy.",
+        "name": "Things to Do Around Lakeside",
+        "tagline": "Family fun and can't-miss attractions in Lakeside, Pinetop & Show Low.",
+        "intro": "Beyond the trails and the fishing, there's a whole lot to do around the White Mountains — kayaking on Rainbow Lake, golf in Pinetop, the parks and shops in Show Low, scenic drives, seasonal events, and easy family outings everyone can enjoy.",
         "emoji": "🎉",
     },
     "places-to-eat": {
