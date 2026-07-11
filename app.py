@@ -30,6 +30,7 @@ db.init_app(app)
 PHONE = os.environ.get("PHONE_NUMBER") or "(602) 430-2232"
 PHONE_RAW = "".join(c for c in PHONE if c.isdigit())
 SITE_URL = "https://arizonafamilycabins.com"
+LEAD_NOTIFY_EMAIL = os.environ.get("LEAD_NOTIFY_EMAIL", "Shilohsassistant@gmail.com")
 
 # ── Canonical-redirect middleware ────────────────────────────────────────────
 
@@ -112,6 +113,7 @@ def contact_post():
     db.session.add(lead)
     db.session.commit()
 
+    _notify_lead_email(lead)
     _push_to_hubspot(lead)
 
     return redirect(url_for("contact_thanks"))
@@ -302,6 +304,44 @@ def robots():
         f"Sitemap: {SITE_URL}/sitemap.xml",
     ]
     return Response("\n".join(lines), mimetype="text/plain")
+
+
+# ── Email notification (forward every inquiry to the assistant) ───────────────
+# Uses FormSubmit (no account, no API key, no password). On the FIRST submission
+# it emails a one-time activation link to LEAD_NOTIFY_EMAIL — click it once and all
+# future inquiries are delivered automatically.
+
+def _notify_lead_email(lead: Lead):
+    if not LEAD_NOTIFY_EMAIL:
+        return
+    cabin_labels = {
+        "parkway_lodge": "Parkway Lodge (sleeps 27)",
+        "mohave_cabin": "Mohave Cabin with Treehouse (sleeps 33)",
+        "both": "Both cabins",
+    }
+    payload = {
+        "_subject": f"New cabin inquiry — {lead.name or 'Website visitor'}",
+        "_template": "table",
+        "_replyto": lead.email or "",
+        "Name": lead.name or "",
+        "Phone": lead.phone or "",
+        "Email": lead.email or "",
+        "Cabin of interest": cabin_labels.get(lead.cabin_interest, lead.cabin_interest or "Not specified"),
+        "Group size": lead.group_size or "",
+        "Check-in": lead.check_in or "",
+        "Check-out": lead.check_out or "",
+        "Message": lead.message or "",
+        "Came from": lead.source_page or "",
+    }
+    try:
+        requests.post(
+            f"https://formsubmit.co/ajax/{LEAD_NOTIFY_EMAIL}",
+            json=payload,
+            timeout=8,
+            headers={"Accept": "application/json"},
+        )
+    except Exception:
+        pass  # never block the guest on a notification hiccup
 
 
 # ── HubSpot integration ───────────────────────────────────────────────────────
