@@ -1,43 +1,74 @@
 {% extends "base.html" %}
-{% block title %}Arizona White Mountains Travel Guides & Tips | Arizona Family Cabins{% endblock %}
-{% block meta_description %}Guides to help you plan the perfect White Mountains trip — things to do near Lakeside, Rainbow Lake fishing, family reunion planning, best time to visit, and more.{% endblock %}
+{% block title %}White Mountains Travel Blog | Arizona Family Cabins{% endblock %}
+{% block meta_description %}Local guides to Lakeside & Show Low, AZ — things to do, where to eat, outdoor adventures, and trip-planning tips from the folks who host cabins in the White Mountains.{% endblock %}
 {% block content %}
 
 <section class="hero" style="padding:56px 20px;">
   <div class="container">
-    <h1>Arizona White Mountains Travel Guides</h1>
-    <p class="tagline">Tips, guides, and local knowledge to help you plan the perfect mountain getaway from our cabins in Lakeside, AZ.</p>
+    <h1>The White Mountains, From People Who Live It</h1>
+    <p class="tagline">Real local guides to Lakeside, Pinetop &amp; Show Low — the food, the trails, the lakes, and the little things that make a trip up here worth it.</p>
   </div>
 </section>
 
-<section class="section">
+<!-- Category nav -->
+<section class="section" style="padding-bottom:0;">
   <div class="container">
-    {% if articles %}
+    <div class="three-col">
+      {% for slug, meta in categories.items() %}
+      <a href="/blog/category/{{ slug }}/" class="col" style="text-decoration:none;display:block;">
+        <h3 style="color:var(--pine-dk);">{{ meta.emoji }} {{ meta.name }}</h3>
+        <p style="color:var(--gray);">{{ meta.tagline }}</p>
+        <span style="color:var(--pine);font-family:'Trebuchet MS',Arial,sans-serif;font-size:.85rem;">Browse posts →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Posts by category -->
+{% for cat_slug, meta, articles in grouped %}
+<section class="section {% if loop.index is even %}section-cream{% endif %}">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:28px;">
+      <h2>{{ meta.emoji }} {{ meta.name }}</h2>
+      <p>{{ meta.intro }}</p>
+    </div>
     <div class="blog-grid">
-      {% for article in articles %}
+      {% for article in articles[:6] %}
       <div class="blog-card">
         <div class="blog-card-body">
-          <h3><a href="/blog/{{ article.slug }}/" style="color:var(--pine-dk);text-decoration:none;">{{ article.h1 }}</a></h3>
+          <span style="font-size:.72rem;font-family:'Trebuchet MS',Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px;color:var(--gold);">{{ meta.name }}</span>
+          <h3 style="margin-top:6px;"><a href="/blog/{{ article.slug }}/" style="color:var(--pine-dk);text-decoration:none;">{{ article.h1 }}</a></h3>
           <p>{{ article.meta_description }}</p>
           <a href="/blog/{{ article.slug }}/" class="btn btn-primary" style="padding:8px 16px;font-size:.85rem;">Read More →</a>
         </div>
       </div>
       {% endfor %}
     </div>
-    {% else %}
-    <div style="text-align:center;padding:60px 20px;color:var(--gray);">
-      <p style="font-size:1.1rem;">Guides coming soon — check back after launch.</p>
-      <a href="/contact/" class="btn btn-primary" style="margin-top:20px;">Contact Us</a>
+    {% if articles|length > 6 %}
+    <div style="text-align:center;margin-top:24px;">
+      <a href="/blog/category/{{ cat_slug }}/" class="btn btn-gold">See all {{ articles|length }} in {{ meta.name }} →</a>
     </div>
     {% endif %}
+  </div>
+</section>
+{% endfor %}
 
-    <div style="margin-top:56px;padding:32px;background:var(--cream);border-radius:8px;text-align:center;">
-      <h2 style="color:var(--pine-dk);margin-bottom:12px;">Ready to Book a Cabin?</h2>
-      <p style="margin-bottom:20px;">Parkway Lodge (sleeps 27) and Mohave Cabin with Treehouse (sleeps 33) are near Rainbow Lake in Lakeside, AZ.</p>
-      <a href="tel:{{ phone_raw }}" class="btn btn-primary">📞 Call {{ phone }}</a>
-      &nbsp;
-      <a href="/contact/" class="btn btn-gold">Send an Inquiry</a>
-    </div>
+{% if not grouped %}
+<section class="section">
+  <div class="container" style="text-align:center;color:var(--gray);">
+    <p style="font-size:1.1rem;">Guides are on the way — check back soon.</p>
+  </div>
+</section>
+{% endif %}
+
+<section class="cta-strip">
+  <div class="container">
+    <h2>Planning a Trip to the White Mountains?</h2>
+    <p>Both cabins sleep your whole group — Parkway Lodge (27) and Mohave Cabin with Treehouse (33), right by Rainbow Lake in Lakeside.</p>
+    <a href="/availability/" class="btn btn-primary btn-lg">📅 Check Availability</a>
+    &nbsp;
+    <a href="tel:{{ phone_raw }}" class="btn btn-gold btn-lg">📞 Call or Text {{ phone }}</a>
   </div>
 </section>
 

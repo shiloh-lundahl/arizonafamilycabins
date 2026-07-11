@@ -157,18 +157,83 @@ def api_availability(slug):
 
 # ── Blog ──────────────────────────────────────────────────────────────────────
 
+# Blog categories — display name, short tagline, and longer intro for SEO
+BLOG_CATEGORIES = {
+    "things-to-do": {
+        "name": "Things to Do in Lakeside",
+        "tagline": "Family fun and can't-miss attractions around the White Mountains.",
+        "intro": "Beyond the trails and the fishing, there's a whole lot to do around Lakeside, Pinetop, and Show Low — parks, the nature center, scenic drives, seasonal events, and easy family outings everyone can enjoy.",
+        "emoji": "🎉",
+    },
+    "places-to-eat": {
+        "name": "Local Places to Eat",
+        "tagline": "Where locals actually eat in Lakeside, Pinetop & Show Low.",
+        "intro": "Some of the best meals in the White Mountains come from small, family-run spots you'd drive right past if you didn't know better. Here are the local restaurants, cafés, and bakeries worth planning a stop around.",
+        "emoji": "🍽️",
+    },
+    "outdoor-adventures": {
+        "name": "Outdoor Adventures",
+        "tagline": "Hiking, fishing, lakes, and getting out into the pines.",
+        "intro": "This is why people come to the White Mountains. Trout lakes, hundreds of miles of trail, cool mountain air, and enough forest to disappear into for a day. Here's how to make the most of the outdoors around Lakeside.",
+        "emoji": "🏞️",
+    },
+    "trip-planning": {
+        "name": "Trip Planning & Tips",
+        "tagline": "Everything you need to plan the perfect White Mountains getaway.",
+        "intro": "Practical, honest advice for planning your trip to Lakeside — when to come, how to get here, what to pack, and how to pull off a big family reunion without losing your mind.",
+        "emoji": "🗺️",
+    },
+}
+
+
+def _articles_by_category():
+    """Return ordered list of (category_slug, meta, [articles]) with published posts."""
+    out = []
+    for slug, meta in BLOG_CATEGORIES.items():
+        arts = Article.query.filter_by(is_published=True, category=slug).order_by(
+            Article.order.asc(), Article.published_at.desc()
+        ).all()
+        if arts:
+            out.append((slug, meta, arts))
+    return out
+
+
 @app.route("/blog/")
 def blog_index():
-    articles = Article.query.filter_by(is_published=True).order_by(
-        Article.published_at.desc()
+    grouped = _articles_by_category()
+    # any published posts with no/unknown category
+    uncategorized = Article.query.filter_by(is_published=True).filter(
+        (Article.category.is_(None)) | (~Article.category.in_(list(BLOG_CATEGORIES.keys())))
+    ).order_by(Article.published_at.desc()).all()
+    return render_template("blog_index.html", grouped=grouped,
+                           categories=BLOG_CATEGORIES, uncategorized=uncategorized)
+
+
+@app.route("/blog/category/<cat_slug>/")
+def blog_category(cat_slug):
+    meta = BLOG_CATEGORIES.get(cat_slug)
+    if not meta:
+        abort(404)
+    articles = Article.query.filter_by(is_published=True, category=cat_slug).order_by(
+        Article.order.asc(), Article.published_at.desc()
     ).all()
-    return render_template("blog_index.html", articles=articles)
+    return render_template("blog_category.html", cat_slug=cat_slug, meta=meta,
+                           articles=articles, categories=BLOG_CATEGORIES)
 
 
 @app.route("/blog/<slug>/")
 def blog_post(slug):
+    if slug == "category":
+        abort(404)
     article = Article.query.filter_by(slug=slug, is_published=True).first_or_404()
-    return render_template("blog_post.html", article=article)
+    cat_meta = BLOG_CATEGORIES.get(article.category)
+    # a few sibling posts in the same category for internal linking
+    related = []
+    if article.category:
+        related = Article.query.filter_by(is_published=True, category=article.category).filter(
+            Article.slug != slug).order_by(Article.order.asc()).limit(4).all()
+    return render_template("blog_post.html", article=article, cat_meta=cat_meta,
+                           related=related, categories=BLOG_CATEGORIES)
 
 
 # ── Catch-all programmatic pages ─────────────────────────────────────────────
@@ -214,6 +279,10 @@ def sitemap():
     for page in Page.query.filter_by(is_published=True, noindex=False).all():
         ts = page.updated_at.strftime("%Y-%m-%d") if page.updated_at else None
         add(f"{SITE_URL}/{page.url_slug}/", ts)
+
+    for cat_slug in BLOG_CATEGORIES:
+        if Article.query.filter_by(is_published=True, category=cat_slug).first():
+            add(f"{SITE_URL}/blog/category/{cat_slug}/")
 
     for article in Article.query.filter_by(is_published=True).all():
         ts = article.updated_at.strftime("%Y-%m-%d") if article.updated_at else None
@@ -317,9 +386,14 @@ def load_all_content():
             article = Article(slug=slug)
             db.session.add(article)
         article.h1 = meta.get("h1", "")
+        article.category = meta.get("category", "") or None
         article.meta_title = meta.get("meta_title", "")[:80]
         article.meta_description = meta.get("meta_description", "")[:160]
         article.target_keyword = meta.get("target_keyword", "")
+        try:
+            article.order = int(meta.get("order", "100"))
+        except ValueError:
+            article.order = 100
         article.body_markdown = body
         article.body_html = md.markdown(body, extensions=["extra", "toc"])
         article.is_published = meta.get("is_published", "true").lower() == "true"

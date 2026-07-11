@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}{{ meta.name }} | Arizona Family Cabins Blog{% endblock %}
+{% block meta_description %}{{ meta.tagline }} Local guides for Lakeside, Pinetop & Show Low, AZ from Arizona Family Cabins.{% endblock %}
+{% block content %}
+
+<section class="hero" style="padding:56px 20px;">
+  <div class="container">
+    <nav class="breadcrumb" style="color:rgba(255,255,255,.7);margin-bottom:14px;">
+      <a href="/" style="color:rgba(255,255,255,.7)">Home</a><span>›</span>
+      <a href="/blog/" style="color:rgba(255,255,255,.7)">Blog</a><span>›</span>{{ meta.name }}
+    </nav>
+    <h1>{{ meta.emoji }} {{ meta.name }}</h1>
+    <p class="tagline">{{ meta.intro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% if articles %}
+    <div class="blog-grid">
+      {% for article in articles %}
+      <div class="blog-card">
+        <div class="blog-card-body">
+          <h3><a href="/blog/{{ article.slug }}/" style="color:var(--pine-dk);text-decoration:none;">{{ article.h1 }}</a></h3>
+          <p>{{ article.meta_description }}</p>
+          <a href="/blog/{{ article.slug }}/" class="btn btn-primary" style="padding:8px 16px;font-size:.85rem;">Read More →</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="text-align:center;color:var(--gray);">More posts in this category are coming soon.</p>
+    {% endif %}
+
+    <!-- Other categories -->
+    <div style="margin-top:48px;padding-top:32px;border-top:1px solid #ddd;text-align:center;">
+      <strong style="display:block;margin-bottom:14px;color:var(--pine-dk);">More from the blog</strong>
+      {% for slug, m in categories.items() %}{% if slug != cat_slug %}
+      <a href="/blog/category/{{ slug }}/" class="btn" style="background:var(--light);color:var(--charcoal);margin:4px;">{{ m.emoji }} {{ m.name }}</a>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="container">
+    <h2>Make It a Cabin Getaway</h2>
+    <p>Parkway Lodge sleeps 27 · Mohave Cabin with Treehouse sleeps 33 · Lakeside, AZ near Rainbow Lake</p>
+    <a href="/availability/" class="btn btn-primary btn-lg">📅 Check Availability</a>
+    &nbsp;
+    <a href="tel:{{ phone_raw }}" class="btn btn-gold btn-lg">📞 Call or Text {{ phone }}</a>
+  </div>
+</section>
+
+{% endblock %}

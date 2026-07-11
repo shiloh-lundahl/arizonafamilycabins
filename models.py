@@ -31,10 +31,12 @@ class Article(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     slug = db.Column(db.String(200), unique=True, nullable=False)
+    category = db.Column(db.String(60), index=True)  # category slug, e.g. "places-to-eat"
     h1 = db.Column(db.Text)
     meta_title = db.Column(db.String(80))
     meta_description = db.Column(db.String(160))
     target_keyword = db.Column(db.String(200))
+    order = db.Column(db.Integer, default=100)  # lower = shown first within a category
     body_markdown = db.Column(db.Text)
     body_html = db.Column(db.Text)
     faq_section = db.Column(db.JSON)

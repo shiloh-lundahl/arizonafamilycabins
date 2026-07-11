@@ -32,9 +32,14 @@
 
       <article style="max-width:720px;">
         <nav class="breadcrumb">
-          <a href="/">Home</a><span>›</span><a href="/blog/">Blog</a><span>›</span>{{ article.h1 }}
+          <a href="/">Home</a><span>›</span><a href="/blog/">Blog</a>
+          {% if cat_meta %}<span>›</span><a href="/blog/category/{{ article.category }}/">{{ cat_meta.name }}</a>{% endif %}
+          <span>›</span>{{ article.h1 }}
         </nav>
-        <h1 style="font-size:clamp(1.6rem,3vw,2.4rem);color:var(--pine-dk);margin:20px 0 12px;">{{ article.h1 }}</h1>
+        {% if cat_meta %}
+        <a href="/blog/category/{{ article.category }}/" style="display:inline-block;margin-top:16px;font-size:.72rem;font-family:'Trebuchet MS',Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px;color:var(--gold);text-decoration:none;">{{ cat_meta.emoji }} {{ cat_meta.name }}</a>
+        {% endif %}
+        <h1 style="font-size:clamp(1.6rem,3vw,2.4rem);color:var(--pine-dk);margin:10px 0 12px;">{{ article.h1 }}</h1>
         {% if article.published_at %}
         <p style="color:var(--gray);font-size:.85rem;margin-bottom:28px;">{{ article.published_at.strftime('%B %d, %Y') }}</p>
         {% endif %}
@@ -50,6 +55,17 @@
             <p>{{ item.answer }}</p>
           </div>
           {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if related %}
+        <div style="margin-top:44px;padding-top:28px;border-top:1px solid #ddd;">
+          <h2 style="color:var(--pine-dk);font-size:1.25rem;margin-bottom:14px;">More in {{ cat_meta.name if cat_meta else 'the Blog' }}</h2>
+          <ul style="line-height:2;">
+            {% for r in related %}
+            <li><a href="/blog/{{ r.slug }}/">{{ r.h1 }}</a></li>
+            {% endfor %}
+          </ul>
         </div>
         {% endif %}
 

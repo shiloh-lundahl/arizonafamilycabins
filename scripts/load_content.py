@@ -53,9 +53,14 @@ with app.app_context():
             article = Article(slug=slug)
             db.session.add(article)
         article.h1 = meta.get("h1", "")
+        article.category = meta.get("category", "") or None
         article.meta_title = meta.get("meta_title", "")[:80]
         article.meta_description = meta.get("meta_description", "")[:160]
         article.target_keyword = meta.get("target_keyword", "")
+        try:
+            article.order = int(meta.get("order", "100"))
+        except ValueError:
+            article.order = 100
         article.body_markdown = body
         article.body_html = md.markdown(body, extensions=["extra", "toc"])
         article.is_published = meta.get("is_published", "true").lower() == "true"
