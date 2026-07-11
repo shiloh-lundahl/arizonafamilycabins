@@ -185,6 +185,9 @@ ul { list-style: none; }
 .cabin-card-img.has-photo { background: none; padding: 0; overflow: hidden; }
 .cabin-card-img.has-photo img { width: 100%; height: 100%; object-fit: cover; }
 
+/* ── Blog post images ────────────────────────────────────────── */
+.prose img { border-radius: 8px; margin: 20px 0; box-shadow: var(--shadow); width: 100%; height: auto; }
+
 /* ── Availability calendar ───────────────────────────────────── */
 .availability { border: 1px solid #e2dccf; border-radius: var(--radius); padding: 24px; background: var(--white); box-shadow: var(--shadow); }
 .avail-head { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 16px; }

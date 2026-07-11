@@ -66,22 +66,29 @@
 
         <!-- Photo gallery -->
         {% set pk = [
-          ['01-exterior-front.jpg','Parkway Lodge exterior front'],
-          ['02-back-of-house.jpg','Parkway Lodge back of house'],
-          ['03-living-room.jpg','Parkway Lodge living room'],
-          ['04-dining-kitchen.jpg','Parkway Lodge dining and kitchen'],
+          ['exterior-golf-cart-kayak.jpg','Parkway Lodge cabin exterior in Lakeside, AZ with golf cart and kayak'],
+          ['exterior-snow.jpg','Parkway Lodge cabin in the snow, Lakeside Arizona'],
+          ['golf-cart-kayak-sunset.jpg','Golf cart and kayak at a Rainbow Lake sunset near Parkway Lodge'],
+          ['game-room-foosball.jpg','Parkway Lodge game room with foosball table and TV'],
+          ['09-game-room.jpg','Parkway Lodge game room with pool table'],
+          ['chess-nook.jpg','Chess table and US map wall art at Parkway Lodge'],
+          ['gym-fitness.jpg','Parkway Lodge home gym with Peloton bike and dumbbells'],
           ['05-master-bedroom.jpg','Parkway Lodge master bedroom'],
-          ['06-bedroom-2.jpg','Parkway Lodge bedroom 2'],
-          ['07-bedroom-3.jpg','Parkway Lodge bedroom 3'],
-          ['08-bunkroom.jpg','Parkway Lodge bunkroom'],
-          ['09-game-room.jpg','Parkway Lodge game room'],
-          ['10-family-fun-center.jpg','Parkway Lodge family fun center'],
-          ['11-hot-tub.jpg','Parkway Lodge hot tub'],
-          ['12-fire-pit.jpg','Parkway Lodge fire pit'],
-          ['13-rainbow-lake.jpg','Parkway Lodge near Rainbow Lake'],
-          ['14-gym.jpg','Parkway Lodge gym']
+          ['bedroom-king-log.jpg','Parkway Lodge king bedroom with log bed and mountain art'],
+          ['bedroom-king-green.jpg','Parkway Lodge king bedroom in green and white'],
+          ['bedroom-queen-boho.jpg','Parkway Lodge queen bedroom with boho decor'],
+          ['bunk-room-log.jpg','Parkway Lodge bunk room with log bunk beds'],
+          ['bunk-room-triple.jpg','Parkway Lodge bunk room with triple bunk beds'],
+          ['bunk-room-triple-2.jpg','Parkway Lodge kids bunk room, sleeps a crowd'],
+          ['04-dining-kitchen.jpg','Parkway Lodge dining table and kitchen'],
+          ['coffee-bar.jpg','Coffee bar with Keurig and drip coffee maker at Parkway Lodge'],
+          ['11-hot-tub.jpg','Parkway Lodge private hot tub'],
+          ['fire-pit-family.jpg','Family around the fire pit with string lights at Parkway Lodge'],
+          ['13-rainbow-lake.jpg','Rainbow Lake near Parkway Lodge in Lakeside, AZ'],
+          ['kayaks-life-vests.jpg','Kayaks, paddles, and life vests provided at Parkway Lodge'],
+          ['snow-day-kids.jpg','Kids playing in the snow at Parkway Lodge, Lakeside AZ']
         ] %}
-        <img class="gallery-hero" src="/static/img/parkway/01-exterior-front.jpg" alt="Parkway Lodge cabin exterior in Lakeside, Arizona" data-lightbox data-full="/static/img/parkway/01-exterior-front.jpg">
+        <img class="gallery-hero" src="/static/img/parkway/{{ pk[0][0] }}" alt="{{ pk[0][1] }}" data-lightbox data-full="/static/img/parkway/{{ pk[0][0] }}">
         <div class="gallery-grid">
           {% for img, alt in pk[1:] %}
           <img src="/static/img/parkway/{{ img }}" alt="{{ alt }}" loading="lazy" data-lightbox data-full="/static/img/parkway/{{ img }}">

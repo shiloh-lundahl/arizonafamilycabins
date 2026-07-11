@@ -27,6 +27,8 @@ This is my personal favorite window. The monsoon has usually wound down, the lig
 
 ## Winter: Snow, Skiing, and Cozy Cabins (November to March)
 
+![Kids playing in the falling snow at a cabin in Lakeside, Arizona](/static/img/parkway/snow-day-kids.jpg)
+
 Yes, it really snows here. The White Mountains get real winter, and Lakeside becomes a genuine snow town. Sunrise Park Resort, about an hour away, is the main downhill skiing and snowboarding hill, and there's cross-country skiing, sledding, and snowshoeing around the area too.
 
 Winter is cabin season in the best sense. You come up for the fireplace, the hot chocolate, the snow in the pines, and a slow pace. Holidays and any weekend with fresh snow can get busy, so book ahead for those. Just keep an eye on the weather and road conditions before you drive — more on that below. If your idea of a mountain trip involves boots by the door and a fire going all evening, this is your season. A big group can still spread out comfortably, which is why folks book our [large cabins in Lakeside](/large-cabins-lakeside-arizona/) for winter holidays.

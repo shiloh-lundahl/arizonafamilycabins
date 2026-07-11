@@ -11,6 +11,8 @@ is_published: true
 
 Rainbow Lake in Lakeside is one of the easiest, prettiest places in the White Mountains to drop a kayak in the water. It's a small, calm mountain lake with no big powerboats churning it up, which makes it ideal for paddling — kayaks, canoes, and stand-up paddleboards all feel right at home here. If you're staying at one of the cabins, this is the closest water to you, and on a still summer morning it's about as good as paddling gets in Arizona.
 
+![Golf cart and kayak at a Rainbow Lake sunset near Lakeside, Arizona](/static/img/parkway/golf-cart-kayak-sunset.jpg)
+
 ## Why Rainbow Lake is made for paddling
 
 Some lakes are built for speed and wakes. Rainbow Lake is the opposite, and that's the whole appeal. It's a modest, tree-ringed lake sitting right around 7,000 feet, so even in July the air stays cool and the water stays quiet. There's no roar of ski boats, no wakes tossing you around. Just you, your paddle, and a glassy surface reflecting the pines.
