@@ -39,13 +39,78 @@
   </div>
 </section>
 
+<!-- Inquiry form — check dates above, then request them right here -->
+<section class="section section-cream" id="inquiry">
+  <div class="container" style="max-width:720px;">
+    <div class="section-header" style="margin-bottom:24px;">
+      <h2>See Your Dates? Send an Inquiry</h2>
+      <p>Found open dates on the calendar above? Tell us what you're looking at and we'll confirm availability and get you booked — no platform fees.</p>
+    </div>
+
+    <form class="contact-form" action="/contact/" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Jane Smith">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone / Text *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(555) 000-0000">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cabin_interest">Which Cabin?</label>
+          <select id="cabin_interest" name="cabin_interest">
+            <option value="">Not sure yet</option>
+            <option value="parkway_lodge">Parkway Lodge (sleeps 27)</option>
+            <option value="mohave_cabin">Mohave Cabin + Treehouse (sleeps 33)</option>
+            <option value="both">Both Cabins</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="group_size">Group Size</label>
+          <select id="group_size" name="group_size">
+            <option value="">Select…</option>
+            <option value="10-15">10–15 people</option>
+            <option value="16-20">16–20 people</option>
+            <option value="21-27">21–27 people</option>
+            <option value="28-33">28–33 people</option>
+            <option value="34-60">34–60 (both cabins)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="check_in">Preferred Check-In</label>
+          <input type="date" id="check_in" name="check_in">
+        </div>
+        <div class="form-group">
+          <label for="check_out">Preferred Check-Out</label>
+          <input type="date" id="check_out" name="check_out">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Anything else?</label>
+        <textarea id="message" name="message" placeholder="Family reunion, occasion, questions about the dates…"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Inquiry →</button>
+      <p style="font-size:.8rem;color:var(--gray);margin-top:10px;text-align:center;">Prefer to talk? Call or text <a href="tel:{{ phone_raw }}">{{ phone }}</a> — we usually reply within a few hours.</p>
+    </form>
+  </div>
+</section>
+
 <section class="cta-strip">
   <div class="container">
     <h2>Found Your Dates? Book Direct &amp; Save</h2>
     <p>Booking directly with us means no Airbnb or VRBO service fees. Call or text to reserve.</p>
     <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call or Text {{ phone }}</a>
     &nbsp;
-    <a href="/contact/" class="btn btn-gold btn-lg">Send an Inquiry</a>
+    <a href="#inquiry" class="btn btn-gold btn-lg">Send an Inquiry</a>
   </div>
 </section>
 
