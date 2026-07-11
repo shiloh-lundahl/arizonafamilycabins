@@ -59,15 +59,19 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="/" class="logo">Arizona Family Cabins</a>
-    <nav class="main-nav">
+    <a href="tel:{{ phone_raw }}" class="btn btn-primary header-cta">Call to Book</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+      <span class="nav-toggle-bars">☰</span> Menu
+    </button>
+    <nav class="main-nav" id="mainNav">
       <a href="/parkway-lodge/">Parkway Lodge</a>
       <a href="/mohave-cabin-treehouse/">Mohave Cabin</a>
       <a href="/availability/">Availability</a>
       <a href="/how-to-book/">How to Book</a>
       <a href="/about/">About</a>
       <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
     </nav>
-    <a href="tel:{{ phone_raw }}" class="btn btn-primary header-cta">Call to Book</a>
   </div>
 </header>
 
@@ -118,6 +122,19 @@
   </div>
 </footer>
 
+<script>
+  (function () {
+    var t = document.querySelector('.nav-toggle');
+    var h = document.querySelector('.site-header');
+    if (t && h) {
+      t.addEventListener('click', function () {
+        var open = h.classList.toggle('nav-open');
+        t.setAttribute('aria-expanded', open ? 'true' : 'false');
+        t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      });
+    }
+  })();
+</script>
 <script src="{{ url_for('static', filename='js/calendar.js') }}" defer></script>
 </body>
 </html>
