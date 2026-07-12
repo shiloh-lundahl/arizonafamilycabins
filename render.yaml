@@ -2,7 +2,7 @@ services:
   - type: web
     name: arizonafamilycabins
     runtime: python
-    plan: free
+    plan: starter
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app --timeout 60
     envVars:
@@ -23,5 +23,7 @@ services:
       - key: VRBO_ICAL_MOHAVE
         sync: false
       # No DATABASE_URL set on purpose — the app falls back to local SQLite and
-      # reloads all page content from committed files on every startup, so the
-      # free plan needs no separate (card-required) database to serve the site.
+      # reloads all page content from committed files on every startup, so this
+      # site needs no separate (card-required) Postgres database to serve pages.
+      # (The web service itself is on the paid Starter plan so it never sleeps —
+      # only the database was being avoided to skip the card requirement.)
