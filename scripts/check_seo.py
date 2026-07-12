@@ -3,21 +3,30 @@ SEO checker — run against local or live URL.
 Usage: python scripts/check_seo.py http://localhost:5000
 """
 import sys
+import glob
+import json
+import os
 import urllib.request
 import urllib.error
 from html.parser import HTMLParser
 
 BASE = sys.argv[1].rstrip("/") if len(sys.argv) > 1 else "http://localhost:5000"
 
+_REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Core routes + every programmatic page in content/pages/ (auto-discovered so
+# newly added pages are never silently skipped by this checker again).
 PATHS = [
     "/",
     "/parkway-lodge/",
     "/mohave-cabin-treehouse/",
-    "/large-cabins-lakeside-arizona/",
-    "/family-reunion-cabins-arizona/",
     "/sitemap.xml",
     "/robots.txt",
 ]
+for _f in sorted(glob.glob(os.path.join(_REPO_ROOT, "content", "pages", "*.json"))):
+    _slug = json.load(open(_f)).get("url_slug")
+    if _slug:
+        PATHS.append(f"/{_slug}/")
 
 
 class SEOParser(HTMLParser):
