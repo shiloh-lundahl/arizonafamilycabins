@@ -1,6 +1,5 @@
 import os
 import json
-import time
 import threading
 import requests
 from datetime import datetime
@@ -309,69 +308,108 @@ def robots():
 
 
 # ── Email notification (forward every inquiry to the assistant) ───────────────
-# Uses FormSubmit (no account, no API key, no password). On the FIRST submission
-# it emails a one-time activation link to LEAD_NOTIFY_EMAIL — click it once and all
-# future inquiries are delivered automatically.
+# Sends directly via Gmail SMTP using an app password — NOT FormSubmit.
+# FormSubmit sits behind Cloudflare, which serves Render's server IP a JS bot
+# challenge (HTTP 403 "Just a moment...") on every request — confirmed in
+# production logs 2026-07-12. A server-to-server request can never solve that
+# challenge, so FormSubmit is permanently unusable from this host. Do not
+# revert to it.
 #
-# IMPORTANT: FormSubmit's AJAX endpoint requires a Referer header matching a real
-# page load, or it silently rejects the request with a 200 + {"success":"false"}
-# body (no exception raised). Always send Referer/Origin, and always check the
-# response body — a 200 status alone does NOT mean the email was sent.
+# Requires two env vars (set in Render dashboard, never committed):
+#   GMAIL_SMTP_USER          — the sending Gmail address (Shilohsassistant@gmail.com)
+#   GMAIL_SMTP_APP_PASSWORD  — a 16-char Google "App Password" for that account
+#                              (requires 2-Step Verification enabled first;
+#                              generate at myaccount.google.com/apppasswords)
+# If either is unset, sending is skipped (logged), so local/dev never breaks.
 
-def _send_formsubmit_payload(payload: dict):
-    # Runs in a background thread so a cold Render container (free tier spins
-    # down after ~15min idle; the next request can take 30-50s to wake up)
-    # can't silently eat this via the old short, request-blocking timeout.
-    # Retries once on failure/timeout since a cold container's network stack
-    # (DNS, TLS) may not be warmed up yet on the first attempt.
-    headers = {
-        "Accept": "application/json",
-        "Referer": f"{SITE_URL}/contact/",
-    }
-    url = f"https://formsubmit.co/ajax/{LEAD_NOTIFY_EMAIL}"
-    for attempt in (1, 2):
-        try:
-            resp = requests.post(url, json=payload, timeout=25, headers=headers)
-            print(f"[lead-notify] attempt {attempt} response {resp.status_code}: {resp.text[:500]}", flush=True)
-            return
-        except Exception as e:
-            print(f"[lead-notify] attempt {attempt} failed: {e}", flush=True)
-            if attempt == 1:
-                time.sleep(2)
+GMAIL_SMTP_USER = os.environ.get("GMAIL_SMTP_USER", "")
+GMAIL_SMTP_APP_PASSWORD = os.environ.get("GMAIL_SMTP_APP_PASSWORD", "")
 
 
-def _notify_lead_email(lead: Lead):
-    if not LEAD_NOTIFY_EMAIL:
-        return
+def _send_gmail(to_addr: str, subject: str, body: str):
+    import smtplib
+    import ssl
+    from email.message import EmailMessage
+
+    msg = EmailMessage()
+    msg["Subject"] = subject
+    msg["From"] = GMAIL_SMTP_USER
+    msg["To"] = to_addr
+    msg.set_content(body)
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context, timeout=20) as server:
+        server.login(GMAIL_SMTP_USER, GMAIL_SMTP_APP_PASSWORD)
+        server.send_message(msg)
+
+
+def _send_lead_emails(lead_data: dict):
+    # Runs in a background thread so a slow SMTP handshake never delays the
+    # guest's redirect to the thank-you page.
     cabin_labels = {
         "parkway_lodge": "Parkway Lodge (sleeps 27)",
         "mohave_cabin": "Mohave Cabin with a Treehouse (sleeps 33)",
         "both": "Both cabins",
     }
-    payload = {
-        "_subject": f"New cabin inquiry — {lead.name or 'Website visitor'}",
-        "_template": "table",
-        "_replyto": lead.email or "",
-        "_captcha": "false",
-        "name": lead.name or "",
-        "phone": lead.phone or "",
-        "email": lead.email or "",
-        "Cabin of interest": cabin_labels.get(lead.cabin_interest, lead.cabin_interest or "Not specified"),
-        "Group size": lead.group_size or "",
-        "Check-in": lead.check_in or "",
-        "Check-out": lead.check_out or "",
-        "Message": lead.message or "",
-        "Came from": lead.source_page or "",
-    }
-    if lead.email:
-        payload["_autoresponse"] = (
-            f"Hi {lead.name or 'there'},\n\n"
+    notify_body = (
+        f"New inquiry from the website:\n\n"
+        f"Name: {lead_data['name'] or '(not provided)'}\n"
+        f"Phone: {lead_data['phone'] or '(not provided)'}\n"
+        f"Email: {lead_data['email'] or '(not provided)'}\n"
+        f"Cabin of interest: {cabin_labels.get(lead_data['cabin_interest'], lead_data['cabin_interest'] or 'Not specified')}\n"
+        f"Group size: {lead_data['group_size'] or '(not provided)'}\n"
+        f"Check-in: {lead_data['check_in'] or '(not provided)'}\n"
+        f"Check-out: {lead_data['check_out'] or '(not provided)'}\n"
+        f"Message: {lead_data['message'] or '(none)'}\n"
+        f"Came from: {lead_data['source_page'] or ''}\n"
+    )
+    try:
+        _send_gmail(
+            LEAD_NOTIFY_EMAIL,
+            f"New cabin inquiry — {lead_data['name'] or 'Website visitor'}",
+            notify_body,
+        )
+        print("[lead-notify] notification email sent OK", flush=True)
+    except Exception as e:
+        print(f"[lead-notify] notification email FAILED: {e}", flush=True)
+
+    if lead_data["email"]:
+        autoresponse_body = (
+            f"Hi {lead_data['name'] or 'there'},\n\n"
             "Thanks for reaching out to Arizona Family Cabins! This confirms we received "
             "your message and someone will get back to you shortly (usually within a few hours).\n\n"
             f"If it's urgent, call or text us directly at {PHONE}.\n\n"
             "Talk soon,\nArizona Family Cabins"
         )
-    threading.Thread(target=_send_formsubmit_payload, args=(payload,), daemon=True).start()
+        try:
+            _send_gmail(
+                lead_data["email"],
+                "We got your message — Arizona Family Cabins",
+                autoresponse_body,
+            )
+            print("[lead-notify] guest autoresponse sent OK", flush=True)
+        except Exception as e:
+            print(f"[lead-notify] guest autoresponse FAILED: {e}", flush=True)
+
+
+def _notify_lead_email(lead: Lead):
+    if not LEAD_NOTIFY_EMAIL:
+        return
+    if not (GMAIL_SMTP_USER and GMAIL_SMTP_APP_PASSWORD):
+        print("[lead-notify] SKIPPED — GMAIL_SMTP_USER/GMAIL_SMTP_APP_PASSWORD not set", flush=True)
+        return
+    lead_data = {
+        "name": lead.name,
+        "phone": lead.phone,
+        "email": lead.email,
+        "cabin_interest": lead.cabin_interest,
+        "group_size": lead.group_size,
+        "check_in": lead.check_in,
+        "check_out": lead.check_out,
+        "message": lead.message,
+        "source_page": lead.source_page,
+    }
+    threading.Thread(target=_send_lead_emails, args=(lead_data,), daemon=True).start()
 
 
 # ── HubSpot integration ───────────────────────────────────────────────────────

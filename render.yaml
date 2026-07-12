@@ -22,6 +22,18 @@ services:
         sync: false
       - key: VRBO_ICAL_MOHAVE
         sync: false
+      # Gmail SMTP for sending lead-notification + guest-confirmation emails
+      # directly (replaces FormSubmit, which is blocked by Cloudflare from
+      # Render's IPs — see app.py comments). Set privately in the Render
+      # dashboard (Environment tab), NOT committed here.
+      # GMAIL_SMTP_USER = Shilohsassistant@gmail.com
+      # GMAIL_SMTP_APP_PASSWORD = a Google "App Password" for that account
+      #   (generate at myaccount.google.com/apppasswords, requires 2-Step
+      #   Verification enabled on the account first)
+      - key: GMAIL_SMTP_USER
+        sync: false
+      - key: GMAIL_SMTP_APP_PASSWORD
+        sync: false
       # No DATABASE_URL set on purpose — the app falls back to local SQLite and
       # reloads all page content from committed files on every startup, so this
       # site needs no separate (card-required) Postgres database to serve pages.
