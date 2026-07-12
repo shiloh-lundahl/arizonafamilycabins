@@ -310,6 +310,11 @@ def robots():
 # Uses FormSubmit (no account, no API key, no password). On the FIRST submission
 # it emails a one-time activation link to LEAD_NOTIFY_EMAIL — click it once and all
 # future inquiries are delivered automatically.
+#
+# IMPORTANT: FormSubmit's AJAX endpoint requires a Referer header matching a real
+# page load, or it silently rejects the request with a 200 + {"success":"false"}
+# body (no exception raised). Always send Referer/Origin, and always check the
+# response body — a 200 status alone does NOT mean the email was sent.
 
 def _notify_lead_email(lead: Lead):
     if not LEAD_NOTIFY_EMAIL:
@@ -323,9 +328,10 @@ def _notify_lead_email(lead: Lead):
         "_subject": f"New cabin inquiry — {lead.name or 'Website visitor'}",
         "_template": "table",
         "_replyto": lead.email or "",
-        "Name": lead.name or "",
-        "Phone": lead.phone or "",
-        "Email": lead.email or "",
+        "_captcha": "false",
+        "name": lead.name or "",
+        "phone": lead.phone or "",
+        "email": lead.email or "",
         "Cabin of interest": cabin_labels.get(lead.cabin_interest, lead.cabin_interest or "Not specified"),
         "Group size": lead.group_size or "",
         "Check-in": lead.check_in or "",
@@ -333,15 +339,28 @@ def _notify_lead_email(lead: Lead):
         "Message": lead.message or "",
         "Came from": lead.source_page or "",
     }
+    if lead.email:
+        payload["_autoresponse"] = (
+            f"Hi {lead.name or 'there'},\n\n"
+            "Thanks for reaching out to Arizona Family Cabins! This confirms we received "
+            "your message and someone will get back to you shortly (usually within a few hours).\n\n"
+            f"If it's urgent, call or text us directly at {PHONE}.\n\n"
+            "Talk soon,\nArizona Family Cabins"
+        )
+    headers = {
+        "Accept": "application/json",
+        "Referer": f"{SITE_URL}/contact/",
+    }
     try:
-        requests.post(
+        resp = requests.post(
             f"https://formsubmit.co/ajax/{LEAD_NOTIFY_EMAIL}",
             json=payload,
             timeout=8,
-            headers={"Accept": "application/json"},
+            headers=headers,
         )
-    except Exception:
-        pass  # never block the guest on a notification hiccup
+        print(f"[lead-notify] FormSubmit response {resp.status_code}: {resp.text[:500]}", flush=True)
+    except Exception as e:
+        print(f"[lead-notify] FormSubmit request failed: {e}", flush=True)  # never block the guest on a notification hiccup
 
 
 # ── HubSpot integration ───────────────────────────────────────────────────────
