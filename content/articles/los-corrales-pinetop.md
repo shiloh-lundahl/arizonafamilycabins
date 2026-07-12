@@ -27,7 +27,7 @@ It's also a nice change of pace from the American classics you tend to find in m
 
 ## Getting There from the Cabins
 
-Pinetop is a short drive from Lakeside, so Los Corrales is easily reachable whether your group is staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/). It's on White Mountain Boulevard, the main road running through Pinetop, so it's easy to find and easy to pair with other stops in town — shopping, groceries, or another meal out later in the week.
+Pinetop is a short drive from Lakeside, so Los Corrales is easily reachable whether your group is staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/). It's on White Mountain Boulevard, the main road running through Pinetop, so it's easy to find and easy to pair with other stops in town — shopping, groceries, or another meal out later in the week.
 
 If you're building out a few restaurant nights for your stay, Los Corrales pairs well with other Pinetop favorites. [Charlie Clark's Steakhouse](/blog/charlie-clarks-steakhouse-pinetop/) is a good option if part of your group is in the mood for steak instead of Mexican food, and [Persnickety's Cafe](/blog/persnikkiys-cafe-pinetop/) is worth keeping in mind for a lighter breakfast or lunch earlier in your trip.
 
@@ -46,6 +46,6 @@ Yes — the portions are generous and it's a family-friendly setup, which works 
 Locals point to the large portions, the margaritas, and the carne asada as the standouts. It's a family-run Mexican restaurant that's earned a strong local reputation over time.
 
 **How far is Los Corrales from the Lakeside cabins?**
-It's a short drive from Lakeside into Pinetop. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) put you close enough that a dinner run to Los Corrales is an easy addition to your evening plans.
+It's a short drive from Lakeside into Pinetop. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) put you close enough that a dinner run to Los Corrales is an easy addition to your evening plans.
 
 Los Corrales is worth building into your trip if your group wants a Mexican food night without giving up on generous portions or good margaritas. Just plan for the possibility of a short wait, and call ahead if you're a large party. While you're planning out your meals for the week, go ahead and [check availability](/availability/) for your dates at the cabin.

@@ -41,7 +41,7 @@ Bring water, sun protection, and layers — mornings and evenings on that grassl
 
 Sipe pairs well with a broader loop through Eagar and Springerville, or it can stand alone as a dedicated wildlife morning before heading back to the cabin for the rest of the day. Either way, it rewards patience — on the drive out and once you're standing at that overlook waiting for something to move.
 
-If you're coordinating a trip like this for a big group, [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) both give you the space to split up for the day and regroup in the evening, with plenty of room to compare notes over dinner about who saw what.
+If you're coordinating a trip like this for a big group, [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) both give you the space to split up for the day and regroup in the evening, with plenty of room to compare notes over dinner about who saw what.
 
 ## Common Questions
 

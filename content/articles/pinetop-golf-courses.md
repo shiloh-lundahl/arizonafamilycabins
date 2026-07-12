@@ -52,4 +52,4 @@ Yes. At around 7,000 feet, summer highs are often in the low 80s while Phoenix p
 **Which course is best for a serious golfer?**
 Silver Creek Golf Club near Show Low gets consistently strong reviews and is a favorite for a standout round. The Pinetop-area courses are more laid-back mountain golf. Honestly, mixing a couple over a few days is a great way to spend a trip.
 
-The cabins make a comfortable home base for a golf getaway — big enough for the whole foursome and their families, and close to everything. Take a look at [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), browse our [large cabins in Lakeside](/large-cabins-lakeside-arizona/), and [check availability](/availability/) for your dates.
+The cabins make a comfortable home base for a golf getaway — big enough for the whole foursome and their families, and close to everything. Take a look at [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), browse our [large cabins in Lakeside](/large-cabins-lakeside-arizona/), and [check availability](/availability/) for your dates.

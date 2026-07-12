@@ -31,7 +31,7 @@ Both shore fishing and small boats work here. The lake is bigger and deeper than
 
 ## Getting There from the Cabins
 
-Hawley Lake is a real drive from Lakeside — plan for a scenic haul up into the high country rather than a quick trip, and give yourself a good chunk of the day. From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) you'll head south and east up toward the reservation high country. The roads climb and wind, so it's a slower drive than the mileage suggests, and worth it. Fuel up before you leave and check current road and weather conditions, especially in shoulder seasons when the high country can get snow.
+Hawley Lake is a real drive from Lakeside — plan for a scenic haul up into the high country rather than a quick trip, and give yourself a good chunk of the day. From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) you'll head south and east up toward the reservation high country. The roads climb and wind, so it's a slower drive than the mileage suggests, and worth it. Fuel up before you leave and check current road and weather conditions, especially in shoulder seasons when the high country can get snow.
 
 Because it's a longer haul, Hawley works best as a dedicated day trip. If you want easier, closer water for the rest of your stay, keep [Rainbow Lake](/fishing-rainbow-lake-lakeside/) in town and [Fool Hollow Lake](/fool-hollow-lake-recreation/) near Show Low in your back pocket — no permits beyond a standard Arizona license, and far shorter drives.
 

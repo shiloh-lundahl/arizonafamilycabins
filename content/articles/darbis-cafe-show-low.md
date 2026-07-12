@@ -33,7 +33,7 @@ Combining a meal with a grocery trip is just efficient, and it's exactly how a l
 
 ## Getting There from the Cabins
 
-Show Low is a short drive from Lakeside, so Darbi's is well within reach of the cabins. If your group is staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), a breakfast run into town before a day of exploring is easy to pull off. Our [cabins near Show Low](/large-cabins-show-low-arizona/) put the town's cafes and stores within a quick drive.
+Show Low is a short drive from Lakeside, so Darbi's is well within reach of the cabins. If your group is staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), a breakfast run into town before a day of exploring is easy to pull off. Our [cabins near Show Low](/large-cabins-show-low-arizona/) put the town's cafes and stores within a quick drive.
 
 ## Good to Know Before You Go
 
@@ -48,6 +48,6 @@ It's a beloved local breakfast-and-lunch cafe with a bakery case. Locals associa
 There can be a morning line, especially on weekends and in the busy summer season. Arriving early is the easiest way to beat it.
 
 **How far is it from the Lakeside cabins?**
-Show Low is a short drive from Lakeside. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) are close enough for an easy breakfast run into town.
+Show Low is a short drive from Lakeside. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) are close enough for an easy breakfast run into town.
 
 Next time you head into Show Low to stock up, start the morning at Darbi's — grab breakfast, snag something from the bakery case, and take on the day. It's an easy drive from Lakeside, and while you're planning meals, [check availability](/availability/) for your stay. Heading back into town later? Zeke's in Show Low is a local favorite worth a stop too.

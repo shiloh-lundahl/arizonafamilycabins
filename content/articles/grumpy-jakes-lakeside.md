@@ -27,7 +27,7 @@ Because it draws families and outdoor crowds, it can get busy at peak meal times
 
 ## Getting There from the Cabins
 
-Grumpy Jake's sits right in Lakeside, which makes it one of the easier meals to reach from our cabins. Whether your crew is staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), you're only a short drive away. That's a real advantage when you've got a hungry group and nobody wants a long trek to dinner.
+Grumpy Jake's sits right in Lakeside, which makes it one of the easier meals to reach from our cabins. Whether your crew is staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), you're only a short drive away. That's a real advantage when you've got a hungry group and nobody wants a long trek to dinner.
 
 It's an easy stop on the way back from Rainbow Lake or a day of exploring, and an easy pickup if you'd rather grab a pie to bring back to the cabin for dessert around the table.
 
@@ -46,6 +46,6 @@ Yes. It's a casual, family-friendly spot, which makes it a comfortable pick when
 Locals rave about the homemade pie, and the restaurant leans into hearty, familiar comfort food. If you finish your meal without ordering a slice, you're doing it wrong.
 
 **How far is it from the cabins in Lakeside?**
-Very close. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) are just a short drive away, so it's one of the more convenient meals during your stay.
+Very close. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) are just a short drive away, so it's one of the more convenient meals during your stay.
 
 If you're planning a trip to the White Mountains and want a low-key, filling meal close to where you're staying, Grumpy Jake's is an easy one to work into your days. Grab a table on your way back from the lake, save room for pie, and [check availability](/availability/) for a cabin while you're mapping out the trip. Hungry for more local recommendations? Charlie Clark's Steakhouse in Pinetop is the move when you want to make a group dinner a real occasion.

@@ -62,4 +62,4 @@ Show Low, about 10 minutes before Lakeside. It has a Safeway and a Walmart, so s
 
 ## Ready to Make the Trip?
 
-The drive up is the easy part — the hard part is getting a summer weekend before it's gone. Take a look at [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), then [check availability](/availability/) for your dates. Questions about the route or directions to the cabin? Call or text us anytime, and we'll get you booked directly.
+The drive up is the easy part — the hard part is getting a summer weekend before it's gone. Take a look at [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), then [check availability](/availability/) for your dates. Questions about the route or directions to the cabin? Call or text us anytime, and we'll get you booked directly.

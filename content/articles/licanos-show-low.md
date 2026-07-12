@@ -25,7 +25,7 @@ Address: 573 W Deuce of Clubs, Show Low, AZ 85901.
 
 Show Low is where families staying at the cabins usually end up anyway — it's the closest real hub for groceries, hardware, and any last-minute supplies before you head back up to Lakeside. Since you're already making the drive, folding in a meal at Licano's turns an errand run into something the whole group will actually enjoy.
 
-A big Mexican-and-steakhouse menu is also a practical choice for a large family or reunion crew. When you've got a group the size that fills [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), having options on the menu matters more than it does for a party of two.
+A big Mexican-and-steakhouse menu is also a practical choice for a large family or reunion crew. When you've got a group the size that fills [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), having options on the menu matters more than it does for a party of two.
 
 ## Hours and Planning Ahead
 
@@ -35,7 +35,7 @@ As with most local restaurants, it's always smart to call ahead if you're bringi
 
 ## Getting There from the Cabins
 
-Show Low is a short, easy drive from Lakeside, which puts Licano's well within reach no matter which cabin your group booked. Whether you're coming from [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), it's a quick trip into town rather than a detour that eats up your day. If breakfast is more what you're after on a different day, [Darbi's Cafe](/blog/darbis-cafe-show-low/) is another local favorite worth knowing about, and [Zeke's](/blog/zekes-show-low/) is a solid option too if you're back in town again later in the trip.
+Show Low is a short, easy drive from Lakeside, which puts Licano's well within reach no matter which cabin your group booked. Whether you're coming from [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), it's a quick trip into town rather than a detour that eats up your day. If breakfast is more what you're after on a different day, [Darbi's Cafe](/blog/darbis-cafe-show-low/) is another local favorite worth knowing about, and [Zeke's](/blog/zekes-show-low/) is a solid option too if you're back in town again later in the trip.
 
 ## Common Questions
 
@@ -49,6 +49,6 @@ No — it's open daily from 11am to 9:30pm except Tuesdays, when it's closed. Pl
 Yes. It's a long-running, locally owned restaurant with a menu wide enough — Mexican dishes and steaks both — to work for a group with different tastes, which is common with the large groups staying at our cabins.
 
 **How far is Licano's from the Lakeside cabins?**
-It's a short drive from either [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), easy to combine with a Show Low supply run.
+It's a short drive from either [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), easy to combine with a Show Low supply run.
 
 Next time your group is heading into Show Low, put Licano's on the list — especially if nobody in your crew has tried a Navajo taco yet. Just remember to skip Tuesdays. And while you're planning meals for the trip, [check availability](/availability/) for your stay at the cabins.

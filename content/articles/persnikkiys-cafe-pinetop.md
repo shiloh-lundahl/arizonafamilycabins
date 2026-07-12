@@ -27,7 +27,7 @@ Coffee is part of the draw too. A cozy cafe with a decent cup is exactly what yo
 
 ## Getting There from the Cabins
 
-Pinetop-Lakeside is right in our backyard, so Persnikkiy's is an easy morning run from the cabins. If your group is staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), you can roll out for breakfast and be back before the rest of the crew has finished their coffee.
+Pinetop-Lakeside is right in our backyard, so Persnikkiy's is an easy morning run from the cabins. If your group is staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), you can roll out for breakfast and be back before the rest of the crew has finished their coffee.
 
 It fits naturally into a mountain morning: fuel up at the cafe, then head to Rainbow Lake or the trails for the day.
 
@@ -46,6 +46,6 @@ It's a small, cozy local cafe that people love for breakfast, lunch, and coffee.
 It's a smaller spot, so it shines for a relaxed breakfast with a few people. For a full cabin's worth of folks, a larger restaurant may be the easier call.
 
 **How far is it from the cabins?**
-It's in the Pinetop-Lakeside area, close to both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) — an easy short drive for a morning out.
+It's in the Pinetop-Lakeside area, close to both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) — an easy short drive for a morning out.
 
 If you want a cozy, low-key breakfast during your stay in the White Mountains, Persnikkiy's is worth a morning. Grab a coffee and a bite on your way to the lake, and while you're planning, [check availability](/availability/) for a cabin. Looking for a heartier sit-down meal later? Grumpy Jake's in Lakeside is a solid pick for comfort food and homemade pie.

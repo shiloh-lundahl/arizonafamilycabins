@@ -39,7 +39,7 @@ Part of the appeal of a town like this is that you don't need reservations or a 
 
 ## Getting There from the Cabins
 
-This is the easy one. Both [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) sit right in the Lakeside area, so downtown shopping and the AZ-260 corridor are only minutes away. That makes it the ideal thing to do when half your group wants a quiet morning and the other half is heading out to fish or hike. Everybody splits up, does their thing, and meets back at the cabin.
+This is the easy one. Both [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) sit right in the Lakeside area, so downtown shopping and the AZ-260 corridor are only minutes away. That makes it the ideal thing to do when half your group wants a quiet morning and the other half is heading out to fish or hike. Everybody splits up, does their thing, and meets back at the cabin.
 
 It also pairs naturally with a morning at [Woodland Lake Park](/woodland-lake-park-pinetop-lakeside/) — walk the lake early, then drift into town for coffee and browsing when the day warms up.
 

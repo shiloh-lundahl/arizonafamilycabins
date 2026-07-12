@@ -1,7 +1,7 @@
 # Arizona Family Cabins — Project Guide for Claude
 
 ## What this project is
-A Flask website for **arizonafamilycabins.com** — direct-booking cabin rentals for two large-group properties in Lakeside, Arizona (White Mountains). Parkway Lodge sleeps 27; Mohave Cabin with Treehouse sleeps 33. Both near Rainbow Lake.
+A Flask website for **arizonafamilycabins.com** — direct-booking cabin rentals for two large-group properties in Lakeside, Arizona (White Mountains). Parkway Lodge sleeps 27; Mohave Cabin with a Treehouse sleeps 33. Both near Rainbow Lake.
 
 ## Owner
 Shiloh Lundahl — tech illiterate, prefers Claude to handle 90%+ autonomously.

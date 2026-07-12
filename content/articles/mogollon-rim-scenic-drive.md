@@ -33,7 +33,7 @@ These lakes make a natural lunch stop. Pack a cooler, grab a picnic table, and l
 
 ## Getting There and When to Go
 
-From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), you'll head west toward the Rim country, and the whole outing makes a comfortable half to full day depending on how many overlooks and lakes you string together. Fill up on gas and grab snacks before you leave town, because services get sparse out on the Rim.
+From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), you'll head west toward the Rim country, and the whole outing makes a comfortable half to full day depending on how many overlooks and lakes you string together. Fill up on gas and grab snacks before you leave town, because services get sparse out on the Rim.
 
 Summer is the ideal season, when the high country is cool and green and the forest roads are usually in their best shape. Bring layers even in July — it can be cool and breezy at the overlooks — plus water, sunscreen, and a full camera roll's worth of patience for the views. Afternoon thunderstorms are common in monsoon season, so aim for a morning start and keep an eye on the sky.
 

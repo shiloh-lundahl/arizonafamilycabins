@@ -17,7 +17,7 @@ This is the headliner. When the desert is unlivable, families load up the car in
 
 The one thing to plan around is the monsoon. From roughly early July into September, afternoon thunderstorms roll through most days. They're often dramatic and short — the sky darkens around 2 or 3 p.m., it pours for an hour, and then everything smells like wet pine. Locals just plan the big outdoor stuff for mornings and treat the afternoon rain as a reason to nap or play cards on the porch.
 
-The catch with summer is availability. Weekends from Memorial Day through Labor Day book out early, especially for larger groups. If you want a specific weekend for a reunion or a big family trip, reserve months ahead. Our two cabins — [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) — fill their prime summer dates fast, so it's worth checking [availability](/availability/) as soon as you have a target weekend in mind.
+The catch with summer is availability. Weekends from Memorial Day through Labor Day book out early, especially for larger groups. If you want a specific weekend for a reunion or a big family trip, reserve months ahead. Our two cabins — [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) — fill their prime summer dates fast, so it's worth checking [availability](/availability/) as soon as you have a target weekend in mind.
 
 ## Fall: Aspen Color and Breathing Room (Late September to October)
 
@@ -66,4 +66,4 @@ Weekdays anytime, plus the shoulder seasons — spring (April to May) and late f
 
 ## Ready to Pick Your Season?
 
-Whatever time of year fits your trip, the next step is the same: grab your dates before someone else does. Take a look at [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), then [check availability](/availability/) for the weekend you have in mind. Have questions about which season suits your group or which cabin fits? Give us a call or text — we're happy to help you plan and to book you in directly.
+Whatever time of year fits your trip, the next step is the same: grab your dates before someone else does. Take a look at [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), then [check availability](/availability/) for the weekend you have in mind. Have questions about which season suits your group or which cabin fits? Give us a call or text — we're happy to help you plan and to book you in directly.

@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}Mohave Cabin & Treehouse – Sleeps 33 | Lakeside, AZ{% endblock %}
-{% block meta_description %}Mohave Cabin with Treehouse in Lakeside, AZ — 7 bedrooms + treehouse, sleeps 33. Near Rainbow Lake. Arizona's top large-group cabin. Call to book.{% endblock %}
+{% block title %}Mohave Cabin with a Treehouse – Sleeps 33 | Lakeside, AZ{% endblock %}
+{% block meta_description %}Mohave Cabin with a Treehouse in Lakeside, AZ — 7 bedrooms + treehouse, sleeps 33. Near Rainbow Lake. Arizona's top large-group cabin. Call to book.{% endblock %}
 
 {% block extra_schema %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LodgingBusiness",
-  "name": "Mohave Cabin with Treehouse",
+  "name": "Mohave Cabin with a Treehouse",
   "description": "7-bedroom vacation cabin with treehouse sleeping up to 33 guests, located near Rainbow Lake in Lakeside, Arizona.",
   "url": "{{ site_url }}/mohave-cabin-treehouse/",
   "telephone": "{{ phone }}",
@@ -27,8 +27,8 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How many people does Mohave Cabin with Treehouse sleep?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Mohave Cabin with Treehouse sleeps up to 33 guests across 7 bedrooms plus the treehouse." }
+      "name": "How many people does Mohave Cabin with a Treehouse sleep?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mohave Cabin with a Treehouse sleeps up to 33 guests across 7 bedrooms plus the treehouse." }
     },
     {
       "@type": "Question",
@@ -45,9 +45,9 @@
 <section class="property-hero" style="background:linear-gradient(160deg,#1e3d1a,#2d5a27,#3a7230);">
   <div class="container">
     <nav class="breadcrumb" style="color:rgba(255,255,255,.7)">
-      <a href="/" style="color:rgba(255,255,255,.7)">Home</a><span>›</span>Mohave Cabin &amp; Treehouse
+      <a href="/" style="color:rgba(255,255,255,.7)">Home</a><span>›</span>Mohave Cabin with a Treehouse
     </nav>
-    <h1>Mohave Cabin &amp; Treehouse</h1>
+    <h1>Mohave Cabin with a Treehouse</h1>
     <p style="font-size:1.15rem;opacity:.9;margin-bottom:20px;">7 Bedrooms + Treehouse · Sleeps up to 33 · Lakeside, Arizona near Rainbow Lake</p>
     <div class="property-stats">
       <div class="stat"><span class="num">33</span><span class="lbl">Max Guests</span></div>
@@ -65,16 +65,16 @@
       <div class="content">
 
         <!-- Photo gallery (from the live Airbnb listing) -->
-        <img class="gallery-hero" src="/static/img/mohave/01.jpg" alt="Mohave Cabin with Treehouse in Lakeside, Arizona at night" data-lightbox data-full="/static/img/mohave/01.jpg">
+        <img class="gallery-hero" src="/static/img/mohave/01.jpg" alt="Mohave Cabin with a Treehouse in Lakeside, Arizona at night" data-lightbox data-full="/static/img/mohave/01.jpg">
         <div class="gallery-grid">
           {% for n in range(2, 26) %}
-          <img src="/static/img/mohave/{{ '%02d' % n }}.jpg" alt="Mohave Cabin with Treehouse photo {{ n }}" loading="lazy" data-lightbox data-full="/static/img/mohave/{{ '%02d' % n }}.jpg">
+          <img src="/static/img/mohave/{{ '%02d' % n }}.jpg" alt="Mohave Cabin with a Treehouse photo {{ n }}" loading="lazy" data-lightbox data-full="/static/img/mohave/{{ '%02d' % n }}.jpg">
           {% endfor %}
         </div>
         <p style="text-align:center;margin-top:14px;color:var(--gray);font-size:.9rem;">Click any photo to enlarge · 25 photos</p>
 
-        <h2 style="color:var(--pine-dk);margin-bottom:16px;">About Mohave Cabin with Treehouse</h2>
-        <p>Mohave Cabin with Treehouse is our largest and most distinctive property — a 7-bedroom cabin with a genuine treehouse that pushes total capacity to 33 guests. This is the property for the reunion that finally gets the whole family together, the milestone birthday that needs real space, or the group that has always wanted something a little more special than a standard vacation rental.</p>
+        <h2 style="color:var(--pine-dk);margin-bottom:16px;">About Mohave Cabin with a Treehouse</h2>
+        <p>Mohave Cabin with a Treehouse is our largest and most distinctive property — a 7-bedroom cabin with a genuine treehouse that pushes total capacity to 33 guests. This is the property for the reunion that finally gets the whole family together, the milestone birthday that needs real space, or the group that has always wanted something a little more special than a standard vacation rental.</p>
 
         <p style="margin-top:16px;">The treehouse isn't a gimmick — it's actual sleeping space set among the pines, giving kids and teens their own adventure while the adults settle into the main lodge. Both structures sit just west of Rainbow Lake in Lakeside, Arizona, surrounded by the ponderosa pines and cool mountain air of the White Mountains.</p>
 
@@ -168,14 +168,14 @@
 <section class="section section-cream">
   <div class="container" style="max-width:900px;">
     {% set cal_slug = "mohave-cabin-treehouse" %}
-    {% set cal_name = "Mohave Cabin with Treehouse" %}
+    {% set cal_name = "Mohave Cabin with a Treehouse" %}
     {% include "_calendar.html" %}
   </div>
 </section>
 
 <section class="cta-strip">
   <div class="container">
-    <h2>Book the Mohave Cabin &amp; Treehouse</h2>
+    <h2>Book the Mohave Cabin with a Treehouse</h2>
     <p>Arizona's most unique large-group cabin · 7 bedrooms + treehouse · Sleeps 33 · Lakeside, AZ</p>
     <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call or Text {{ phone }}</a>
   </div>

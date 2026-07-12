@@ -50,4 +50,4 @@ The town got its name from a card game. Two settlers agreed to settle their part
 **Is Show Low good for families?**
 Yes. Between the shops on Deuce of Clubs, casual dining, the movie theater, the historical museum, and Fool Hollow Lake right at the edge of town, there's an easy mix of indoor and outdoor options that works well for kids and a rainy afternoon alike.
 
-With Show Low just up the road, the cabins put you close to town conveniences and mountain scenery both. If you're bringing a big group, [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) give everyone room to spread out — see our [large cabins in Lakeside](/large-cabins-lakeside-arizona/) and [check availability](/availability/) for your dates.
+With Show Low just up the road, the cabins put you close to town conveniences and mountain scenery both. If you're bringing a big group, [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) give everyone room to spread out — see our [large cabins in Lakeside](/large-cabins-lakeside-arizona/) and [check availability](/availability/) for your dates.

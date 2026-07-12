@@ -27,7 +27,7 @@ Pair a supply run with lunch or dinner at Zeke's and you've knocked out two thin
 
 ## Getting There from the Cabins
 
-Show Low is a short drive from Lakeside, so Zeke's is well within reach of the cabins. Whether your crew is at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), a trip into Show Low for supplies and a meal is easy to build into a day. Our [cabins near Show Low](/large-cabins-show-low-arizona/) are positioned so the town's stores and restaurants are a quick errand, not a whole expedition.
+Show Low is a short drive from Lakeside, so Zeke's is well within reach of the cabins. Whether your crew is at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), a trip into Show Low for supplies and a meal is easy to build into a day. Our [cabins near Show Low](/large-cabins-show-low-arizona/) are positioned so the town's stores and restaurants are a quick errand, not a whole expedition.
 
 ## Good to Know Before You Go
 
@@ -44,6 +44,6 @@ Yes — it's a local favorite, and that reputation is the best reason to try it,
 It's a well-liked local eatery in Show Low. Locals recommend it, which is exactly the kind of endorsement worth trusting in an unfamiliar town.
 
 **How far is Show Low from the Lakeside cabins?**
-It's a short drive. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) are close enough that a Show Low supply run and a meal at Zeke's fit easily into an afternoon.
+It's a short drive. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) are close enough that a Show Low supply run and a meal at Zeke's fit easily into an afternoon.
 
 Next time you head into Show Low to stock up for the cabin, make Zeke's part of the trip. It's an easy drive from Lakeside, and while you're mapping out meals, [check availability](/availability/) for your stay. Planning breakfast in town too? Darbi's Cafe in Show Low is the local morning spot worth knowing about.

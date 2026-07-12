@@ -35,7 +35,7 @@ Because it's such a short visit, the smart move is to treat it as a stop rather 
 
 Even if local history museums aren't usually your thing, this one is worth the detour for the Show Low origin story specifically. It's genuinely fun trivia to bring back to the cabin — the kind of thing that gets repeated at dinner for the rest of the trip, especially with kids who like the idea of a town being won on a single card. Pair that with a quick, free browse through 500 years of regional history, and you've got a solid half hour that costs you nothing but a short stop on your way through town.
 
-If you're staying at [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), Show Low is just down the road from Lakeside, making it an easy errand-day addition rather than a trip you have to plan around. Load up the group, handle whatever you need in town, and let everyone pile out for ten minutes to hear how the town got its name.
+If you're staying at [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), Show Low is just down the road from Lakeside, making it an easy errand-day addition rather than a trip you have to plan around. Load up the group, handle whatever you need in town, and let everyone pile out for ten minutes to hear how the town got its name.
 
 ## Common Questions
 

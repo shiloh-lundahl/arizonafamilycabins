@@ -25,7 +25,7 @@ The exact vendor lineup shifts from week to week since it's an outdoor market, s
 
 ## Why it pairs well with a big cabin week
 
-When you've got a house full of people — think [Parkway Lodge](/parkway-lodge/) sleeping 27 or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) sleeping 33 — cooking becomes a group event almost by default. Someone's on breakfast duty, someone's planning the big reunion dinner, and everyone eventually asks "what's fresh nearby?" A Saturday morning stop at the market is a natural answer. Grab produce, eggs, and baked goods for the group, then treat it as part of a broader grocery and supply run into Show Low before heading back up to the cabin. It's a nice contrast to a grocery store aisle — you get to actually talk to the people who grew or made what you're buying.
+When you've got a house full of people — think [Parkway Lodge](/parkway-lodge/) sleeping 27 or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) sleeping 33 — cooking becomes a group event almost by default. Someone's on breakfast duty, someone's planning the big reunion dinner, and everyone eventually asks "what's fresh nearby?" A Saturday morning stop at the market is a natural answer. Grab produce, eggs, and baked goods for the group, then treat it as part of a broader grocery and supply run into Show Low before heading back up to the cabin. It's a nice contrast to a grocery store aisle — you get to actually talk to the people who grew or made what you're buying.
 
 Both cabins have full kitchens built for cooking at scale, so a market haul doesn't have to sit in a fridge unused. A few dozen fresh eggs and some local honey can turn a big group breakfast into something a little more memorable than the usual pancake mix, and fresh produce is an easy way to round out whatever's already on the grill that night. If your trip is built around a family reunion or a big multi-generational gathering, having something local on the table for the main dinner is a nice touch that doesn't take much extra effort.
 
@@ -50,4 +50,4 @@ Regional produce, meats, eggs, honey, and baked goods, plus Arizona arts and cra
 **Where exactly is it located?**
 Near the Show Low Library, around 9th Street and Huning in Show Low. It's an easy add-on to a grocery or supply run into town during your stay.
 
-If a Saturday morning market fits your dates, it's a relaxed way to start the day and stock the kitchen before you head back to the cabin. Check [availability](/availability/) for Parkway Lodge or Mohave Cabin with Treehouse and plan your Show Low morning around it.
+If a Saturday morning market fits your dates, it's a relaxed way to start the day and stock the kitchen before you head back to the cabin. Check [availability](/availability/) for Parkway Lodge or Mohave Cabin with a Treehouse and plan your Show Low morning around it.

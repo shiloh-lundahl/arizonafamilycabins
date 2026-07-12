@@ -140,7 +140,7 @@ def mohave_cabin():
 
 CABINS = {
     "parkway-lodge": {"name": "Parkway Lodge", "sleeps": 27},
-    "mohave-cabin-treehouse": {"name": "Mohave Cabin with Treehouse", "sleeps": 33},
+    "mohave-cabin-treehouse": {"name": "Mohave Cabin with a Treehouse", "sleeps": 33},
 }
 
 
@@ -316,7 +316,7 @@ def _notify_lead_email(lead: Lead):
         return
     cabin_labels = {
         "parkway_lodge": "Parkway Lodge (sleeps 27)",
-        "mohave_cabin": "Mohave Cabin with Treehouse (sleeps 33)",
+        "mohave_cabin": "Mohave Cabin with a Treehouse (sleeps 33)",
         "both": "Both cabins",
     }
     payload = {

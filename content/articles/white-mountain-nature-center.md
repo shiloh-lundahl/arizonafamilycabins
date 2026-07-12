@@ -33,7 +33,7 @@ If there's a guided walk or a kids' program lined up during your stay, it's well
 
 ## Getting There from the Cabins
 
-The nature center is only a short drive from both [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), tucked near the Woodland Lake area just off the main corridor through town. That closeness makes it a great backup plan. If the weather turns or the group needs a mellow morning, you can be there in minutes and back at the cabin before anyone gets restless.
+The nature center is only a short drive from both [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), tucked near the Woodland Lake area just off the main corridor through town. That closeness makes it a great backup plan. If the weather turns or the group needs a mellow morning, you can be there in minutes and back at the cabin before anyone gets restless.
 
 It's the sort of low-stakes, low-cost stop that fills a gap in the day nicely, especially with younger kids who need a change of scenery.
 

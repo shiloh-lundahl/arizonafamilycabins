@@ -29,7 +29,7 @@ Pinetop-Lakeside has a handful of good breakfast and coffee spots, and it's wort
 
 ## Getting There from the Cabins
 
-Pinetop is close to both of our properties, so this is an easy stop whether you're staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/). It's a short drive in either direction — close enough that "let's grab coffee" doesn't turn into a production. Groups staying at either cabin can swing by on the way to breakfast, on the way out for a hike, or just because the pot at the cabin ran dry before everyone was awake.
+Pinetop is close to both of our properties, so this is an easy stop whether you're staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/). It's a short drive in either direction — close enough that "let's grab coffee" doesn't turn into a production. Groups staying at either cabin can swing by on the way to breakfast, on the way out for a hike, or just because the pot at the cabin ran dry before everyone was awake.
 
 ## Good to Know Before You Go
 
@@ -44,9 +44,9 @@ It roasts its own beans on-site rather than sourcing from an outside roaster, wh
 No — it's a coffee shop and roastery, best treated as a coffee-and-quick-bite stop rather than a sit-down meal.
 
 **How far is it from the Lakeside cabins?**
-It's a short drive from both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), making it an easy errand during your stay.
+It's a short drive from both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), making it an easy errand during your stay.
 
 **Has it won any awards?**
 Yes — it was named Best Coffee Shop in the greater White Mountains for 2022 and 2023, and Best Coffee Shop in Pinetop-Lakeside for 2023.
 
-Next time your cabin needs a coffee run, point it toward Pinetop Coffee House & Roasting Company. It's veteran-owned, locally roasted, and close enough to either property that it barely counts as leaving. While you're planning your trip, [check availability](/availability/) for Parkway Lodge or the Mohave Cabin with Treehouse.
+Next time your cabin needs a coffee run, point it toward Pinetop Coffee House & Roasting Company. It's veteran-owned, locally roasted, and close enough to either property that it barely counts as leaving. While you're planning your trip, [check availability](/availability/) for Parkway Lodge or the Mohave Cabin with a Treehouse.

@@ -2,7 +2,7 @@
   "page_type": "location",
   "url_slug": "large-cabins-pinetop-arizona",
   "meta_title": "Large Cabins in Pinetop AZ – 7 Bedrooms, Sleeps 27–33",
-  "meta_description": "Large cabin rentals in the Pinetop-Lakeside area of Arizona. Parkway Lodge sleeps 27; Mohave Cabin with Treehouse sleeps 33. White Mountains at 7,000 ft. Call to book.",
+  "meta_description": "Large cabin rentals in Pinetop-Lakeside, AZ. Parkway Lodge sleeps 27; Mohave Cabin with a Treehouse sleeps 33. White Mountains at 7,000 ft.",
   "h1_title": "Large Cabin Rentals in Pinetop-Lakeside, Arizona",
   "hero_text": "Pinetop-Lakeside's White Mountains setting — 7,200 feet, ponderosa pines, Rainbow Lake — is home to Arizona's best large-group cabin rentals.",
   "why_section": "<h2>Pinetop-Lakeside: Arizona's Premier Mountain Town</h2><p>Pinetop-Lakeside is a single incorporated community spanning two historic towns on Arizona's Mogollon Rim. At approximately 7,200 feet — slightly higher than neighboring Show Low — it sits deeper into the ponderosa pine belt and closer to the Apache-Sitgreaves National Forest. The result is a cooler, quieter, more forested feel than Show Low's commercial corridor, while still providing easy access to services.</p><p>For large groups, Pinetop-Lakeside offers something genuinely rare in Arizona: cabin properties built to hold 20, 27, or even 33 people under a single roof. Our cabins sit in Lakeside, the eastern half of the community, just west of Rainbow Lake. At 7,000 feet, summer highs average in the low 80s. Evenings cool to the 50s. It's the kind of mountain air that makes an extended group stay feel genuinely restorative.</p><p>The White Mountains Trail System — 200+ miles of nonmotorized trails threading through the national forest — starts near our cabins. Woodland Lake Park in Pinetop offers a flat, paved loop around a 17-acre lake that's ideal for groups with younger children or guests of varying fitness levels.</p>",
@@ -15,7 +15,7 @@
     },
     {
       "question": "Are there large cabins in Pinetop that sleep 30 people?",
-      "answer": "Yes. Our Mohave Cabin with Treehouse in Lakeside (part of the Pinetop-Lakeside community) sleeps up to 33 guests across 7 bedrooms plus the treehouse. Parkway Lodge sleeps 27."
+      "answer": "Yes. Our Mohave Cabin with a Treehouse in Lakeside (part of the Pinetop-Lakeside community) sleeps up to 33 guests across 7 bedrooms plus the treehouse. Parkway Lodge sleeps 27."
     },
     {
       "question": "What is Pinetop-Lakeside known for?",
@@ -26,14 +26,14 @@
       "answer": "About 3.5 hours via US-60 East through Globe and the Salt River Canyon, then east on AZ-260 through Show Low. The drive is scenic and straightforward."
     }
   ],
-  "schema_markup": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are there large cabins in Pinetop that sleep 30 people?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mohave Cabin with Treehouse in Lakeside sleeps up to 33; Parkway Lodge sleeps 27. Both are in the Pinetop-Lakeside community near Rainbow Lake."}}]},
+  "schema_markup": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are there large cabins in Pinetop that sleep 30 people?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mohave Cabin with a Treehouse in Lakeside sleeps up to 33; Parkway Lodge sleeps 27. Both are in the Pinetop-Lakeside community near Rainbow Lake."}}]},
   "internal_links": [
     {"url": "/large-cabins-lakeside-arizona/", "text": "Large Cabins in Lakeside, AZ"},
     {"url": "/large-cabins-show-low-arizona/", "text": "Large Cabins Near Show Low, AZ"},
     {"url": "/family-reunion-cabins-arizona/", "text": "Family Reunion Cabins in Arizona"},
     {"url": "/cabins-that-sleep-30-arizona/", "text": "Arizona Cabins That Sleep 30+"},
     {"url": "/parkway-lodge/", "text": "Parkway Lodge – Sleeps 27"},
-    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with Treehouse – Sleeps 33"}
+    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with a Treehouse – Sleeps 33"}
   ],
   "target_keyword": "large cabins pinetop arizona",
   "is_published": true,

@@ -29,7 +29,7 @@ When you've got a large group in from a day outdoors and everyone's ready to cle
 
 Traveling with a big crew changes how you think about dinner. Most nights you might cook at the cabin or grab something casual, but a trip usually deserves at least one real sit-down meal where everyone dresses up a notch. Charlie Clark's is built for that moment.
 
-If your group is staying at [Parkway Lodge](/parkway-lodge/), which sleeps 27, or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), which sleeps 33, this is the kind of place to gather everyone for one memorable dinner. For a group that size, call ahead so they can plan for your table — a little coordination makes a big-group dinner far smoother.
+If your group is staying at [Parkway Lodge](/parkway-lodge/), which sleeps 27, or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), which sleeps 33, this is the kind of place to gather everyone for one memorable dinner. For a group that size, call ahead so they can plan for your table — a little coordination makes a big-group dinner far smoother.
 
 ## Getting There from the Cabins
 
@@ -48,6 +48,6 @@ Steaks and prime rib, plus a historic bar and patio. It's a longtime Pinetop ins
 Yes — it's a natural fit for a group's big night out. Just call ahead so they can prepare for a large table, particularly if you're bringing a full cabin's worth of people.
 
 **How far is it from the Lakeside cabins?**
-It's a short drive in Pinetop, close to both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), so a group dinner out is easy to pull off.
+It's a short drive in Pinetop, close to both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), so a group dinner out is easy to pull off.
 
 If there's one dinner on your trip worth doing right, make it this one. Plan a group night at Charlie Clark's, then head back to the cabin for the fire and the stars. Ready to line up the trip? [Check availability](/availability/) and take a look at our [cabins near Show Low](/large-cabins-show-low-arizona/). For a more casual meal earlier in the day, Grumpy Jake's in Lakeside has the homemade pie covered.

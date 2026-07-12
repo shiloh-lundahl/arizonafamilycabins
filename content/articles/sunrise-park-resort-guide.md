@@ -35,7 +35,7 @@ Skiing and lift-served activities usually run on lift tickets or passes bought a
 
 ## Getting There from the Cabins
 
-From either [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), plan on roughly 45 minutes to an hour of driving, mostly a pretty one through forest and along the highway toward Greer and McNary. It's a genuine day trip, so pack accordingly: snacks, water, layers, and a full tank before you leave town, because services thin out the higher you go.
+From either [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), plan on roughly 45 minutes to an hour of driving, mostly a pretty one through forest and along the highway toward Greer and McNary. It's a genuine day trip, so pack accordingly: snacks, water, layers, and a full tank before you leave town, because services thin out the higher you go.
 
 Because it's a bit of a haul, Sunrise works best as a planned day rather than a spur-of-the-moment stop. Get an early start, especially in winter when you'll want to catch the lifts, and you'll have plenty of daylight left for the drive home.
 

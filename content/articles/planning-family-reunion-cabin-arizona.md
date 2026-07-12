@@ -21,7 +21,7 @@ Send a quick poll to the family with two or three date options and a hard deadli
 
 The magic of a reunion is the togetherness, and that falls apart when half the family is at a hotel across town. The goal is one big place where everyone sleeps, eats, and hangs out together.
 
-That's exactly what our cabins are built for. [Parkway Lodge](/parkway-lodge/) has 7 bedrooms and sleeps up to 27. [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) also has 7 bedrooms plus a treehouse and sleeps up to 33 — the treehouse alone tends to decide the whole trip for the grandkids. And if your family is really big, you can **book both cabins together and host up to around 60 people** on the same trip near Rainbow Lake.
+That's exactly what our cabins are built for. [Parkway Lodge](/parkway-lodge/) has 7 bedrooms and sleeps up to 27. [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) also has 7 bedrooms plus a treehouse and sleeps up to 33 — the treehouse alone tends to decide the whole trip for the grandkids. And if your family is really big, you can **book both cabins together and host up to around 60 people** on the same trip near Rainbow Lake.
 
 When you're figuring out sleeping arrangements, think in family units: which couples and kids go in which rooms, where the teenagers can have their own zone, and where grandma gets a quiet spot away from the 6 a.m. crowd. Having 7 bedrooms to work with makes this easy. See both options side by side on our [large cabins in Lakeside](/large-cabins-lakeside-arizona/) page.
 
@@ -62,7 +62,7 @@ For a summer weekend, book several months out — ideally late winter or early s
 
 **How many people can stay in one cabin?**
 
-Parkway Lodge sleeps up to 27 and Mohave Cabin with Treehouse sleeps up to 33, each with 7 bedrooms. Book both together and you can host a reunion of roughly 60 people in the same spot.
+Parkway Lodge sleeps up to 27 and Mohave Cabin with a Treehouse sleeps up to 33, each with 7 bedrooms. Book both together and you can host a reunion of roughly 60 people in the same spot.
 
 **What's the best way to handle meals for a big group?**
 
@@ -70,4 +70,4 @@ Assign each family a meal to own, plan one or two group dinners everyone helps w
 
 ## Let's Get Your Reunion on the Calendar
 
-The families who pull off a great reunion are the ones who book early and keep the logistics simple. Take a look at [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), decide whether you need one cabin or both, and [check availability](/availability/) for your dates. When you're ready, call or text us — we'll answer your questions and book your family in directly, no third-party site required.
+The families who pull off a great reunion are the ones who book early and keep the logistics simple. Take a look at [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), decide whether you need one cabin or both, and [check availability](/availability/) for your dates. When you're ready, call or text us — we'll answer your questions and book your family in directly, no third-party site required.

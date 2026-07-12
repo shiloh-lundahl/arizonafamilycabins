@@ -37,7 +37,7 @@ Fall is arguably the best time of all. The aspens and oaks turn, the crowds thin
 
 ## Getting There from the Cabins
 
-This is the easy part. The cabins sit right in Lakeside, so much of the trail system is minutes away. From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), you can reach Woodland Lake and several other trailheads in a short drive — close enough to squeeze in a morning hike before the rest of the group is even thinking about lunch. With a big group, it's easy to split up: send the ambitious hikers on a long loop and let others take the flat lake walk, then meet back at the cabin.
+This is the easy part. The cabins sit right in Lakeside, so much of the trail system is minutes away. From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), you can reach Woodland Lake and several other trailheads in a short drive — close enough to squeeze in a morning hike before the rest of the group is even thinking about lunch. With a big group, it's easy to split up: send the ambitious hikers on a long loop and let others take the flat lake walk, then meet back at the cabin.
 
 If your crew wants a bigger scenic payoff on another day, pair the local trails with a drive out to the [Mogollon Rim](/mogollon-rim-hiking-rim-lakes-vista/) for the overlooks — a great one-two week of hiking.
 

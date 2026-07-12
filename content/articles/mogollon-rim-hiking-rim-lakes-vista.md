@@ -29,7 +29,7 @@ The Rim tops out well above 7,000 feet, so it stays cool even in the thick of su
 
 ## Getting There from the Cabins
 
-From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), the Rim is roughly an hour's drive — far enough to feel like a proper adventure, close enough to do comfortably in a day and be back for dinner. You'll wind up through the forest toward the Rim country. Fuel up before you leave, since services get sparse, and check current road and weather conditions, especially in shoulder seasons.
+From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), the Rim is roughly an hour's drive — far enough to feel like a proper adventure, close enough to do comfortably in a day and be back for dinner. You'll wind up through the forest toward the Rim country. Fuel up before you leave, since services get sparse, and check current road and weather conditions, especially in shoulder seasons.
 
 It makes a great contrast to your closer outings. Spend some days on the easy [White Mountains Trail System](/white-mountains-trail-system-hiking/) near the cabins and fishing the quiet [Rainbow Lake](/fishing-rainbow-lake-lakeside/) in town, then give one day to the Rim for the big-view payoff. That mix — easy-and-local plus one grand day trip — is how you get the most out of a week up here.
 

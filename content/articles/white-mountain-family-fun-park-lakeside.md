@@ -37,7 +37,7 @@ If you're coordinating a big group, it's also worth calling ahead about party ro
 
 White Mountain Family Fun Park works well as the "everyone's a little worn out from the outdoors" day in a longer stay. If your group has already spent a morning at [Woodland Lake Park](/blog/woodland-lake-park-pinetop-lakeside/) or out on the water, an afternoon of go-karts and mini golf is a nice change of pace that doesn't require much planning or gear. It also pairs naturally with a day exploring [things to do in Show Low](/blog/things-to-do-show-low/), since the drive between the two towns is short and easy to combine into one loop.
 
-For groups staying at [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), the park is a quick, no-fuss drive from either property — close enough that it doesn't eat up a whole day just getting there and back, which matters when you're trying to fit in everything a reunion week wants to cover.
+For groups staying at [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), the park is a quick, no-fuss drive from either property — close enough that it doesn't eat up a whole day just getting there and back, which matters when you're trying to fit in everything a reunion week wants to cover.
 
 ## Common Questions
 

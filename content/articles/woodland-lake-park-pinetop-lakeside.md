@@ -29,7 +29,7 @@ Mornings are your best bet, both for the fish and for having the place to yourse
 
 ## Getting There from the Cabins
 
-Woodland Lake Park is only a short drive from both [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) — we're talking minutes, not a road trip. That's a big part of why it's such a good first-morning activity. You can walk the loop, feed the ducks, wear the kids out, and still be back at the cabin in time for lunch and a nap on the deck.
+Woodland Lake Park is only a short drive from both [Parkway Lodge](/parkway-lodge/) and [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) — we're talking minutes, not a road trip. That's a big part of why it's such a good first-morning activity. You can walk the loop, feed the ducks, wear the kids out, and still be back at the cabin in time for lunch and a nap on the deck.
 
 The park is right off the AZ-260 corridor that runs through Pinetop-Lakeside, so it's easy to find and easy to fold into a bigger day. Plenty of families pair a morning here with a wander through [downtown Pinetop-Lakeside](/pinetop-lakeside-downtown-shopping/) in the afternoon.
 

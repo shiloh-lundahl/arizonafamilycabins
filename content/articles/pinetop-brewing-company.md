@@ -37,7 +37,7 @@ If your group already did the big formal dinner at [Charlie Clark's Steakhouse](
 
 ## Getting There from the Cabins
 
-Pinetop Brewing Company sits on White Mountain Blvd, an easy drive whether you're staying at [Parkway Lodge](/parkway-lodge/), which sleeps 27, or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), which sleeps 33. Close enough that a casual dinner out doesn't eat up the evening, and close enough to make a return trip for round two if the group's enjoying itself.
+Pinetop Brewing Company sits on White Mountain Blvd, an easy drive whether you're staying at [Parkway Lodge](/parkway-lodge/), which sleeps 27, or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), which sleeps 33. Close enough that a casual dinner out doesn't eat up the evening, and close enough to make a return trip for round two if the group's enjoying itself.
 
 ## Good to Know Before You Go
 
@@ -58,6 +58,6 @@ Yes, both are available on the menu, which is handy if your group has dietary re
 Yes, the seasonal patio welcomes dogs, so you don't have to leave anyone behind on dog-sitting duty.
 
 **How far is it from the Lakeside cabins?**
-Just a short drive from both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), making it an easy addition to any evening plan.
+Just a short drive from both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), making it an easy addition to any evening plan.
 
 A trip built around a big group needs a few different kinds of nights, and Pinetop Brewing Company covers the one where the adults want a good beer and a relaxed meal without the fuss. Ready to plan the trip around it? [Check availability](/availability/) for your dates, and if you want something more low-key and family-first the next night, [Grumpy Jake's](/blog/grumpy-jakes-lakeside/) in Lakeside has you covered.

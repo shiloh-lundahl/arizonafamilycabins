@@ -29,7 +29,7 @@ The recreation area has developed campgrounds with sites for tents and RVs, and 
 
 ## Getting There from the Cabins
 
-From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), you'll head toward Show Low and follow the signs to the recreation area. Call it roughly 15 to 20 minutes — close enough that you're not committing your whole day to driving, far enough that it feels like a real outing. It pairs nicely with a grocery or supply run in Show Low, since you're headed that direction anyway.
+From [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), you'll head toward Show Low and follow the signs to the recreation area. Call it roughly 15 to 20 minutes — close enough that you're not committing your whole day to driving, far enough that it feels like a real outing. It pairs nicely with a grocery or supply run in Show Low, since you're headed that direction anyway.
 
 If your group has been fishing the closer, quieter [Rainbow Lake](/fishing-rainbow-lake-lakeside/) and wants to level up to boating and a bigger day out, Fool Hollow is the natural next step. And if you're plotting a whole week of water, it slots in well between an easy day in town and the bigger drive up to [Hawley Lake](/hawley-lake-fishing/).
 

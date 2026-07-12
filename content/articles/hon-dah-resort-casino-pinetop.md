@@ -29,7 +29,7 @@ If gambling isn't your thing, that's fine too — plenty of people go for Timber
 
 One of the nice things about a property this size sitting essentially adjoining Pinetop-Lakeside is that it doesn't require restructuring your whole day. If your group already has a golf outing planned — see our guide to [golf in Pinetop](/blog/pinetop-golf-courses/) — an evening at Hon-Dah pairs naturally afterward. Same goes for a day spent browsing [downtown Pinetop-Lakeside shopping](/blog/pinetop-lakeside-downtown-shopping/); swing by the casino for dinner and a show on the way back to the cabin.
 
-With a big group split across [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/), it's rare that every single person wants to do the same thing every night, and that's exactly why a spot like Hon-Dah is useful. A few couples peel off for a couple of hours, everyone else stays back with a movie or a game night, and the group reconvenes without anyone feeling like they missed the whole trip.
+With a big group split across [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/), it's rare that every single person wants to do the same thing every night, and that's exactly why a spot like Hon-Dah is useful. A few couples peel off for a couple of hours, everyone else stays back with a movie or a game night, and the group reconvenes without anyone feeling like they missed the whole trip.
 
 ## Practical notes for planning
 
@@ -46,4 +46,4 @@ It sits right at the edge of Pinetop-Lakeside, at the junction of Highways 260 a
 **What can you do there besides gamble?**
 Plenty. There's a hotel, an RV park, a conference center, and Timbers Lounge for live music and comedy. You can go purely for dinner and a show and skip the gaming floor entirely if that's more your group's speed.
 
-A night at Hon-Dah is an easy way to give the adults in a big group something different to do without anyone having to leave town. Pair it with a day of golf or downtown shopping, and you've got a full day that ends with everyone happy — even if not everyone did the same thing. Check [availability](/availability/) at Parkway Lodge or Mohave Cabin with Treehouse for your dates, and plan your evening at Hon-Dah once you know when you'll be in the White Mountains.
+A night at Hon-Dah is an easy way to give the adults in a big group something different to do without anyone having to leave town. Pair it with a day of golf or downtown shopping, and you've got a full day that ends with everyone happy — even if not everyone did the same thing. Check [availability](/availability/) at Parkway Lodge or Mohave Cabin with a Treehouse for your dates, and plan your evening at Hon-Dah once you know when you'll be in the White Mountains.

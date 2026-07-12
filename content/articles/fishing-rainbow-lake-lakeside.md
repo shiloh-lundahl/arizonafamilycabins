@@ -27,7 +27,7 @@ For bait and tackle, the standards work fine: PowerBait or a nightcrawler under 
 
 ## Getting There from the Cabins
 
-Rainbow Lake is right in Lakeside, so from either [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) you're only a few minutes out — the kind of trip where you can decide to go fishing over breakfast and be casting a line before the coffee's cold. That's the real charm of it. You don't have to commit to a whole expedition. You can fish for an hour, come back, and still have your whole day.
+Rainbow Lake is right in Lakeside, so from either [Parkway Lodge](/parkway-lodge/) or [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) you're only a few minutes out — the kind of trip where you can decide to go fishing over breakfast and be casting a line before the coffee's cold. That's the real charm of it. You don't have to commit to a whole expedition. You can fish for an hour, come back, and still have your whole day.
 
 It also makes a great warm-up. If your group is planning bigger outings to [Fool Hollow Lake](/fool-hollow-lake-recreation/) near Show Low or the long drive up to [Hawley Lake](/hawley-lake-fishing/), Rainbow is where you shake off the rust and figure out who actually remembers how to tie on a hook.
 

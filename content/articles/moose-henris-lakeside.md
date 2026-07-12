@@ -27,7 +27,7 @@ Because the beer selection draws a crowd on its own, plan on it being busier in 
 
 ## Getting There from the Cabins
 
-Moose Henri's sits on Highway 260 (also called White Mountain Blvd) in Lakeside, which puts it within easy reach of both of our cabins. Groups staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) have a short drive to get there, which is worth something when you're trying to get a hungry, restless group out the door and fed without losing half the evening to travel.
+Moose Henri's sits on Highway 260 (also called White Mountain Blvd) in Lakeside, which puts it within easy reach of both of our cabins. Groups staying at [Parkway Lodge](/parkway-lodge/) or the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) have a short drive to get there, which is worth something when you're trying to get a hungry, restless group out the door and fed without losing half the evening to travel.
 
 It's a natural stop after a day out on Rainbow Lake — if your crew spent the afternoon [kayaking on Rainbow Lake](/blog/kayaking-rainbow-lake-lakeside/), Moose Henri's is close enough to make for an easy dinner without much of a detour on the way back to the cabin.
 
@@ -49,6 +49,6 @@ The 30 craft beers on draft, mostly Arizona microbrews, plus a wine list of more
 Open 11am to 9pm Monday, Tuesday, and Thursday through Sunday. Closed Wednesdays — worth checking against your trip dates before you plan a specific night around it.
 
 **How far is it from the cabins in Lakeside?**
-Close. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with Treehouse](/mohave-cabin-treehouse/) are a short drive from Moose Henri's on Highway 260, making it one of the easier dinners to work into a busy day.
+Close. Both [Parkway Lodge](/parkway-lodge/) and the [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) are a short drive from Moose Henri's on Highway 260, making it one of the easier dinners to work into a busy day.
 
 If your group wants a relaxed night out with real beer and wine options and a menu that won't start an argument, Moose Henri's is worth putting on the list — just not for a Wednesday. Pair it with an afternoon at the lake, then [check availability](/availability/) for a cabin and start building out the rest of the trip. For a different night with a homier, pie-first feel, [Grumpy Jake's](/blog/grumpy-jakes-lakeside/) is another easy Lakeside option just a short drive from either property.
