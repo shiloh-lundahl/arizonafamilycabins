@@ -1,5 +1,7 @@
 import os
 import json
+import time
+import threading
 import requests
 from datetime import datetime
 from flask import (Flask, render_template, request, redirect, url_for,
@@ -316,6 +318,28 @@ def robots():
 # body (no exception raised). Always send Referer/Origin, and always check the
 # response body — a 200 status alone does NOT mean the email was sent.
 
+def _send_formsubmit_payload(payload: dict):
+    # Runs in a background thread so a cold Render container (free tier spins
+    # down after ~15min idle; the next request can take 30-50s to wake up)
+    # can't silently eat this via the old short, request-blocking timeout.
+    # Retries once on failure/timeout since a cold container's network stack
+    # (DNS, TLS) may not be warmed up yet on the first attempt.
+    headers = {
+        "Accept": "application/json",
+        "Referer": f"{SITE_URL}/contact/",
+    }
+    url = f"https://formsubmit.co/ajax/{LEAD_NOTIFY_EMAIL}"
+    for attempt in (1, 2):
+        try:
+            resp = requests.post(url, json=payload, timeout=25, headers=headers)
+            print(f"[lead-notify] attempt {attempt} response {resp.status_code}: {resp.text[:500]}", flush=True)
+            return
+        except Exception as e:
+            print(f"[lead-notify] attempt {attempt} failed: {e}", flush=True)
+            if attempt == 1:
+                time.sleep(2)
+
+
 def _notify_lead_email(lead: Lead):
     if not LEAD_NOTIFY_EMAIL:
         return
@@ -347,20 +371,7 @@ def _notify_lead_email(lead: Lead):
             f"If it's urgent, call or text us directly at {PHONE}.\n\n"
             "Talk soon,\nArizona Family Cabins"
         )
-    headers = {
-        "Accept": "application/json",
-        "Referer": f"{SITE_URL}/contact/",
-    }
-    try:
-        resp = requests.post(
-            f"https://formsubmit.co/ajax/{LEAD_NOTIFY_EMAIL}",
-            json=payload,
-            timeout=8,
-            headers=headers,
-        )
-        print(f"[lead-notify] FormSubmit response {resp.status_code}: {resp.text[:500]}", flush=True)
-    except Exception as e:
-        print(f"[lead-notify] FormSubmit request failed: {e}", flush=True)  # never block the guest on a notification hiccup
+    threading.Thread(target=_send_formsubmit_payload, args=(payload,), daemon=True).start()
 
 
 # ── HubSpot integration ───────────────────────────────────────────────────────
