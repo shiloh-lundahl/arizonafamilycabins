@@ -42,6 +42,7 @@ ul { list-style: none; }
 .site-header { background: var(--pine-dk); color: var(--white); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.3); }
 .header-inner { display: flex; align-items: center; gap: 24px; padding-top: 14px; padding-bottom: 14px; }
 .logo { color: var(--white); text-decoration: none; font-family: "Trebuchet MS", Arial, sans-serif; font-size: 1.25rem; font-weight: 700; white-space: nowrap; flex-shrink: 0; order: 1; }
+.logo:hover { color: var(--white); }
 .main-nav { display: flex; gap: 20px; flex: 1; flex-wrap: wrap; order: 2; }
 .main-nav a { color: rgba(255,255,255,.85); text-decoration: none; font-family: "Trebuchet MS", Arial, sans-serif; font-size: .9rem; white-space: nowrap; }
 .main-nav a:hover { color: var(--white); }
