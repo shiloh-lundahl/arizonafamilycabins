@@ -52,7 +52,7 @@ Pick maybe two group things for the whole trip — a morning hike, fishing at Ra
 
 ## Why the White Mountains Work for Reunions
 
-A few honest reasons this area is a reunion favorite. The **summer weather** is the big draw — cool 80s days and 50s nights when the rest of Arizona is scorching. It's **reasonably central**, roughly 3 to 3.5 hours from Phoenix and about 3 from Tucson, so family coming from different directions can all get there in an afternoon. And there's **room to spread out**, both inside a 7-bedroom cabin and outside in the pines. For picking the right season, our [best time to visit the White Mountains](/best-time-to-visit-white-mountains-az/) guide breaks it down.
+A few honest reasons this area is a reunion favorite. The **summer weather** is the big draw — cool 80s days and 50s nights when the rest of Arizona is scorching. It's **reasonably central**, roughly 3 to 3.5 hours from Phoenix and about 3.5 hours from Tucson, so family coming from different directions can all get there in an afternoon. And there's **room to spread out**, both inside a 7-bedroom cabin and outside in the pines. For picking the right season, our [best time to visit the White Mountains](/best-time-to-visit-white-mountains-az/) guide breaks it down.
 
 ## Common Questions
 
