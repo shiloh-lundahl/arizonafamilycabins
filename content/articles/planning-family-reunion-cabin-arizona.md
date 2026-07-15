@@ -21,7 +21,7 @@ Send a quick poll to the family with two or three date options and a hard deadli
 
 The magic of a reunion is the togetherness, and that falls apart when half the family is at a hotel across town. The goal is one big place where everyone sleeps, eats, and hangs out together.
 
-That's exactly what our cabins are built for. [Parkway Lodge](/parkway-lodge/) has 7 bedrooms and sleeps up to 27. [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) also has 7 bedrooms plus a treehouse and sleeps up to 33 — the treehouse alone tends to decide the whole trip for the grandkids. And if your family is really big, you can **book both cabins together and host up to around 60 people** on the same trip near Rainbow Lake.
+That's exactly what our cabins are built for. [Parkway Lodge](/parkway-lodge/) has 7 bedrooms and sleeps up to 27. [Mohave Cabin with a Treehouse](/mohave-cabin-treehouse/) has 7 bedrooms plus a barndominium and sleeps up to 33 — and the backyard treehouse alone tends to decide the whole trip for the grandkids. And if your family is really big, you can **book both cabins together and host up to around 60 people** on the same trip near Rainbow Lake.
 
 When you're figuring out sleeping arrangements, think in family units: which couples and kids go in which rooms, where the teenagers can have their own zone, and where grandma gets a quiet spot away from the 6 a.m. crowd. Having 7 bedrooms to work with makes this easy. See both options side by side on our [large cabins in Lakeside](/large-cabins-lakeside-arizona/) page.
 
