@@ -67,7 +67,7 @@
         <!-- Photo gallery (from the live Airbnb listing) -->
         <img class="gallery-hero" src="/static/img/mohave/01.jpg" alt="Mohave Cabin with a Treehouse in Lakeside, Arizona at night" data-lightbox data-full="/static/img/mohave/01.jpg">
         <div class="gallery-grid">
-          {% set mo_remove = [7, 15, 17, 19, 21, 22, 23, 24] %}
+          {% set mo_remove = [7, 14, 15, 17, 19, 21, 22, 23, 24] %}
           {% for n in range(2, 26) if n not in mo_remove %}
           <img src="/static/img/mohave/{{ '%02d' % n }}.jpg" alt="Mohave Cabin with a Treehouse photo {{ n }}" loading="lazy" data-lightbox data-full="/static/img/mohave/{{ '%02d' % n }}.jpg">
           {% endfor %}
@@ -75,7 +75,6 @@
             [26, 'Mohave Cabin with a Treehouse exterior in the snow, Lakeside, Arizona'],
             [27, 'Snow-covered barn and treehouse at Mohave Cabin in winter'],
             [28, 'Mohave Cabin barndominium exterior with hot tub'],
-            [29, 'Mohave Cabin with a Treehouse A-frame exterior'],
             [30, 'Treehouse and picnic area at Mohave Cabin'],
             [31, 'Mohave Cabin barndominium with outdoor bench platform'],
             [32, 'Mohave Cabin barndominium exterior in the pines'],
@@ -106,7 +105,7 @@
           <img src="/static/img/mohave/{{ n }}.jpg" alt="{{ alt }}" loading="lazy" data-lightbox data-full="/static/img/mohave/{{ n }}.jpg">
           {% endfor %}
         </div>
-        <p style="text-align:center;margin-top:14px;color:var(--gray);font-size:.9rem;">Click any photo to enlarge · 46 photos</p>
+        <p style="text-align:center;margin-top:14px;color:var(--gray);font-size:.9rem;">Click any photo to enlarge · 44 photos</p>
 
         <!-- Video tour -->
         <h2 style="color:var(--pine-dk);margin-top:40px;margin-bottom:16px;">🎥 Video Tour of Mohave Cabin with a Treehouse</h2>
