@@ -71,8 +71,42 @@
           {% for n in range(2, 26) if n not in mo_remove %}
           <img src="/static/img/mohave/{{ '%02d' % n }}.jpg" alt="Mohave Cabin with a Treehouse photo {{ n }}" loading="lazy" data-lightbox data-full="/static/img/mohave/{{ '%02d' % n }}.jpg">
           {% endfor %}
+          {% set mo_new = [
+            [26, 'Mohave Cabin with a Treehouse exterior in the snow, Lakeside, Arizona'],
+            [27, 'Snow-covered barn and treehouse at Mohave Cabin in winter'],
+            [28, 'Mohave Cabin barndominium exterior with hot tub'],
+            [29, 'Mohave Cabin with a Treehouse A-frame exterior'],
+            [30, 'Treehouse and picnic area at Mohave Cabin'],
+            [31, 'Mohave Cabin barndominium with outdoor bench platform'],
+            [32, 'Mohave Cabin barndominium exterior in the pines'],
+            [33, 'Mohave Cabin bedroom with green accent wall'],
+            [34, 'Mohave Cabin bunk room with log-frame bunk beds'],
+            [35, 'Mohave Cabin bunk room with wood paneling'],
+            [36, 'Mohave Cabin bedroom with log bed frame'],
+            [37, 'Mohave Cabin bunk room with plaid quilts and TV'],
+            [38, 'Mohave Cabin bedroom with plaid quilts'],
+            [39, 'Mohave Cabin living room with stone fireplace'],
+            [40, 'Mohave Cabin living room with sectional couch'],
+            [41, 'Cozy reading nook at Mohave Cabin'],
+            [42, 'Mohave Cabin living room with leather sectional'],
+            [43, 'Mohave Cabin living room with fireplace and TV'],
+            [44, 'Mohave Cabin living room seating area'],
+            [45, 'Arcade game in the Mohave Cabin game room'],
+            [46, 'Board games at Mohave Cabin with a Treehouse'],
+            [47, 'Board game collection at Mohave Cabin'],
+            [48, 'Gazebo and picnic area at Mohave Cabin'],
+            [49, 'Deck seating at Mohave Cabin with a Treehouse'],
+            [50, 'Kayaks and life vests provided at Mohave Cabin'],
+            [51, 'Kids playing yard games at Mohave Cabin'],
+            [52, 'Outdoor kitchen and grill at Mohave Cabin'],
+            [53, 'String lights over the deck at Mohave Cabin in the evening'],
+            [54, 'Cornhole boards in the yard at Mohave Cabin']
+          ] %}
+          {% for n, alt in mo_new %}
+          <img src="/static/img/mohave/{{ n }}.jpg" alt="{{ alt }}" loading="lazy" data-lightbox data-full="/static/img/mohave/{{ n }}.jpg">
+          {% endfor %}
         </div>
-        <p style="text-align:center;margin-top:14px;color:var(--gray);font-size:.9rem;">Click any photo to enlarge · 17 photos</p>
+        <p style="text-align:center;margin-top:14px;color:var(--gray);font-size:.9rem;">Click any photo to enlarge · 46 photos</p>
 
         <!-- Video tour -->
         <h2 style="color:var(--pine-dk);margin-top:40px;margin-bottom:16px;">🎥 Video Tour of Mohave Cabin with a Treehouse</h2>
