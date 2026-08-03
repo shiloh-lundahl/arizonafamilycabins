@@ -222,6 +222,18 @@ ul { list-style: none; }
 .avail-status { font-size: .78rem; color: var(--gray); margin-top: 8px; font-style: italic; }
 .avail-fallback { text-align: center; padding: 24px; color: var(--gray); }
 
+/* ── Reviews ──────────────────────────────────────────────────── */
+.review-summary { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin: 24px 0 8px; }
+.review-source-pill { background: var(--light); border-radius: 999px; padding: 10px 20px; font-family: "Trebuchet MS", Arial, sans-serif; font-size: .9rem; color: var(--pine-dk); }
+.review-source-pill strong { color: var(--gold); }
+.review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px; }
+.review-card { background: var(--white); border: 1px solid #e8e0d5; border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px; display: flex; flex-direction: column; }
+.review-stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; margin-bottom: 10px; }
+.review-quote { font-style: italic; color: var(--charcoal); margin-bottom: 16px; flex-grow: 1; }
+.review-meta { display: flex; justify-content: space-between; align-items: flex-end; font-size: .85rem; color: var(--gray); border-top: 1px solid #eee; padding-top: 12px; }
+.review-author { font-weight: 700; font-family: "Trebuchet MS", Arial, sans-serif; color: var(--pine-dk); }
+.review-badge { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; background: var(--light); border-radius: 4px; padding: 3px 8px; white-space: nowrap; }
+
 /* ── Responsive ──────────────────────────────────────────────── */
 /* General small-screen tweaks (any orientation) */
 @media (max-width: 768px) {

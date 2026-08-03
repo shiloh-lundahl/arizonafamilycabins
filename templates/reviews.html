@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+{% block title %}Guest Reviews | Arizona Family Cabins{% endblock %}
+{% block meta_description %}Real 5-star guest reviews from Airbnb and VRBO for Parkway Lodge (sleeps 27) and Mohave Cabin with a Treehouse (sleeps 33) in Lakeside, AZ.{% endblock %}
+
+{% block extra_schema %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LodgingBusiness",
+      "name": "Parkway Lodge",
+      "url": "{{ site_url }}/parkway-lodge/",
+      "review": [
+        {"@type": "Review", "author": {"@type": "Person", "name": "Jeremy"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "great hosts, the place was beautiful, the beds were really comfortable, there was lots of room and stuff for our guests to do, would definitely come back"},
+        {"@type": "Review", "author": {"@type": "Person", "name": "Monica"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "This home was absolutely perfect for our large family! The two separate living rooms made a huge difference, those who wanted to stay up late watching movies or playing games could do so without disturbing the early risers."},
+        {"@type": "Review", "author": {"@type": "Person", "name": "Sarah"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "We had a wonderful stay! The home was exactly as described and was perfect for our group of 19 people. There were plenty of rooms & beds to accommodate our group, enough seating, and so many nice extras."},
+        {"@type": "Review", "author": {"@type": "Person", "name": "Emma G."}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "My family and I got this cabin for the week of my wedding. It was absolutely perfect. Very kid friendly, and accommodates for a lot of people. 10/10 would recommend."},
+        {"@type": "Review", "author": {"@type": "Person", "name": "Michone Forsey"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "This cabin was so perfect for our big group getaway! We had a lot of kids and we felt they were set up so well for welcoming big families! The really nice golf cart was a WAY COOL perk! We really enjoyed taking that around and using it with the little trailer and their kayaks to the lake!!"},
+        {"@type": "Review", "author": {"@type": "Person", "name": "Josh Young"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "I just stayed here for a retreat and with 10 people and had a great time! This is the perfect cabin for a group! Beautiful and clean!"}
+      ]
+    },
+    {
+      "@type": "LodgingBusiness",
+      "name": "Mohave Cabin with a Treehouse",
+      "url": "{{ site_url }}/mohave-cabin-treehouse/",
+      "review": [
+        {"@type": "Review", "author": {"@type": "Person", "name": "Tamara"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "We had such a wonderful stay! The hosts were incredibly friendly, welcoming, and very flexible, which made the entire experience smooth and stress-free. The house was perfect for our large gathering."},
+        {"@type": "Review", "author": {"@type": "Person", "name": "Sherri B."}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Amazing vacation for a large group. Super clean and comfy. Responsiveness and care was excellent! Super easy to rent from out of state. Definitely in my repeat list when I am back in AZ!!"},
+        {"@type": "Review", "author": {"@type": "Person", "name": "Rachel R."}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "This home was perfect for our large family. So much room in the yard for the kids to play. The addition with the barn was perfect."},
+        {"@type": "Review", "author": {"@type": "Person", "name": "JT Olmstead"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Hands down one of the best cabins I've ever stayed in. My kids still talk about it years later!"},
+        {"@type": "Review", "author": {"@type": "Person", "name": "Jacob English"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "This cabin is an awesome place for my friends and family to gather and spend quality time together. The game room in the barndominium and the media room in the cabin as well as the tree house in the back yard are all fun places for the teenagers and kids to hang out."}
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+
+<section class="hero" style="padding:60px 20px;">
+  <div class="container">
+    <h1>What Our Guests Are Saying</h1>
+    <p class="tagline">Real, verified reviews from families who've stayed at Parkway Lodge and Mohave Cabin with a Treehouse — pulled straight from Airbnb, VRBO, and Google.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Parkway Lodge -->
+    <div style="text-align:center;">
+      <h2 style="color:var(--pine-dk);">Parkway Lodge Reviews</h2>
+      <p style="color:var(--gray);">7 bedrooms · Sleeps up to 27 · <a href="/parkway-lodge/">See the property</a></p>
+    </div>
+
+    <div class="review-grid">
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"My family and I got this cabin for the week of my wedding. It was absolutely perfect... very kid friendly, and accommodates for a lot of people. 10/10 would recommend."</p>
+        <div class="review-meta">
+          <span class="review-author">Emma G.</span>
+          <span class="review-badge">VRBO · Verified</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Our Family Thanksgiving was absolutely magical at this wonderful cabin! We were a party of 23 and there was plenty of space for all of us to enjoy each other and the amazing property! The bunk room was a blast for our grandkids along with the old-school arcade machine. We enjoyed every amenity including the zip-line, golf cart and kayaks!"</p>
+        <div class="review-meta">
+          <span class="review-author">Verified traveler</span>
+          <span class="review-badge">VRBO · Verified</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"This home was absolutely perfect for our large family! The two separate living rooms made a huge difference... We didn't expect to use the golf cart much, but it ended up being incredibly convenient. It was perfect for quick trips, especially for fishing at the public Rainbow Lake spot."</p>
+        <div class="review-meta">
+          <span class="review-author">Monica</span>
+          <span class="review-badge">Airbnb · Tempe, AZ</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"10 out 10 recommend for any size family. So much for the kids and teens to do around the home... As a family of 20 who rents cabins every year, this was our favorite home yet. Will be back."</p>
+        <div class="review-meta">
+          <span class="review-author">Cherelle C.</span>
+          <span class="review-badge">VRBO · Verified</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"We had a wonderful stay! The home was exactly as described and was perfect for our group of 19 people. There were plenty of rooms & beds to accommodate our group... The kitchen was well equipped to handle a large group, which was a highlight."</p>
+        <div class="review-meta">
+          <span class="review-author">Sarah</span>
+          <span class="review-badge">Airbnb · Chandler, AZ</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"This cabin is perfect for a large family and in a great location! Fishing only 5 minutes down the road."</p>
+        <div class="review-meta">
+          <span class="review-author">Brittany F.</span>
+          <span class="review-badge">VRBO · Verified</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"This cabin was so perfect for our big group getaway! We had a lot of kids and we felt they were set up so well for welcoming big families! The really nice golf cart was a WAY COOL perk! We really enjoyed taking that around and using it with the little trailer and their kayaks to the lake!!"</p>
+        <div class="review-meta">
+          <span class="review-author">Michone Forsey</span>
+          <span class="review-badge">Google · Local Guide</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"I just stayed here for a retreat and with 10 people and had a great time! This is the perfect cabin for a group! Beautiful and clean!"</p>
+        <div class="review-meta">
+          <span class="review-author">Josh Young</span>
+          <span class="review-badge">Google Review</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mohave Cabin -->
+    <div style="text-align:center;margin-top:72px;">
+      <h2 style="color:var(--pine-dk);">Mohave Cabin with a Treehouse Reviews</h2>
+      <p style="color:var(--gray);">7 bedrooms + barndominium · Sleeps up to 33 · <a href="/mohave-cabin-treehouse/">See the property</a></p>
+    </div>
+
+    <div class="review-grid">
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Amazing vacation for a large group. Super clean and comfy. Responsiveness and care was excellent! Super easy to rent from out of state. Definitely in my repeat list when I am back in AZ!!"</p>
+        <div class="review-meta">
+          <span class="review-author">Sherri B.</span>
+          <span class="review-badge">VRBO · Verified</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"We had such a wonderful stay! The hosts were incredibly friendly, welcoming, and very flexible, which made the entire experience smooth and stress-free. The house was perfect for our large gathering — plenty of space for everyone to relax and spend time together."</p>
+        <div class="review-meta">
+          <span class="review-author">Tamara</span>
+          <span class="review-badge">Airbnb · San Tan Valley, AZ</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"This home was perfect for our large family. So much room in the yard for the kids to play. The addition with the barn was perfect."</p>
+        <div class="review-meta">
+          <span class="review-author">Rachel R.</span>
+          <span class="review-badge">VRBO · Verified</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Clean, comfortable and appealing. We had a great time and the location was wonderful for our needs. We feel fortunate to have had such a great place to gather."</p>
+        <div class="review-meta">
+          <span class="review-author">Margary B.</span>
+          <span class="review-badge">VRBO · Verified</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"We enjoyed our time here and we really feel that the owners want this to be an amazing spot! Everyone is very responsive and helpful. We had an event here and really enjoyed ourselves."</p>
+        <div class="review-meta">
+          <span class="review-author">Christy</span>
+          <span class="review-badge">Airbnb · North Highlands, CA</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"We had a great time. The cabin was very nice and there was great communication. We would definitely stay again. The cabin was well stocked with dishes and lots of games and the theater was very cool."</p>
+        <div class="review-meta">
+          <span class="review-author">Shannon M.</span>
+          <span class="review-badge">VRBO · Verified</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Thank you very much for allowing us to book your property. We had such a good time enjoying the holidays. The property was in great condition, it was perfect for my family. We will recommend you for sure to our friends and family."</p>
+        <div class="review-meta">
+          <span class="review-author">Ruben</span>
+          <span class="review-badge">Airbnb · Casa Grande, AZ</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Such a wonderful place to make memories! We had a great stay in the forest. Thank you!"</p>
+        <div class="review-meta">
+          <span class="review-author">Ashlynd</span>
+          <span class="review-badge">Airbnb · Oro Valley, AZ</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"Hands down one of the best cabins I've ever stayed in. My kids still talk about it years later!"</p>
+        <div class="review-meta">
+          <span class="review-author">JT Olmstead</span>
+          <span class="review-badge">Google · Local Guide</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-quote">"This cabin is an awesome place for my friends and family to gather and spend quality time together. The game room in the barndominium and the media room in the cabin as well as the tree house in the back yard are all fun places for the teenagers and kids to hang out."</p>
+        <div class="review-meta">
+          <span class="review-author">Jacob English</span>
+          <span class="review-badge">Google · Local Guide</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:56px;">
+      <h2 style="color:var(--pine-dk);margin-bottom:16px;">See More Reviews or Book Your Stay</h2>
+      <p style="margin-bottom:24px;color:var(--gray);">These are just a sample — read the full review history on <a href="https://www.airbnb.com/rooms/1120404100143239740/reviews" target="_blank" rel="noopener">Airbnb</a>, <a href="https://www.vrbo.com/2677537" target="_blank" rel="noopener">VRBO</a>, or <a href="https://www.google.com/maps/search/Parkway+Lodge+3717+Parkway+Lakeside+AZ" target="_blank" rel="noopener">Google</a>, or call us directly to check availability.</p>
+      <a href="tel:{{ phone_raw }}" class="btn btn-primary btn-lg">📞 Call {{ phone }}</a>
+      &nbsp;
+      <a href="/availability/" class="btn btn-gold btn-lg">Check Availability</a>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

@@ -20,6 +20,7 @@ PATHS = [
     "/",
     "/parkway-lodge/",
     "/mohave-cabin-treehouse/",
+    "/reviews/",
     "/sitemap.xml",
     "/robots.txt",
 ]

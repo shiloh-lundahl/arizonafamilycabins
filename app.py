@@ -137,6 +137,11 @@ def mohave_cabin():
     return render_template("property_mohave_cabin.html")
 
 
+@app.route("/reviews/")
+def reviews():
+    return render_template("reviews.html")
+
+
 # ── Availability calendars ────────────────────────────────────────────────────
 
 CABINS = {
@@ -245,7 +250,7 @@ def blog_post(slug):
 def dynamic_page(slug):
     # protect named routes that Flask resolves before this
     protected = {"about", "how-to-book", "faq", "contact", "blog",
-                 "parkway-lodge", "mohave-cabin-treehouse", "availability",
+                 "parkway-lodge", "mohave-cabin-treehouse", "reviews", "availability",
                  "api", "sitemap.xml", "robots.txt"}
     if slug in protected:
         abort(404)
@@ -276,7 +281,7 @@ def sitemap():
 
     add(f"{SITE_URL}/")
     for slug in ["about", "how-to-book", "faq", "contact", "availability",
-                 "parkway-lodge", "mohave-cabin-treehouse", "blog"]:
+                 "parkway-lodge", "mohave-cabin-treehouse", "reviews", "blog"]:
         add(f"{SITE_URL}/{slug}/")
 
     for page in Page.query.filter_by(is_published=True, noindex=False).all():
