@@ -17,15 +17,21 @@ If you're staying up here with family and want a morning where nobody complains,
 
 The lake sits in a bowl of tall ponderosa pines, so even on a warm July afternoon there's shade and that clean pine smell you came up here for. The main draw is the paved loop that circles the water. It's flat and wide, which makes it genuinely stroller-friendly and easy on knees that don't love hills anymore. You can do the full loop in well under an hour at a relaxed pace, and there are benches if you want to sit and watch the water for a while.
 
+![The paved walking loop along the water at Woodland Lake Park in Pinetop-Lakeside, Arizona](/static/img/blog/paved-loop-trail-woodland-lake-park.jpg)
+
 There's a fishing pier and shoreline access, a playground that keeps younger kids occupied, and picnic ramadas with tables scattered around the grassy areas. On summer weekends the ramadas fill up, so if you want a shaded table for a big group, get there in the morning. Dogs are welcome on leash, and you'll pass plenty of them out for the same walk you are.
 
 And yes, there are ducks. Bring the kids, though maybe skip the bread (it's not great for the birds) and let them just watch instead.
+
+![Ducks and geese swimming on Woodland Lake in Pinetop-Lakeside, Arizona](/static/img/blog/ducks-woodland-lake-park.jpg)
 
 ## Fishing at Woodland Lake
 
 Woodland Lake is a solid, low-pressure fishing spot, especially for kids or anyone who wants to catch something without a whole expedition. It's typically stocked with trout, and you'll see people working the shoreline and the pier through the warmer months. If anyone in your group is 10 or older, you'll want a valid Arizona fishing license first, so sort that out ahead of time.
 
 Mornings are your best bet, both for the fish and for having the place to yourself. Bring a couple of camp chairs, a thermos of coffee, and let the day go slow.
+
+![A family fishing from the pier at Woodland Lake Park in Pinetop-Lakeside, Arizona](/static/img/blog/fishing-pier-woodland-lake-park.jpg)
 
 ## Getting There from the Cabins
 

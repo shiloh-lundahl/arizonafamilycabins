@@ -17,13 +17,19 @@ For a family reunion or a multi-generational trip filling up one of the cabins, 
 
 White Mountain Family Fun Park sits at 4725 W White Mountain Blvd in Lakeside. The lineup includes two go-kart tracks — a family-friendly track for younger or newer drivers and a faster track for the teenagers and adults who want an actual race — plus an 18-hole mini golf course, a laser maze, and 44 arcade games. There's a food court on site too, so you're not stuck driving off in search of lunch mid-visit, and party rooms if you're celebrating something specific during your stay.
 
+![Go-karts racing on the track at White Mountain Family Fun Park in Lakeside, Arizona](/static/img/blog/go-karts-white-mountain-fun-park.jpg)
+
 It's the kind of park where a group can naturally split up and reconvene. Little kids and grandparents can putt through mini golf while the older cousins run laps on the fast track, and everyone ends up back at the same tables in the food court comparing notes.
 
 ## Why it's a smart pick for a big group trip
 
 When you've got a house full of people spanning three generations, the hardest activities to plan are the ones that need everyone to want the same thing at the same time. Go-karts, mini golf, and an arcade sidestep that entirely. A grandparent who has no interest in hiking will happily putt around a mini golf course. A ten-year-old who's too small for the fast track can still get laps in on the family track. Teenagers who'd rather die than join a nature walk will show up for go-karts every time.
 
+![Mini golf course with a water feature at White Mountain Family Fun Park in Lakeside, Arizona](/static/img/blog/mini-golf-white-mountain-fun-park.jpg)
+
 It's also genuinely useful as a weather backup. The White Mountains get afternoon monsoon storms most summer days, and a cabin full of restless kids waiting out a thunderstorm is its own kind of stressful. Having an indoor arcade and laser maze in your back pocket for those afternoons — or for a scorching, sun-heavy stretch when everyone's had enough of the lake — takes the pressure off.
+
+![Laser maze with green and red beams at White Mountain Family Fun Park in Lakeside, Arizona](/static/img/blog/laser-maze-white-mountain-fun-park.jpg)
 
 There's also something to be said for the low planning overhead. A hike or a lake day takes some coordinating — gear, sunscreen, timing around naps or afternoon storms. Piling everyone into cars for an afternoon of go-karts and mini golf takes almost none of that. You show up, buy however many rounds or wristbands make sense for your group, and let people rotate through activities on their own schedule. For a week built around keeping a large, multi-generational group happy without a detailed itinerary, that ease counts for a lot.
 

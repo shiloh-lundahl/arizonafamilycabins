@@ -13,6 +13,8 @@ Rainbow Lake in Lakeside is one of the easiest, prettiest places in the White Mo
 
 ![Golf cart and kayak at a Rainbow Lake sunset near Lakeside, Arizona](/static/img/parkway/golf-cart-kayak-sunset.jpg)
 
+![A couple kayaking together on calm Rainbow Lake in Lakeside, Arizona](/static/img/blog/kayaking-couple-rainbow-lake.jpg)
+
 ## Why Rainbow Lake is made for paddling
 
 Some lakes are built for speed and wakes. Rainbow Lake is the opposite, and that's the whole appeal. It's a modest, tree-ringed lake sitting right around 7,000 feet, so even in July the air stays cool and the water stays quiet. There's no roar of ski boats, no wakes tossing you around. Just you, your paddle, and a glassy surface reflecting the pines.
@@ -25,9 +27,13 @@ If you do one thing here, paddle early. Get on the water not long after sunrise,
 
 Mornings are also when the wildlife shows up. You'll almost certainly see ducks. Herons stalk the shallows and shoreline reeds, standing statue-still until they stab at something. If you're lucky you might spot an osprey working the lake for fish, or hear one before you see it. Bring a thermos of coffee, go slow, and let the lake wake up around you. Afternoons can get a little breezier and choppier, so if you want that mirror-smooth water, set an alarm.
 
+![Kayaker on Rainbow Lake at sunrise near Lakeside, Arizona](/static/img/blog/kayaking-sunrise-rainbow-lake.jpg)
+
 ## Bringing your own boat vs. renting
 
 If you own kayaks, a canoe, or paddleboards, throw them on the roof or in the truck and bring them. Having your own gear means you can launch on your own schedule — which, again, should be early. The cabins give you plenty of room to store boats and gear for the week.
+
+![Kayaks strapped to a car roof outside a cabin near Rainbow Lake, Lakeside, Arizona](/static/img/blog/kayaks-on-car-rainbow-lake.jpg)
 
 If you don't own anything, don't write off a paddle day. Rental options in the Pinetop-Lakeside area do come and go with the seasons, so call around ahead of your trip to see what's currently available and where. Availability tends to be best in summer, and it's worth confirming before you count on it rather than showing up and hoping. When in doubt, ask a local outfitter or sporting goods shop what they'd recommend for Rainbow Lake specifically.
 
