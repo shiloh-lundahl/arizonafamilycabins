@@ -5,7 +5,7 @@ import requests
 from datetime import datetime
 from flask import (Flask, render_template, request, redirect, url_for,
                    abort, Response, jsonify, make_response)
-from models import db, Page, Article, Lead
+from models import db, Page, Article, Lead, Subscriber
 from availability import get_availability, CABIN_ICAL_ENV
 from dotenv import load_dotenv
 
@@ -123,6 +123,121 @@ def contact_post():
 @app.route("/contact/thanks/")
 def contact_thanks():
     return render_template("contact_thanks.html")
+
+
+# ── VIP email list ────────────────────────────────────────────────────────────
+
+@app.route("/subscribe/", methods=["POST"])
+def subscribe():
+    # Honeypot: real users never fill a hidden field; bots fill everything.
+    if request.form.get("website", "").strip():
+        return _safe_redirect_back(subscribed=1)  # silently accept, don't store
+
+    email = request.form.get("email", "").strip().lower()
+    first_name = request.form.get("first_name", "").strip()
+
+    if "@" not in email or "." not in email.split("@")[-1] or len(email) > 200:
+        return _safe_redirect_back(error=1)
+
+    # Local row is best-effort only — the DB is ephemeral on Render (see model docstring).
+    try:
+        existing = Subscriber.query.filter_by(email=email).first()
+        if not existing:
+            db.session.add(Subscriber(
+                email=email,
+                first_name=first_name,
+                source_page=request.referrer or "",
+            ))
+            db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+        print(f"[vip-list] local save failed (non-fatal): {e}", flush=True)
+
+    # HubSpot is the real store. Run in a thread so a slow API never stalls the redirect.
+    threading.Thread(
+        target=_subscribe_to_hubspot,
+        args=(email, first_name, request.referrer or ""),
+        daemon=True,
+    ).start()
+
+    return _safe_redirect_back(subscribed=1)
+
+
+def _safe_redirect_back(**params):
+    """Return the visitor to the page they signed up from, with a status flag.
+
+    Only same-host referrers are honored — never redirect to an attacker-supplied
+    external URL.
+    """
+    from urllib.parse import urlparse, urlencode
+
+    ref = request.referrer or ""
+    target = "/"
+    if ref:
+        p = urlparse(ref)
+        if p.netloc == request.host and p.path:
+            target = p.path
+    return redirect(f"{target}?{urlencode(params)}#vip", 303)
+
+
+def _subscribe_to_hubspot(email: str, first_name: str, source_page: str):
+    """Create or update the contact in HubSpot as a newsletter subscriber.
+
+    HubSpot returns 409 when the email already exists — that's a success for our
+    purposes (they're already in the CRM), not an error.
+    """
+    api_key = os.environ.get("HUBSPOT_API_KEY")
+    if not api_key:
+        print("[vip-list] SKIPPED — HUBSPOT_API_KEY not set", flush=True)
+        _notify_subscriber_fallback(email, first_name, "HUBSPOT_API_KEY not set")
+        return
+
+    props = {"email": email, "lifecyclestage": "subscriber"}
+    if first_name:
+        props["firstname"] = first_name
+
+    try:
+        resp = requests.post(
+            "https://api.hubapi.com/crm/v3/objects/contacts",
+            headers={"Authorization": f"Bearer {api_key}",
+                     "Content-Type": "application/json"},
+            json={"properties": props},
+            timeout=15,
+        )
+        if resp.status_code in (200, 201):
+            print(f"[vip-list] HubSpot contact created: {email}", flush=True)
+            return
+        if resp.status_code == 409:
+            print(f"[vip-list] already in HubSpot: {email}", flush=True)
+            return
+        print(f"[vip-list] HubSpot {resp.status_code}: {resp.text[:200]}", flush=True)
+        _notify_subscriber_fallback(email, first_name, f"HubSpot {resp.status_code}")
+    except Exception as e:
+        print(f"[vip-list] HubSpot call FAILED: {e}", flush=True)
+        _notify_subscriber_fallback(email, first_name, str(e))
+
+
+def _notify_subscriber_fallback(email: str, first_name: str, reason: str):
+    """If HubSpot didn't take the signup, email it so it is never lost.
+
+    The local DB is wiped on restart, so without this a failed API call would
+    silently drop a real subscriber.
+    """
+    if not (GMAIL_SMTP_USER and GMAIL_SMTP_APP_PASSWORD and LEAD_NOTIFY_EMAIL):
+        return
+    try:
+        _send_gmail(
+            LEAD_NOTIFY_EMAIL,
+            "VIP list signup (needs manual add to HubSpot)",
+            f"A visitor joined the VIP email list but HubSpot did not accept it.\n\n"
+            f"Email: {email}\n"
+            f"Name: {first_name or '(not provided)'}\n"
+            f"Reason: {reason}\n\n"
+            f"Please add them to HubSpot manually.\n",
+        )
+        print("[vip-list] fallback notification sent", flush=True)
+    except Exception as e:
+        print(f"[vip-list] fallback notification FAILED: {e}", flush=True)
 
 
 # ── Property pages ────────────────────────────────────────────────────────────

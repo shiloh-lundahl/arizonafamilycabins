@@ -46,6 +46,25 @@ class Article(db.Model):
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 
+class Subscriber(db.Model):
+    """VIP email list signup.
+
+    NOTE: this table is NOT the source of truth. The site runs on ephemeral
+    SQLite on Render (no persistent DB), so rows here are lost on every
+    restart/redeploy. HubSpot is the real store — see _subscribe_to_hubspot().
+    This model exists for same-session dedupe and so the data starts
+    persisting automatically if a Postgres DATABASE_URL is ever added.
+    """
+    __tablename__ = "subscribers"
+
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(200), unique=True, nullable=False, index=True)
+    first_name = db.Column(db.String(120))
+    source_page = db.Column(db.String(300))
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    hubspot_synced = db.Column(db.Boolean, default=False)
+
+
 class Lead(db.Model):
     __tablename__ = "leads"
 
