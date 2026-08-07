@@ -1,9 +1,9 @@
 {
   "page_type": "location",
   "url_slug": "large-cabins-show-low-arizona",
-  "meta_title": "Large Cabins Near Show Low AZ – Sleeps Up to 33",
-  "meta_description": "Large group cabin rentals near Show Low, AZ. Parkway Lodge sleeps 27; Mohave Cabin with a Treehouse sleeps 33. Just 10 minutes from Show Low.",
-  "h1_title": "Large Cabin Rentals Near Show Low, Arizona",
+  "meta_title": "Show Low AZ Cabins – Large Groups, Sleeps 27 or 33",
+  "meta_description": "Large cabin rentals 10 minutes from Show Low, AZ. Parkway Lodge sleeps 27; Mohave Cabin with a Treehouse sleeps 33. Book direct and save.",
+  "h1_title": "Show Low, AZ Cabins for Large Groups",
   "hero_text": "Our White Mountains cabins are just 10 minutes from Show Low — close to town conveniences, deep in ponderosa pine country near Rainbow Lake.",
   "why_section": "<h2>Show Low, AZ: Gateway to the White Mountains</h2><p>Show Low is the commercial hub of Arizona's White Mountains region, sitting at 6,331 feet on the Mogollon Rim. It's the place you stop for groceries at Safeway or Walmart, grab breakfast at a diner, or pick up fishing licenses before heading to the water. What it lacks in quaint mountain-town charm, it makes up for in practicality — and its location puts it at the center of one of Arizona's most underrated outdoor destinations.</p><p>Our cabins are located in neighboring Lakeside, just 10 minutes west of Show Low's commercial corridor and directly adjacent to Rainbow Lake. That proximity means you get the best of both worlds: the quiet and natural setting of a lakeside cabin in the pines, with easy access to Show Low's stores and services whenever a group of 27 or 33 needs to resupply.</p><p>Show Low takes its name from a card game played in 1876 between two ranchers disputing ownership of a ranch. The winner showed low — a 2 of clubs — and kept the land. The town's main street is still called Deuce of Clubs in honor of the legend.</p>",
   "how_section": "<h2>Driving to Show Low from Phoenix and Tucson</h2><p>Show Low is approximately 3.25 hours from central Phoenix via US-60 East. The highway runs through Miami and Globe before climbing through the Salt River Canyon — a dramatic 2,000-foot descent and ascent that signals you've left the desert behind. Once through the canyon, the landscape shifts to juniper, then piñon pine, then the tall ponderosa that defines the Rim Country. Show Low sits at the top of that climb.</p><p>From Tucson, Show Low is about 2.75 hours via AZ-77 North through Winkelman and Globe, connecting to US-60 at Globe. From Flagstaff, it's a pleasant 2-hour drive southeast via AZ-260.</p>",
@@ -26,16 +26,47 @@
       "answer": "Yes. Our Lakeside cabins — just 10 minutes from Show Low — are specifically designed for large reunions. Mohave Cabin with a Treehouse sleeps 33; Parkway Lodge sleeps 27. Together they accommodate up to 60 guests."
     }
   ],
-  "schema_markup": {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are there large cabins near Show Low that sleep 20+ people?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — our cabins in Lakeside sleep up to 27 (Parkway Lodge) and 33 (Mohave Cabin with a Treehouse), just 10 minutes from Show Low."}}]},
+  "schema_markup": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Are there large cabins near Show Low that sleep 20+ people?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — our cabins in Lakeside sleep up to 27 (Parkway Lodge) and 33 (Mohave Cabin with a Treehouse), just 10 minutes from Show Low."
+        }
+      }
+    ]
+  },
   "internal_links": [
-    {"url": "/large-cabins-lakeside-arizona/", "text": "Large Cabins in Lakeside, AZ"},
-    {"url": "/large-cabins-pinetop-arizona/", "text": "Large Cabins in Pinetop, AZ"},
-    {"url": "/family-reunion-cabins-arizona/", "text": "Family Reunion Cabins in Arizona"},
-    {"url": "/7-bedroom-cabins-arizona/", "text": "7-Bedroom Cabins in Arizona"},
-    {"url": "/parkway-lodge/", "text": "Parkway Lodge – Sleeps 27"},
-    {"url": "/mohave-cabin-treehouse/", "text": "Mohave Cabin with a Treehouse – Sleeps 33"}
+    {
+      "url": "/large-cabins-lakeside-arizona/",
+      "text": "Large Cabins in Lakeside, AZ"
+    },
+    {
+      "url": "/large-cabins-pinetop-arizona/",
+      "text": "Large Cabins in Pinetop, AZ"
+    },
+    {
+      "url": "/family-reunion-cabins-arizona/",
+      "text": "Family Reunion Cabins in Arizona"
+    },
+    {
+      "url": "/7-bedroom-cabins-arizona/",
+      "text": "7-Bedroom Cabins in Arizona"
+    },
+    {
+      "url": "/parkway-lodge/",
+      "text": "Parkway Lodge – Sleeps 27"
+    },
+    {
+      "url": "/mohave-cabin-treehouse/",
+      "text": "Mohave Cabin with a Treehouse – Sleeps 33"
+    }
   ],
-  "target_keyword": "large cabins show low arizona",
+  "target_keyword": "show low az cabins",
   "is_published": true,
   "noindex": false
 }
