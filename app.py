@@ -1,5 +1,7 @@
 import os
+import re
 import json
+import time
 import threading
 import requests
 from datetime import datetime
@@ -66,6 +68,7 @@ def inject_globals():
         "phone_raw": PHONE_RAW,
         "site_url": SITE_URL,
         "current_year": datetime.utcnow().year,
+        "now_ts": int(time.time()),  # spam time-trap on the contact form
     }
 
 
@@ -98,8 +101,83 @@ def contact():
     return render_template("contact.html")
 
 
+# ── Contact-form spam filtering ───────────────────────────────────────────────
+# Layered scoring, NOT a single hard rule. Losing one real booking inquiry costs
+# far more than receiving spam, so anything short of near-certain is still
+# delivered — just flagged in the subject line so it can be filtered in Gmail.
+
+SPAM_PHRASES = (
+    "jackpot", "casino", "lottery", "crypto", "bitcoin", "forex", "viagra",
+    "cialis", "payday", "loan offer", "make money", "work from home",
+    "seo service", "seo expert", "backlink", "guest post", "web design service",
+    "increase your traffic", "rank your", "digital marketing agency",
+    "investment opportunity", "click here", "limited time offer", "act now",
+    "congratulations you", "you have won", "claim your prize",
+)
+
+URL_RE = re.compile(r"(https?://|www\.|\.com/|\.ru\b|\.cn\b|\.top\b|\.xyz\b|bit\.ly|tinyurl)", re.I)
+
+
+def _spam_score(name, email, phone, message, form_loaded_at):
+    """Return (score, [reasons]). Higher = more likely spam."""
+    score, why = 0, []
+    msg = (message or "").lower()
+
+    # Links in the message. Real guests asking about a cabin essentially never
+    # paste URLs — this is the single strongest signal.
+    if URL_RE.search(message or ""):
+        score += 4
+        why.append("link in message")
+
+    hits = [p for p in SPAM_PHRASES if p in msg]
+    if hits:
+        score += 2 * len(hits)
+        why.append(f"spam phrase: {', '.join(hits[:3])}")
+
+    # Bots often submit instantly; humans take time to type.
+    try:
+        elapsed = time.time() - float(form_loaded_at)
+        if 0 <= elapsed < 4:
+            score += 3
+            why.append(f"submitted in {elapsed:.1f}s")
+    except (TypeError, ValueError):
+        pass  # missing/garbled timestamp isn't itself suspicious
+
+    # "Robertmindy" — two names jammed together, no space.
+    n = (name or "").strip()
+    if n and " " not in n and len(n) > 9:
+        score += 1
+        why.append("run-together name")
+
+    # Phone with no US-plausible shape (guests here are ~97% domestic).
+    digits = re.sub(r"\D", "", phone or "")
+    if digits and not (10 <= len(digits) <= 11):
+        score += 2
+        why.append(f"implausible phone ({len(digits)} digits)")
+
+    if msg and len(msg) > 1200:
+        score += 1
+        why.append("very long message")
+
+    return score, why
+
+
 @app.route("/contact/", methods=["POST"])
 def contact_post():
+    # Honeypot: hidden field humans never see. Accept silently so the bot thinks
+    # it worked, but store and send nothing.
+    if request.form.get("website", "").strip():
+        print("[contact] honeypot tripped — dropped silently", flush=True)
+        return redirect(url_for("contact_thanks"))
+
+    score, why = _spam_score(
+        request.form.get("name", ""),
+        request.form.get("email", ""),
+        request.form.get("phone", ""),
+        request.form.get("message", ""),
+        request.form.get("form_loaded_at"),
+    )
+
     lead = Lead(
         name=request.form.get("name", "").strip(),
         email=request.form.get("email", "").strip(),
@@ -113,6 +191,20 @@ def contact_post():
     )
     db.session.add(lead)
     db.session.commit()
+
+    if score >= 6:
+        # Near-certain spam. Log it (visible in Render logs if ever needed) but
+        # don't email and don't pollute the CRM.
+        print(f"[contact] BLOCKED as spam (score {score}: {'; '.join(why)}) "
+              f"name={lead.name!r} email={lead.email!r}", flush=True)
+        return redirect(url_for("contact_thanks"))
+
+    if score >= 3:
+        # Suspicious but not certain — still deliver, flagged, so a false
+        # positive never costs a real booking.
+        print(f"[contact] flagged possible spam (score {score}: {'; '.join(why)})", flush=True)
+        _notify_lead_email(lead, spam_flag=f"score {score}: {'; '.join(why)}")
+        return redirect(url_for("contact_thanks"))
 
     _notify_lead_email(lead)
     _push_to_hubspot(lead)
@@ -471,8 +563,12 @@ def _send_lead_emails(lead_data: dict):
         "mohave_cabin": "Mohave Cabin with a Treehouse (sleeps 33)",
         "both": "Both cabins",
     }
+    spam_flag = lead_data.get("spam_flag")
     notify_body = (
-        f"New inquiry from the website:\n\n"
+        (f"*** POSSIBLE SPAM — {spam_flag} ***\n"
+         f"Delivered anyway in case it's genuine. Reply only if it looks real.\n\n"
+         if spam_flag else "")
+        + f"New inquiry from the website:\n\n"
         f"Name: {lead_data['name'] or '(not provided)'}\n"
         f"Phone: {lead_data['phone'] or '(not provided)'}\n"
         f"Email: {lead_data['email'] or '(not provided)'}\n"
@@ -484,11 +580,12 @@ def _send_lead_emails(lead_data: dict):
         f"Came from: {lead_data['source_page'] or ''}\n"
     )
     try:
-        _send_gmail(
-            LEAD_NOTIFY_EMAIL,
-            f"New cabin inquiry — {lead_data['name'] or 'Website visitor'}",
-            notify_body,
+        subject = (
+            f"[Possible spam] Cabin inquiry — {lead_data['name'] or 'Website visitor'}"
+            if spam_flag else
+            f"New cabin inquiry — {lead_data['name'] or 'Website visitor'}"
         )
+        _send_gmail(LEAD_NOTIFY_EMAIL, subject, notify_body)
         print("[lead-notify] notification email sent OK", flush=True)
     except Exception as e:
         print(f"[lead-notify] notification email FAILED: {e}", flush=True)
@@ -512,7 +609,7 @@ def _send_lead_emails(lead_data: dict):
             print(f"[lead-notify] guest autoresponse FAILED: {e}", flush=True)
 
 
-def _notify_lead_email(lead: Lead):
+def _notify_lead_email(lead: Lead, spam_flag: str = ""):
     if not LEAD_NOTIFY_EMAIL:
         return
     if not (GMAIL_SMTP_USER and GMAIL_SMTP_APP_PASSWORD):
@@ -528,6 +625,7 @@ def _notify_lead_email(lead: Lead):
         "check_out": lead.check_out,
         "message": lead.message,
         "source_page": lead.source_page,
+        "spam_flag": spam_flag,
     }
     threading.Thread(target=_send_lead_emails, args=(lead_data,), daemon=True).start()
 

@@ -21,6 +21,12 @@
         <p style="color:var(--gray);margin-bottom:28px;">Tell us about your trip and we'll check availability and answer your questions.</p>
 
         <form class="contact-form" action="/contact/" method="POST">
+          <!-- Spam traps: invisible to humans, filled/tripped by bots. Do not remove. -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="ct-website">Leave this field empty</label>
+            <input type="text" id="ct-website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <input type="hidden" name="form_loaded_at" value="{{ now_ts }}">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name *</label>

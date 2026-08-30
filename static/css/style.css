@@ -247,6 +247,7 @@ ul { list-style: none; }
 .vip-form input:focus { outline: 3px solid var(--gold-lt); outline-offset: 1px; }
 .vip-form .btn { flex: 0 0 auto; }
 .vip-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .vip-success { max-width: 620px; margin: 0 auto; }
 .vip-success strong { font-family: "Trebuchet MS", Arial, sans-serif; font-size: 1.3rem; display: block; margin-bottom: 8px; }
 .vip-success p { opacity: .92; }
