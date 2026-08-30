@@ -117,6 +117,40 @@ SPAM_PHRASES = (
 
 URL_RE = re.compile(r"(https?://|www\.|\.com/|\.ru\b|\.cn\b|\.top\b|\.xyz\b|bit\.ly|tinyurl)", re.I)
 
+# Scripts that cannot be English or Spanish. Both of those languages live
+# entirely in Latin script — Spanish accents (á é í ó ú ñ ü ¿ ¡) are Latin-1,
+# so they pass cleanly. Anything written in these ranges is not a real inquiry
+# for a cabin in Lakeside, AZ.
+NON_LATIN_RE = re.compile(
+    "["
+    "Ѐ-ԯ"  # Cyrillic (Russian, Ukrainian, Bulgarian…)
+    "一-鿿"  # CJK — Chinese
+    "㐀-䶿"  # CJK extension A
+    "぀-ヿ"  # Japanese hiragana + katakana
+    "가-힯"  # Korean hangul
+    "؀-ۿ"  # Arabic
+    "ݐ-ݿ"  # Arabic supplement
+    "֐-׿"  # Hebrew
+    "฀-๿"  # Thai
+    "ऀ-ॿ"  # Devanagari (Hindi)
+    "ঀ-৿"  # Bengali
+    "Ͱ-Ͽ"  # Greek
+    "က-႟"  # Myanmar
+    "]"
+)
+
+
+def _is_non_latin(*fields):
+    """True if the submission is written in a script that can't be English/Spanish.
+
+    Requires 3+ such characters so a stray symbol never trips it. Deliberately
+    script-based rather than language-detection: language detectors are
+    unreliable on short text ("Any openings Labor Day weekend?") and a false
+    positive here deletes a real booking inquiry outright.
+    """
+    text = " ".join(f or "" for f in fields)
+    return len(NON_LATIN_RE.findall(text)) >= 3
+
 
 def _spam_score(name, email, phone, message, form_loaded_at):
     """Return (score, [reasons]). Higher = more likely spam."""
@@ -168,6 +202,13 @@ def contact_post():
     # it worked, but store and send nothing.
     if request.form.get("website", "").strip():
         print("[contact] honeypot tripped — dropped silently", flush=True)
+        return redirect(url_for("contact_thanks"))
+
+    # Language gate: English and Spanish only, per owner's instruction.
+    # Anything in a non-Latin script is discarded outright — no email, no CRM,
+    # no database row.
+    if _is_non_latin(request.form.get("name", ""), request.form.get("message", "")):
+        print("[contact] DISCARDED — non-English/Spanish script", flush=True)
         return redirect(url_for("contact_thanks"))
 
     score, why = _spam_score(
