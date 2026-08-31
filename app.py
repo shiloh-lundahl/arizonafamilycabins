@@ -33,6 +33,11 @@ db.init_app(app)
 PHONE = os.environ.get("PHONE_NUMBER") or "(602) 430-2232"
 PHONE_RAW = "".join(c for c in PHONE if c.isdigit())
 SITE_URL = "https://arizonafamilycabins.com"
+
+# Which commit is actually running. Render sets RENDER_GIT_COMMIT automatically.
+# Rendered as an HTML comment so deployment state can be verified from outside
+# without guessing whether a push has gone live yet.
+BUILD_REV = (os.environ.get("RENDER_GIT_COMMIT") or "local")[:7]
 LEAD_NOTIFY_EMAIL = os.environ.get("LEAD_NOTIFY_EMAIL", "Shilohsassistant@gmail.com")
 
 # ── Canonical-redirect middleware ────────────────────────────────────────────
@@ -69,6 +74,7 @@ def inject_globals():
         "site_url": SITE_URL,
         "current_year": datetime.utcnow().year,
         "now_ts": int(time.time()),  # spam time-trap on the contact form
+        "build_rev": BUILD_REV,
     }
 
 
