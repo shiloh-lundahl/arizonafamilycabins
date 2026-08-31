@@ -146,6 +146,48 @@ NON_LATIN_RE = re.compile(
 )
 
 
+# Positive-evidence vocabulary. Rather than trying to identify every foreign
+# language, we require the message to look affirmatively English or Spanish.
+# Script detection alone is not enough: Croatian, Polish, Turkish, Vietnamese
+# etc. are all Latin script and slipped straight through.
+EN_ES_VOCAB = set("""
+the be is are was were am an and or but if of at by for with about to from in on
+out up we us our you your my me they their he she it this that these those have
+has had do does did can could will would should may might need needs want wants
+would like looking interested please thanks thank hi hello hey question questions
+there here when what which who how why any all some more most just also very
+cabin cabins lodge house home book booking booked reserve reservation reserving
+available availability stay staying stays night nights weekend weekends week
+weeks date dates day days group groups family families reunion reunions people
+person guests guest adults kids children price prices cost costs rate rates
+quote pet pets dog dogs allowed hot tub wedding retreat trip vacation visit
+interested checking wondering possible open openings
+january february march april june july august september october november december
+jan feb mar apr jun jul aug sep sept oct nov dec
+hola buenos buenas dias tardes noches gracias por favor para con sin del las los
+una unos unas que cuanto cuesta precio precios disponibilidad disponible tienen
+tiene hay somos personas familia reunion cabana noche fin semana quiero queremos
+necesito necesitamos nos es son esta estan estamos su mi nuestra nuestro cuantas
+cuantos podemos puedo hacer saber informacion
+""".split())
+
+WORD_RE = re.compile(r"[a-záéíóúñü]{2,}", re.I)
+
+
+def _looks_english_or_spanish(message):
+    """True if the message shows positive evidence of English or Spanish.
+
+    Short or empty messages return True deliberately — a terse but real inquiry
+    ("Call me", "20 people July 4th") carries too little signal to judge, and a
+    false positive here deletes a genuine booking with no trace.
+    """
+    words = WORD_RE.findall((message or "").lower())
+    if len(words) < 4:
+        return True
+    hits = sum(1 for w in words if w in EN_ES_VOCAB)
+    return hits >= 2 or (hits / len(words)) >= 0.20
+
+
 def _is_non_latin(*fields):
     """True if the submission is written in a script that can't be English/Spanish.
 
@@ -213,9 +255,23 @@ def contact_post():
     # Language gate: English and Spanish only, per owner's instruction.
     # Anything in a non-Latin script is discarded outright — no email, no CRM,
     # no database row.
-    if _is_non_latin(request.form.get("name", ""), request.form.get("message", "")):
-        print("[contact] DISCARDED — non-English/Spanish script", flush=True)
+    msg_in = request.form.get("message", "")
+    if _is_non_latin(request.form.get("name", ""), msg_in):
+        print("[contact] DISCARDED — non-Latin script", flush=True)
         return redirect(url_for("contact_thanks"))
+
+    if not _looks_english_or_spanish(msg_in):
+        print(f"[contact] DISCARDED — not English/Spanish: {msg_in[:60]!r}", flush=True)
+        return redirect(url_for("contact_thanks"))
+
+    # No human fills out a form this fast. Physically impossible, so treat it as
+    # a bot outright rather than scoring it.
+    try:
+        if 0 <= (time.time() - float(request.form.get("form_loaded_at"))) < 2.0:
+            print("[contact] DISCARDED — submitted in under 2s (bot)", flush=True)
+            return redirect(url_for("contact_thanks"))
+    except (TypeError, ValueError):
+        pass
 
     score, why = _spam_score(
         request.form.get("name", ""),
